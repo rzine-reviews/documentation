@@ -1,0 +1,7 @@
+
+```{r nom_de_mon_chunck, echo = FALSE, warning = FALSE}
+
+x <- 37 + 12
+print(x)
+
+```
