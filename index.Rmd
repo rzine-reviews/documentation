@@ -44,105 +44,73 @@ knitr::opts_chunk$set(echo=TRUE,
 
 # Une fiche Rzine ?  
 
-La "fiche" est un des deux formats proposés de la collection Rzine. **Il s'agit d'un document didactique qui présente une méthodologie, un type d'analyse, une fonctionnalité, ou encore le traitement d’un certain type de données avec le logiciel R. Une fiche peut être principalement technique, méthodologique ou thématique, mais elle peut aussi couvrir ces trois aspects**.
+La "fiche" est l'un des formats de documentation de la collection Rzine. **Il s'agit d'un document didactique qui présente une méthodologie, un type d'analyse, une fonctionnalité, ou encore le traitement d'un certain type de données avec le logiciel R. Une fiche peut être principalement technique, méthodologique ou thématique, mais elle peut aussi couvrir ces trois aspects.Le premier objectif d'une fiche Rzine consiste à partager de manière pédagogique des méthodes reproductibles, applicables en SHS**
 
-**La publication de fiche est ouverte à tou·te·s, quelque soit son statut et sa discipline. Une fiche peut être réalisée à plusieurs et présenter une dimension interdisciplinaire**. 
+**La publication de fiche est ouverte à tou·te·s, quelque soit son statut et sa discipline**. Une fiche peut être réalisée à plusieurs et présenter une dimension interdisciplinaire. 
+
+**Les auteur·e·s sont libres dans le choix de la problématique et dans la façon d'articuler le contenu**. Cependant, il est indispensable que **le contenu d'une fiche soit correctement contextualisé et qu'il soit intelligible par l'ensemble des disciplines de SHS**. Il est également **obligatoire de suivre les règles suivantes :**
+
+- **Rédiger en français ou en anglais**
+- **Utiliser le modèle de mise en page** `readrzine`
+- **Introduire et contextualiser la fiche** 
+- **Proposer du code entièrement reproductible**
+- **Utiliser des données libres d'utilisation et mise à disposition**
+- **Fournir certains fichiers et annexes associés** 
+
 
 Vous pouvez consulter les premières fiches déjà produites pour vous faire une idée du résultat attendu :    
 
-- [Analyse Territoriale Multiscalaire](https://rysebaert.github.io/mta_rzine/), *Ronan Ysebaert et Claude Grasland*.    
-- [Analyse des corrélations avec easystats](https://rzine.fr/docs/20200526_glecampion_initiation_aux_correlations/rapp_correlation.html), *Grégoire Le Campion*.    
+- [Analyse Territoriale Multiscalaire](https://rzine.fr/docs/20211101_ysebaert_grasland_MTA/index.html), *Ronan Ysebaert et Claude Grasland*.    
+- [Analyse des corrélations avec easystats](https://rzine.fr/docs/20200526_glecampion_initiation_aux_correlations/index.html), *Grégoire Le Campion*.    
 - [Exploration spatio-temporelle d’objets géographiques ponctuels](https://rzine.fr/docs/20200601_mletexier86_explo_spatiotemporel/index.html), *Marion Le Texier*.    
-- [Réaliser une carte de discontinuités en 2,5D](https://neocarto.github.io/ironcurtain/ironcurtain.html), *Nicolas Lambert*.    
-
-**Les auteur·e·s sont libres dans le choix de la problématique et dans la façon d'articuler le contenu**. Les seules obligations en matière de contenu sont :
-
-- **Une fiche doit être rédigée en français ou en anglais**.
-- **Les traitements présentés doivent être reproductibles** et respecter le RGPD.
-- **Les données utilisées doivent être accessibles**.
-- **Une fiche doit contenir une introduction qui contextualise le contenu présenté**.
-- **Certaines annexes sont obligatoires** (information sur la session et citation de la fiche) ou fortement recommandés (glossaire et références bibliographiques). 
+- [Réaliser une carte de discontinuités en 2,5D](https://neocarto.github.io/ironcurtain/), *Nicolas Lambert*.
 
 
-**Les auteur·e·s sont libres dans le choix de la problématique et dans la façon d'articuler le contenu de leur fiche Rzine**. Les seules obligations sont :
+**Rzine souhaite promouvoir l'usage de logiciels contribuant à une science plus ouverte et reproductible, et participer à une montée en compétence des disciplines de SHS dans ce domaine.** C'est pour cela que **l'ensemble du processus d'évaluation se déroule sur** [**GitHub**](https://github.com/), service web d'hébergement et de gestion de développement de logiciels, utilisant le logiciel de gestion de versions [Git](https://git-scm.com/). 
 
-- **Utiliser le template** (et l'architecture de dossier) `readrzine` ([partie 2.1](#installation)).
-- **Rédiger en français ou en anglais**
-- **Fournir certains fichiers et annexes associés** ([partie 4](#rédiger-une-fiche-rzine)). 
-- **Introduire et contextualiser la fiche** ([partie 4.1](#introduction-contextualisation)). 
-- **Présenter des traitements reproductibles** et respecter le RGPD.
-- **Mettre à disposition les données utilisées** ([partie 4.2](#données-utilisées)). 
-
-
-**Une fois votre fiche soumise au comité de lecture, elle sera évaluée sur les** [**critères suivants**](https://rzine.gitpages.huma-num.fr/help_rzine_publication/#crit%C3%A8res-d%C3%A9valuation).
+Cela ne doit en aucun cas effrayer les auteur·e·s qui n'ont jamais utilisé ce genre de logiciel. De la documentation et une assistance sont fournies par le comité éditorial Rzine... Profitez-en pour vous former à cet outil qui change la vie !
 
 
 ## Critères d'acceptation
 
+Afin d'assurer la cohérence de la collection et une certaine qualité du contenu des fiches Rzine, plusieurs critères d'acceptation ont été établis. Certains de ces critères sont soumis à un ou plusieurs évaluateur·rice·s, d'autres peuvent faire l'objet d'un refus immédiat de la part des éditeur·rice·s du [comité de lecture](https://rzine.fr/collection/#people).  
 
-Afin d'assurer la cohérence de la collection et une certaine qualité du contenu des fiches Rzine, **plusieurs critères d'évaluation ont été établis** . **Certains de ces critères sont soumis à un ou plusieurs relecteur.rice.s, d'autres peuvent faire l'objet d'un refus immédiat de la part du** [**comité de lecture**](https://rzine.fr/collection/#people).  
-
-
-**Le premier objectif d'une fiche Rzine consiste à partager des méthodes reproductibles, applicables en SHS**. Pour cela, le comité de lecture et les relecteur·rice·s veilleront à ce que la démonstration soit contextualisée (champ disciplinaire d'application, enjeux en terme de reproductibilité...) et rigoureuse. Le code présenté se doit d'être lisible, commenté et reproductible. Les packages mobilisés doivent être brièvement décrits et leur utilisation justifiée. Enfin, les données utilisées dans le cadre de la démonstration doivent obligatoirement être sourcées, libres de droit et mises à disposition.
+**Les éditeur·rice·s et les évaluateur·rice·s veilleront à ce que la démonstration soit contextualisée (champ disciplinaire d'application, enjeux en terme de reproductibilité...) et rigoureuse. Le code présenté se doit d'être lisible, commenté et reproductible. Les packages mobilisés doivent être brièvement décrits et leur utilisation justifiée. Enfin, les données utilisées dans le cadre de la démonstration doivent obligatoirement être sourcées, libres de droit et mises à disposition.**
 
 
-|  Critères d'évaluations d'une fiche                                |  Comité de lecture | Relecteur.rice.s  |
+|  Critères d'évaluations d'une fiche                                |  Editeur·rice·s | Evaluateur·rice·s |
 |--------------------------------------------------------------------|:-------------:|:-------------:|
-| Respect des consignes éditoriales ([partie 3](#processus-de-publication))    |       X       |               |
+| Respect des consignes éditoriales ([partie 4](#la-rédaction-dune-fiche))    |       X       |               |
 | Acceptation des futures conditions d'utilisation [**CC BY-SA 4.0**](https://creativecommons.org/licenses/by-sa/4.0/deed.fr)  |      X        |               |
 | Pas de fiche Rzine similaire déjà produite*                        |       X       |               |
 | N'a pas fait l'objet d'une publication par ailleurs                |       X       |               |
 | Pas de renvoi publicitaire explicite                               |       X       |       X       |
 | Respect du Règlement Général sur la Protection des Données         |       X       |       X       |
 | Intérêt pour la communauté des utilisateurs de R en SHS            |       X       |       X       |
-| Données utilisées libres, sourcées et mises à disposition          |       X       |       X       |
+| Données utilisées libres, sourcées et mises à disposition  ([partie 4.?](#la-rédaction-dune-fiche))        |       X       |       X       |
 | Rédaction dans un français ou un anglais correct                   |               |       X       |
 | Concerne des méthodes applicables aux SHS                          |               |       X       |
 | Contextualisation de l'analyse ou méthode présentée          |               |       X       |
 | Présentation des prérequis techniques et méthodologiques           |               |       X       |
 | Clarté et rigueur de la ressource et de la démonstration           |               |       X       |
-| Clarté (indentation, commentaire...) et reproductibilité du code présenté  |               |       X       |
+| Clarté (indentation, commentaire...) et reproductibilité du code présenté  |       X        |       X       |
 | Justification (et stabilité) des packages utilisés                 |       X      |       X       |
 
-*Le cas échéant, le comité éditorial se réserve la possibilité de mettre en relation différents contributeur.rice.s pour leur proposer la rédaction collaborative d'une fiche. 
-
-
-
+*Le cas échéant, le comité de lecture se réserve la possibilité de mettre en relation différents contributeur.rice.s pour leur proposer la rédaction collaborative d'une fiche. 
 
 
 ## Format et template
 
-Une fiche Rzine est **un fichier HTML produit en R Markdown**. Elle se construit donc avec R et repose sur les packages [rmarkdown](https://rmarkdown.rstudio.com/) et [knit](https://yihui.org/knitr/). 
+**Une fiche Rzine est document computationnel**, alternant du texte et du code. Il s'agit d'un **fichier HTML produit en R Markdown**. Il se construit avec R et repose sur les packages [rmarkdown](https://rmarkdown.rstudio.com/) et [knitr](https://yihui.org/knitr/). 
 
-Une fiche doit respecter une mise en page ainsi qu'une structure prédéfinie de répertoire. Pour faciliter cela, **un modèle pré-rempli est mis à disposition par le package** [**rzine**](https://gitlab.huma-num.fr/rzine/package). L'installation du package et la génération d'une fiche Rzine vierge est expliquée dans la [partie 3.1](#édition) 
+**Un modèle de mise en page, ainsi qu'une structure prédéfinie de répertoires, sont mis à disposition par le biais du package** [`rzine`](https://gitlab.huma-num.fr/rzine/package).Son installation du package, ainsi que la création d'une fiche Rzine vierge sont expliqués dans la [partie 2](#le-package-rzine).
 
-
-Une fiche Rzine est **un fichier HTML produit en R Markdown à partir d'un modèle de mise en page fournit par le package** [**rzine**](https://gitlab.huma-num.fr/rzine/package). Ce modèle de mise en page fournit également toute l'infrastructure de répertoires et les fichiers associés (vierges) demandés à la soumission d'une fiche.
-
-Le package est mis à disposition sur un [dépôt de l'organisation Rzine](https://gitlab.huma-num.fr/rzine/package) sur le GitLab Huma-Num.   
-Pour l'installer, exécutez les lignes suivantes :
-
-```r
-# install.packages(remotes)
-remotes::install_gitlab("rzine/package", host = "https://gitlab.huma-num.fr/", force = TRUE)
-library(rzine)
-```
-
-Vous pouvez ensuite générer une fiche Rzine vierge en clic-bouton depuis l'interface Rstudio (File > New File > R Markdown > From temmplate) ou utiliser la fonction suivante :
+Le package est mis à disposition sur un [dépôt de l'organisation Rzine](https://gitlab.huma-num.fr/rzine/package) sur le GitLab Huma-Num. Son installation 
 
 
-```r
-rmarkdown::draft(file = "index.Rmd", 
-                 template = "readrzine", 
-                 package = "rzine", 
-                 create_dir = FALSE, 
-                 edit = FALSE)
-```
+## Soumission et évaluation
 
-**Retrouvez l'ensemble du processus d'édition expliqué et détaillé dans** [**ce document**](https://rzine.gitpages.huma-num.fr/Help_Rzine_Layout/), @RedactRzine.
-  
-
-
+## publication et licence
 
 ## Stockage et déploiement
 
