@@ -586,6 +586,8 @@ $(document).ready(function() {
 ```
 ```
 
+## Fichier readme.md
+
 ## Annexes obligatoires
 
 ### Informations sur la session
