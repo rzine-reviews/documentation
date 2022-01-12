@@ -159,6 +159,8 @@ library(rzine)
 
 ## Utiliser le template `readrzine`
 
+### Spécifier un répértoire de travail
+
 **Avant de générer une fiche Rzine vierge, il est important de spécifier un répertoire de travail.**
 Pour cela, deux solutions s'offrent à vous :
 
