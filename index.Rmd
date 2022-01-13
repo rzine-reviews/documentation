@@ -44,18 +44,18 @@ knitr::opts_chunk$set(echo=TRUE,
 
 # Une fiche Rzine ?  
 
-La "fiche" est le premier format de documentation de la collection Rzine. **Il s'agit d'un document didactique qui présente une méthodologie, un type d'analyse, une fonctionnalité, ou encore le traitement d'un certain type de données avec le langage R. Une fiche peut être principalement technique, méthodologique ou thématique, mais elle peut aussi couvrir ces trois aspects. Le premier objectif d'une fiche consiste à partager de manière pédagogique des méthodes reproductibles, applicables en SHS**.
+La "fiche" est le premier format de documentation de la collection Rzine. Il s'agit d'un document didactique qui présente une méthodologie, un type d'analyse, une fonctionnalité, ou encore le traitement d'un certain type de données avec le langage R. Une fiche peut être principalement technique, méthodologique ou thématique, mais elle peut aussi couvrir ces trois aspects. Le premier objectif d'une fiche consiste à partager de manière pédagogique des méthodes reproductibles, applicables en SHS.
 
-**La publication de fiche est ouverte à tou·te·s, quelque soit son statut et sa discipline. Une fiche peut être réalisée à plusieurs et présenter une dimension interdisciplinaire.** 
+La publication de fiche est ouverte à tou·te·s, quelque soit son statut et sa discipline. Une fiche peut être réalisée à plusieurs et présenter une dimension interdisciplinaire. 
 
-**Les auteur·e·s sont libres dans le choix de la problématique et dans la façon d'articuler le contenu. Il est cependant indispensable que le contenu d'une fiche soit correctement contextualisé et qu'il soit intelligible par l'ensemble des disciplines de SHS. Il est également obligatoire de suivre les règles suivantes :**
+Les auteur·e·s sont libres dans le choix de la problématique et dans la façon d'articuler le contenu. Il est cependant indispensable que le contenu d'une fiche soit correctement contextualisé et qu'il soit intelligible par l'ensemble des disciplines de SHS. Il est également obligatoire de suivre les règles suivantes :
 
-- **Utiliser le modèle de mise en page** [`readrzine`](#utiliser-le-template-readrzine)
-- **Rédiger en français ou en anglais**
-- **Introduire et contextualiser le contenu** 
-- **Présenter du code entièrement reproductible**
-- **Utiliser des données libres d'utilisation et mises à disposition des lecteurs**
-- **Fournir des fichiers et annexes associés** 
+- Utiliser le modèle de mise en page [`readrzine`](#utiliser-le-template-readrzine)
+- Rédiger en français ou en anglais
+- Introduire et contextualiser le contenu 
+- Présenter du code entièrement reproductible
+- Utiliser des données libres d'utilisation et mises à disposition des lecteurs
+- Fournir les fichiers et annexes demandées 
 
 
 Vous pouvez consulter les premières fiches déjà produites pour vous faire une idée du résultat attendu :    
@@ -66,11 +66,11 @@ Vous pouvez consulter les premières fiches déjà produites pour vous faire une
 - [Réaliser une carte de discontinuités en 2,5D](https://rzine.fr/docs/20191125_ironcurtain/index.html), *Nicolas Lambert*.
 
 
-**Rzine souhaite promouvoir l'usage de logiciels contribuant à une science plus ouverte et reproductible, et participer à une montée en compétence des disciplines de SHS dans ce domaine.** C'est pour cela que **l'ensemble du processus d'évaluation se déroule sur** [**GitHub**](https://github.com/) (service web d'hébergement et de gestion de développement de logiciels) qui repose sur le logiciel de gestion de versions [**Git**](https://git-scm.com/). 
+Rzine souhaite promouvoir l'usage de logiciels contribuant à une science plus ouverte et reproductible, et participer à une montée en compétence des disciplines de SHS dans ce domaine. C'est pour cela que l'ensemble du processus d'évaluation se déroule sur [GitHub](https://github.com/) (service web d'hébergement et de gestion de développement de logiciels) qui repose sur le logiciel de gestion de versions [Git](https://git-scm.com/). 
 
 
 <div class="alert alert-success" role="alert">
-<b>Cela ne doit en aucun cas effrayer les auteur·e·s qui n'ont jamais utilisé ce genre de logiciel. De la documentation et une assistance sont fournies par le comité éditorial Rzine... Profitez-en pour vous former à cet outil qui change la vie !</b></div>
+<b>Cela ne doit en aucun cas effrayer les auteur·e·s qui n'ont jamais utilisé Git. De la documentation et une assistance sont fournies par le comité de lecture Rzine... Profitez-en pour vous former à cet outil !</b></div>
 
 <br/>
 
@@ -78,13 +78,13 @@ Vous pouvez consulter les premières fiches déjà produites pour vous faire une
 
 Afin d'assurer la cohérence de la collection et une certaine qualité du contenu des fiches Rzine, plusieurs critères d'acceptation ont été établis. Certains de ces critères sont soumis à un ou plusieurs évaluateur·rice·s, d'autres peuvent faire l'objet d'un refus immédiat de la part des éditeur·rice·s du [comité de lecture](https://rzine.fr/collection/#people).  
 
-**Les éditeur·rice·s et les évaluateur·rice·s veilleront à ce que la démonstration soit contextualisée (champ disciplinaire d'application, enjeux en terme de reproductibilité...) et rigoureuse. Le code présenté se doit d'être lisible, commenté et reproductible. Les packages mobilisés doivent être brièvement décrits et leur utilisation justifiée. Enfin, les données utilisées dans le cadre de la démonstration doivent obligatoirement être sourcées, libres de droit et mises à disposition.**
+Les éditeur·rice·s et les évaluateur·rice·s veilleront à ce que la démonstration soit contextualisée (champ disciplinaire d'application, enjeux en terme de reproductibilité...) et rigoureuse. Le code présenté se doit d'être lisible, commenté et reproductible. Les packages mobilisés doivent être brièvement décrits et leur utilisation justifiée. Enfin, les données utilisées dans le cadre de la démonstration doivent obligatoirement être sourcées, libres de droit et mises à disposition.
 
 
 |  Critères d'évaluations d'une fiche                                |  Editeur·rice·s | Evaluateur·rice·s |
 |--------------------------------------------------------------------|:-------------:|:-------------:|
 | Respect des consignes éditoriales ([partie 4](#la-rédaction-dune-fiche))    |       X       |               |
-| Acceptation des futures conditions d'utilisation [**CC BY-SA 4.0**](https://creativecommons.org/licenses/by-sa/4.0/deed.fr)  |      X        |               |
+| Acceptation des futures conditions d'utilisation [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.fr)  |      X        |               |
 | Pas de fiche Rzine similaire déjà produite*                        |       X       |               |
 | N'a pas fait l'objet d'une publication par ailleurs                |       X       |               |
 | Pas de renvoi publicitaire explicite                               |       X       |       X       |
@@ -105,19 +105,19 @@ Afin d'assurer la cohérence de la collection et une certaine qualité du conten
 
 ## Format et template
 
-**Une fiche Rzine est document computationnel**, alternant du texte et du code (programmation lettrée). **Il s'agit d'un fichier HTML produit en R Markdown. Il se construit avec R et repose sur les packages** [**`rmarkdown`**](https://rmarkdown.rstudio.com/) **et** [**`knitr`**](https://yihui.org/knitr/). 
+Une fiche Rzine est la sortie HTML d'un fichier R Markdown construit avec R. Les packages nécessaires sont [**`rmarkdown`**](https://rmarkdown.rstudio.com/), [**`knitr`**](https://yihui.org/knitr/) (pour la compilation) et [**`rzine`**](https://gitlab.huma-num.fr/rzine/package) (pour le modèle de mise en page).
 
-**Le modèle de mise en page est mis à disposition via le package** [**`rzine`**](https://gitlab.huma-num.fr/rzine/package). Son installation ainsi que la création d'une fiche Rzine vierge sont expliqués dans la [partie 2](#le-package-rzine).
+Il s'agit d'un document computationnel, alternant du texte et du code, permettant d’appliquer le paradigme de la programmation lettrée. 
 
 <br/>
 
 ## Soumission et évaluation
 
-**L'ensemble du processus de soumission et d'évaluation d'une fiche se déroule sur** [**GitHub**](https://github.com/). **Cela facilite la gestion de version, permet l'archivage et la transparence de l'évaluation d'une fiche.**
+L'ensemble du processus de soumission et d'évaluation d'une fiche se déroule sur [GitHub](https://github.com/). Cela facilite la gestion de version, permet l'archivage et la transparence de l'évaluation d'une fiche.
 
-**Pour être soumise à évaluation, une fiche doit être déposée et déployée sur GitHub** ([cf. partie 5](#la-soumission-dune-fiche)). 
+Pour être soumise à évaluation, une fiche doit être déposée et déployée sur GitHub ([cf. partie 5](#la-soumission-dune-fiche)). 
 
-Dans le cas où l'ensemble des critères d'acceptations sont respectés, le comité de lecture désigne un éditeur.rice référent qui coordonnera tout le processus d'évaluation et de publication. Il propose également deux évaluateur·rice·s à l'auteur·e. Une fois le processus d'évaluation enclenché, les retours (publics) des évaluateur·rice·s et de l'éditeur·rice se font directement sur GitHub ([cf. partie 6](#le-processus-de-relecture)).
+Dans le cas où l'ensemble des critères d'acceptations sont respectés, le comité de lecture désigne un éditeur.rice référent qui coordonnera tout le processus d'évaluation et de publication. Il propose également deux évaluateur·rice·s à l'auteur·e. Une fois le processus d'évaluation enclenché, les retours des évaluateur·rice·s et de l'éditeur·rice se feront publiquement sur GitHub ([cf. partie 6](#le-processus-de-relecture)).
 
 <br/>
 <center>**Le processus d'évaluation et de publication d'une fiche Rzine :**</center>
@@ -131,9 +131,9 @@ knitr::include_graphics("figures/Rzine_05.png")
 
 ## Publication et licence d'utilisation
 
-Une fois le processus d'évaluation terminée, **les éditeur·rice·s du comité de lecture s'occupent de la mise en page finale de la fiche, du dépôt d'un** [**DOI**](https://www.doi.org/), **du référencement du document sur HAL et de sa mise en ligne sur le site** [**rzine.fr**](https://rzine.fr/publication_rzine/).
+Une fois le processus d'évaluation terminée, les éditeur·rice·s s'occupent de la mise en page finale de la fiche, du dépôt d'un [DOI](https://www.doi.org/), du référencement du document sur HAL et de sa mise en ligne sur le site [rzine.fr](https://rzine.fr/publication_rzine/).
 
-Le projet Rzine souhaite promouvoir les pratiques contribuant à une science plus ouverte et reproductible. C'est pour cette raison que **l'ensemble des publications de la collection Rzine, ainsi que leurs codes sources, sont automatiquement mis à disposition de tou·te·s et libres de droit**.
+Le projet Rzine souhaite promouvoir les pratiques contribuant à une science plus ouverte et reproductible. C'est pour cette raison que l'ensemble des publications de la collection Rzine, ainsi que leurs codes sources, sont automatiquement mis à disposition de tou·te·s et libres de droit.
 
 <div class="alert alert-danger" role="alert">
 <b>Etre auteur.e d'une fiche Rzine, c'est accepter à ce que votre publication soit mise à disposition sous les conditions d'utilisation de la [<b>licence Creative Commons BY-SA 4.0</b>](https://creativecommons.org/licenses/by-sa/4.0/deed.fr) et que son code source réponde aux condition d'utilisation de la licence...</b>
@@ -141,15 +141,14 @@ Le projet Rzine souhaite promouvoir les pratiques contribuant à une science plu
 <b>Afin d’éviter tout malentendu avec les auteur·e·s, la signature d’un accord de principe sera demandé.</b></div>
 
 
-<br/>
 
 # Le package `rzine`
 
-**Le package** [**`Rzine`**](https://gitlab.huma-num.fr/rzine/package) **fournit le modèle de mise en page des fiches Rzine**, ainsi que l'architecture de répertoire et l'ensemble des fichiers associés à fournir.
+Le package [`Rzine`](https://gitlab.huma-num.fr/rzine/package) fournit le modèle de mise en page des fiches Rzine, ainsi que l'architecture de répertoire et l'ensemble des fichiers associés à fournir.
 
 ## Installation du package `rzine`
 
-Le package est mis à disposition sur un [depôt de l'organisation Rzine](https://gitlab.huma-num.fr/rzine/package) sur l'instance GitLab de la TGIR Huma-num. **Pour l'installer et le charger, exécutez les lignes suivantes :**
+Le package est mis à disposition sur un [depôt de l'organisation Rzine](https://gitlab.huma-num.fr/rzine/package) sur l'instance GitLab de la TGIR Huma-num. Pour l'installer et le charger :
 
 ```r
 # install.packages(remotes)
@@ -161,10 +160,10 @@ library(rzine)
 
 ### Spécifier un répértoire de travail
 
-**Avant de générer une fiche Rzine vierge, il est important de spécifier un répertoire de travail.**
+Avant de générer une fiche Rzine vierge, il est important de spécifier un répertoire de travail.
 Pour cela, deux solutions s'offrent à vous :
 
-**1- La solution standart**
+**1- En ligne de code**
 
 Créez un répertoire sur votre ordinateur, et spécifiez-le comme répertoire de travail avec la fonction `setwd()`, exemple :
 
@@ -172,7 +171,7 @@ Créez un répertoire sur votre ordinateur, et spécifiez-le comme répertoire d
 setwd("/home/jeanne/Documents/Fiche_rzine")
 ```
 
-**2- La solution Rstudio (recommandée)**
+**2- En clic-bouton avec Rstudio (recommandée)**
 
 Créez un projet Rstudio. Pour cela, cliquez sur *File/New Project*, sélectionnez *New Directory*, puis *New Project* :
 
@@ -192,7 +191,7 @@ knitr::include_graphics("figures/create_project_2.png")
 
 ### Générer une fiche vierge (.Rmd)
 
-Une fois dans votre votre projet Rstudio (ou que vous avez spécifié votre répertoire de travail de manière standart), vous pouvez générer une fiche `readrzine` vierge en ligne de commande. Pour cela, **copiez-collez les lignes de code suivantes sans les modifier, puis exécutez :**
+Une fois dans votre votre projet Rstudio (ou que vous avez spécifié votre répertoire de travail), vous pouvez générer un modèle de mise en page `readrzine` vierge en ligne de commande. Copiez-collez les lignes de code suivantes sans les modifier, puis exécutez :
 
 ```r
 rmarkdown::draft(file = "index.Rmd", 
@@ -203,7 +202,7 @@ rmarkdown::draft(file = "index.Rmd",
 ```
 
 
-**Cela génère un ensemble de fichiers à la racine de votre répertoire de travail.** Certains fichiers sont à modifier ou à ajouter en fonction du contenu de votre fiche : 
+Cela génère un ensemble de fichiers à la racine de votre répertoire de travail. Certains fichiers sont à modifier ou à ajouter en fonction du contenu de votre fiche : 
 
 
 ```{r, echo=FALSE, fig.align='center', out.width = "90%"}
@@ -214,40 +213,34 @@ knitr::include_graphics("figures/files_folder.png")
 
 ## Kniter la fiche (.html)
 
-**Le fichier le plus important est** ***index.Rmd***. **Il s'agit du fichier R Markdown source à partir duquel sera généré la fiche Rzine en format HTML**. **Ne modifiez pas son nom**.
+Pour générer la fiche en format HTML, il suffit de *kniter* (*tricoter*) le fichier ***index.Rmd***. 
 
-Pour générer le document en format HTML, il suffit de ***kniter*** (*tricoter*) ce fichier. Cela revient à le convertir dans un premier temps en format markdown puis (dans ce cas) en format HTML via [**Pandoc**](https://pandoc.org/installing.html) (logiciel libre de conversion de documents). 
+Le fichier est d'abord converti en format Markdown puis en format HTML via [Pandoc](https://pandoc.org/installing.html) (logiciel libre de conversion de documents). Sur certaines versions de systèmes d'exploitation, il est nécessaire d'installer le logiciel [Pandoc](https://pandoc.org/installing.html).
 
-<div class="alert alert-danger" role="alert">
-Sur certains systèmes d'exploitation comme Windows, <b>il est nécessaire d'installer</b> <a href="https://pandoc.org/installing.html"><b>Pandoc</b>.</a></div>
-
-Vous pouvez **kniter (générer) le R Markdown `readrzine` en format HMTL** de différente manière :
+Vous pouvez *kniter* le fichier *index.Rmd* de différente manière :
 
 **1- En ligne de code**
 
-Copiez-collez ces lignes de commande puis exécutez pour générer le fichier HTML :
 
 ```r
 rmarkdown::render("index.Rmd", envir = new.env())
-```
-**2- En clic- bouton avec Rstudio**
 
-Ou cliquez tout simplement sur `knit` depuis l'interface Rstudio :
+```
+**2- En clic- bouton (Rstudio)**
+
 
 ```{r, echo=FALSE, fig.align='center', out.width = "70%"}
 knitr::include_graphics("figures/knit.png")
 ```
 
-**3- Raccourci clavier**
-
-Vous pouvez également utiliser le raccourci clavier suivant : `CTRL+SHIFT+K`
+**3- Avec le raccourci clavier (Rstudio) :** **`CTRL+SHIFT+K`**
 
 
 <br/>
 
-**Cela engendre la création d'un fichier du même nom mais en format HTML** (***index.html***) **à la racine de votre répertoire. Il s'agit du fichier index.Rmd mis en page à partir du modèle** **`readrzine`**. 
+Cela engendre la création d'un fichier du même nom, en format HTML (***index.html***) à la racine de votre répertoire. Il s'agit du fichier index.Rmd mis en page à partir du modèle `readrzine`. 
 
-Voici à quoi ressemble une fiche Rzine vierge *knité* :
+Voici à quoi ressemble une fiche Rzine HTML vierge :
 
 ```{r, echo=FALSE, fig.align='center', out.width = "100%"}
 knitr::include_graphics("figures/template.png")
