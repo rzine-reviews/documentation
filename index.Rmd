@@ -136,7 +136,7 @@ Une fois le processus d'évaluation terminée, les éditeur·rice·s s'occupent 
 Le projet Rzine souhaite promouvoir les pratiques contribuant à une science plus ouverte et reproductible. C'est pour cette raison que l'ensemble des publications de la collection Rzine, ainsi que leurs codes sources, sont automatiquement mis à disposition de tou·te·s et libres de droit.
 
 <div class="alert alert-danger" role="alert">
-<b>Etre auteur.e d'une fiche Rzine, c'est accepter à ce que votre publication soit mise à disposition sous les conditions d'utilisation de la [<b>licence Creative Commons BY-SA 4.0</b>](https://creativecommons.org/licenses/by-sa/4.0/deed.fr) et que son code source réponde aux condition d'utilisation de la licence...</b>
+<b>Etre auteur.e d'une fiche Rzine, c'est accepter à ce que votre publication soit mise à disposition sous les conditions d'utilisation de la [<b>licence Creative Commons BY-SA 4.0</b>](https://creativecommons.org/licenses/by-sa/4.0/deed.fr) et que son code source réponde aux conditions d'utilisation de la licence...</b>
 
 <b>Afin d’éviter tout malentendu avec les auteur·e·s, la signature d’un accord de principe sera demandé.</b></div>
 
