@@ -1,5 +1,0 @@
-```{r, echo=FALSE, fig.align='center', out.width = "15%"}
-
-include_graphics("figures/folder_figures.png")
-
-```

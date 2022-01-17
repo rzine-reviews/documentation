@@ -3,7 +3,7 @@
 **Comité éditorial Rzine**
 <br/>  
 
-**WORK IN PROGRESS**
+Pour consulter la documentation, cliquez [**ici**](https://rzine-reviews.github.io/documentation/)
 
 <br/>  
 
