@@ -85,7 +85,7 @@ Les éditeur·rice·s et les évaluateur·rice·s veilleront à ce que la démon
 |  Critères d'évaluations d'une fiche                                |  Editeur·rice·s | Evaluateur·rice·s |
 |--------------------------------------------------------------------|:-------------:|:-------------:|
 | Respect des consignes éditoriales ([partie 4](#la-rédaction-dune-fiche))    |       X       |               |
-| Acceptation des futures conditions d'utilisation [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.fr)  |      X        |               |
+| Acceptation des futures conditions d'utilisation ([partie 1.4](#publication-et-licence-dutilisation)) |      X        |               |
 | Pas de fiche Rzine similaire déjà produite*                        |       X       |               |
 | N'a pas fait l'objet d'une publication par ailleurs                |       X       |               |
 | Pas de renvoi publicitaire explicite                               |       X       |       X       |
@@ -94,7 +94,7 @@ Les éditeur·rice·s et les évaluateur·rice·s veilleront à ce que la démon
 | Données utilisées libres, sourcées et mises à disposition  ([partie 4.2](#données-utilisées))        |       X       |       X       |
 | Rédaction dans un français ou un anglais correct                   |               |       X       |
 | Concerne des méthodes applicables en SHS (et sciences territoriales)                          |               |       X       |
-| Contextualisation de l'analyse ou méthode présentée          |               |       X       |
+| Contextualisation de l'analyse ou méthode présentée ([partie 4.3](#contextualisation))         |               |       X       |
 | Présentation des prérequis techniques et méthodologiques           |               |       X       |
 | Clarté et rigueur de la ressource et de la démonstration           |               |       X       |
 | Clarté (indentation, commentaire...) et reproductibilité du code présenté  |       X        |       X       |
@@ -118,7 +118,7 @@ L'ensemble du processus de soumission et d'évaluation d'une fiche se déroule s
 
 Pour être soumise à évaluation, une fiche doit être déposée et déployée sur GitHub ([cf. partie 5](#la-soumission-dune-fiche)). 
 
-Dans le cas où l'ensemble des critères d'acceptations sont respectés, le comité de lecture désigne un éditeur.rice référent qui coordonnera tout le processus d'évaluation et de publication. Il propose également deux évaluateur·rice·s à l'auteur·e. Une fois le processus d'évaluation enclenché, les retours des évaluateur·rice·s et de l'éditeur·rice se feront publiquement sur GitHub ([cf. partie 6](#le-processus-de-relecture)).
+Dans le cas où l'ensemble des critères d'acceptations sont respectés, le comité de lecture désigne un·e éditeur·rice référent·e qui coordonnera tout le processus d'évaluation et de publication. Il propose également deux évaluateur·rice·s à l'auteur·e. Une fois le processus d'évaluation enclenché, les retours des évaluateur·rice·s et de l'éditeur·rice se feront publiquement sur GitHub ([cf. partie 6](#le-processus-de-relecture)).
 
 <br/>
 <center>**Le processus d'évaluation et de publication d'une fiche Rzine :**</center>
@@ -132,12 +132,13 @@ knitr::include_graphics("figures/Rzine_05.png")
 
 ## Publication et licence d'utilisation
 
-Une fois le processus d'évaluation terminée, les éditeur·rice·s s'occupent de la mise en page finale de la fiche, du dépôt d'un [DOI](https://www.doi.org/), du référencement du document sur HAL et de sa mise en ligne sur le site [rzine.fr](https://rzine.fr/publication_rzine/).
+<div class="alert alert-success" role="alert">
+<b>Une fois le processus d'évaluation terminée, les éditeur·rice·s s'occupent de la mise en page finale de la fiche, de son [<b>stockage pérenne</b>](https://github.com/rzine-reviews), du dépôt d'un [<b>DOI</b>](https://www.doi.org/), du référencement du document sur [<b>HAL</b>](https://hal.archives-ouvertes.fr/RZINE) et de sa mise en ligne sur le site [<b>rzine.fr</b>](https://rzine.fr/publication_rzine/).</b></div>
 
 Le projet Rzine souhaite promouvoir les pratiques contribuant à une science plus ouverte et reproductible. C'est pour cette raison que l'ensemble des publications de la collection Rzine, ainsi que leurs codes sources, sont automatiquement mis à disposition de tou·te·s et libres de droit.
 
 <div class="alert alert-danger" role="alert">
-<b>Etre auteur.e d'une fiche Rzine, c'est accepter à ce que votre publication soit mise à disposition sous les conditions d'utilisation de la [<b>licence Creative Commons BY-SA 4.0</b>](https://creativecommons.org/licenses/by-sa/4.0/deed.fr) et que son code source réponde aux conditions d'utilisation de la licence...</b>
+<b>Etre auteur.e d'une fiche Rzine, c'est accepter à ce que votre publication (HTML) soit mise à disposition sous les conditions d'utilisation de la [<b>licence Creative Commons BY-SA 4.0</b>](https://creativecommons.org/licenses/by-sa/4.0/deed.fr) et que son code source réponde aux conditions d'utilisation de la licence [<b>MIT</b>](https://lbesson.mit-license.org/).</b>
 
 <b>Afin d’éviter tout malentendu avec les auteur·e·s, la signature d’un accord de principe sera demandé.</b></div>
 
@@ -239,7 +240,7 @@ knitr::include_graphics("figures/knit.png")
 
 <br/>
 
-Un fichier du même nom en format HTML est alors créé à la racine de votre répertoire (***index.html***). Il s'agit du fichier index.Rmd mis en page à partir du modèle `readrzine` :
+**Un fichier du même nom en format HTML est alors créé à la racine de votre répertoire** (***index.html***). Il s'agit du fichier index.Rmd mis en page à partir du modèle `readrzine` :
 
 ```{r, echo=FALSE, fig.align='center', out.width = "100%"}
 knitr::include_graphics("figures/template.png")
@@ -252,10 +253,10 @@ Il ne reste plus qu'à le remplir...
 
 # Anatomie d'un R Markdown
 
-Bien que dans le cadre d'une publication Rzine certaines métadonnées et informations sont à renseigner et que certaines règles de mise en page doivent également être appliquées, le modèle de mise en page **`readrzine`** fonctionne comme n'importe quel autre fichier R Markdown.
+Bien que dans le cadre d'une publication Rzine certaines métadonnées et informations sont à renseigner et que certaines règles de mise en page doivent être appliquées, le modèle de mise en page **`readrzine`** fonctionne comme n'importe quel autre fichier R Markdown.
 
 <div class="alert alert-success" role="alert">
-<b>Ce chapitre est introduction au langage de balisage Markdown et à la construction de document R Markdown. Il ne vous sera pas utile si vous en maîtrisez déjà les différents aspects.</b></div>
+<b>Ce chapitre est une introduction au langage de balisage Markdown et à la construction de document R Markdown. Il ne vous sera pas utile si vous en maîtrisez déjà les différents aspects.</b></div>
 
 
 
@@ -435,12 +436,12 @@ message  | TRUE/FALSE    | Afficher ou non les messages générés par le code d
  
 # La rédaction d'une fiche
 
-Les auteur.e.s sont libres dans le choix de la problématique et dans la façon d’articuler le contenu de leur fiche Rzine, mais **afin d'assurer une certaine cohérence éditoriale et une qualité du contenu de la collection, les auteur.e.s sont soumis à quelques obligations dans l'organisation du contenu**.
+Les auteur.e.s sont libres dans le choix de la problématique et dans la façon d’articuler le contenu de leur fiche Rzine, mais **afin d'assurer une certaine cohérence éditoriale et une qualité du contenu de la collection, les auteur.e.s sont soumis à quelques obligations**.
 
 
 ## Métadonnées d'en tête
 
-Commencez par modifier l'en-tête du template `readrzine`** (YAML header), en personnalisant le **titre**, le **sous-titre**, le.s nom.s de ou des **auteur.es** et les **affiliations**, exemple : 
+Commencez par modifier l'en-tête du template **`readrzine`** (YAML header), en personnalisant le **titre**, le **sous-titre**, le.s nom.s de ou des **auteur.es** et les **affiliations**, exemple : 
 
 
 ```
@@ -500,7 +501,6 @@ Vous pouvez pour cela vous appuyer sur des références bibliographiques, utiles
 
 ## Données utilisées
 
-**Les données utilisées sont centrales dans une fiche Rzine. Plusieurs consignes sont à respecter.**
 
 ### Conditions d'utilisation
 
@@ -508,7 +508,7 @@ Pour assurer le reproductibilité complète de la fiche, les données utilisées
 
 
 <div class="alert alert-danger" role="alert">
-<b>Les données mobilisés doivent pourvoir être librement diffusées et utilisées par tous les lecteur·rice·s. Il est donc très important de vérifier leur conditions d'utilisations.</b></div>
+<b>Les données mobilisés doivent pourvoir être librement diffusées et utilisées par tous les lecteur·rice·s. Il est très important de vérifier leur conditions d'utilisations.</b></div>
 
 
 ### Présentation
@@ -582,7 +582,7 @@ Tous les packages et fonctions explicitement nommés doivent également être mi
 Voici le rendu : `packages` et `fonction()`
 
 <div class="alert alert-danger" role="alert">
-<b>L'utilisation d'un package doit être justifiable. Les éditeur·rice·s seront particulièrement attentifs à l'utilisation de packages récent et mis à disposition via un logiciel de gestion de versions.</b></div>
+<b>L'utilisation d'un package doit être justifiable. Les éditeur·rice·s seront particulièrement attentifs à l'utilisation de packages récents ou mis à disposition via un logiciel de gestion de versions.</b></div>
 
 <br/>
 
@@ -631,7 +631,7 @@ Pour insérer une image en HTML :
 </figure>
 ```
 
-Cela affichera l'image centrée et large de 200 pixels, ainsi qu'un titre :
+Cela affichera l'image centrée et large de 200 pixels, ainsi qu'un titre (source) :
 
 <figure class="center">
   <img src="figures/rzine.png" width="200">
@@ -659,7 +659,7 @@ Pour en savoir plus, vous pouvez consulter [The tidyverse style guide](https://s
 
 ## Message d'alerte
 
-Il est possible d'utiliser les [messages d'alerte boostrap](https://getbootstrap.com/docs/4.0/components/alerts/). Vous pouvez utilisez deux mise en page différente :   
+Il est possible d'utiliser certains [messages d'alerte boostrap](https://getbootstrap.com/docs/4.0/components/alerts/) :   
 
 - Encadré vert (*success*) : Pour mettre en avant une information   
 - Encadré rouge (*danger*) : Pour mettre en relief une information primordiale   
@@ -668,11 +668,11 @@ La syntaxe HTML à utiliser est :
 
 
 ````
-<div class="alert alert-success" role="alert">MESSAGE SUCCESS</diV>
+<div class="alert alert-success" role="alert">Message d'information</diV>
 
 **ET**
  
-<div class="alert alert-danger" role="alert">MESSAGE DANGER</diV>
+<div class="alert alert-danger" role="alert">Message <b>très important</b></diV>
 ````
 
 Voici le rendu :
@@ -681,7 +681,7 @@ Voici le rendu :
 
 **ET**
  
-<div class="alert alert-danger" role="alert">Message très important</diV>
+<div class="alert alert-danger" role="alert">Message <b>très important</b></diV>
 
 <br/>
 
@@ -715,7 +715,7 @@ Il n'est pas obligatoire d'ajouter des références bibliographique. Néanmoins,
 knitr::include_graphics("figures/biblio_folder.png")
 ```
 
-Trois référence bibliographique sont saisie par défaut dans le fichier *biblio.bib* :
+Trois références bibliographique sont saisies par défaut dans le fichier *biblio.bib* :
 
 ```
 @Manual{R-base,
@@ -793,9 +793,12 @@ $(document).ready(function() {
 <br/>
 ````
 
+<br/>
+
+
 ## Informations sur la session
 
-**Cette section obligatoire est directement intégrée au template** : 
+Cette section obligatoire est directement intégrée au template.
 
 ````{verbatim}
 ## Info session  {-}
@@ -806,7 +809,7 @@ kableExtra::kable_styling(knitr::kable(rzine::sessionRzine()[[2]], row.names = F
 ```
 ````
 
-**La seule chose à faire est de ne pas modifier ni déplacer pas cette section**. 
+**Ne pas modifier ni déplacer cette section !** 
 
 Ce bout de code affiche des informations sur la session qui a permis de générer la fiche (système d'exploitation, version de R et des packages utilisés). Voir l'[exemple](#info-session) pour ce document.
 
@@ -814,7 +817,7 @@ Ce bout de code affiche des informations sur la session qui a permis de génére
 
 ## Citation BibTex 
 
-**Cette section obligatoire est directement intégrée au template :**
+Cette section obligatoire est directement intégrée au template.
 
 ````{verbatim}
 ## Citation {-}
@@ -926,7 +929,13 @@ Cliquez sur "***Add file***", puis sur "***Upload files***" :.
 knitr::include_graphics("figures/upload_file.png")
 ```
 
-**Faîtes glisser l'ensemble des fichiers et sous-répertoires de votre fiche dans le dépôt** :
+
+<br/>
+
+<div class="alert alert-danger" role="alert">
+**Faîtes glisser l'ensemble des fichiers et sous-répertoires de votre fiche**, c'est à dire tous les fichiers et repértoires présents dans votre projet Rstudio) **dans ce dépôt**.</div>
+
+
 
 ```{r, echo=FALSE, fig.align='center', out.width = "100%"}
 knitr::include_graphics("figures/drag_files.png")
@@ -1002,7 +1011,7 @@ Vous pouvez éditer et modifier facilement ce fichier depuis l'interface GitHub 
 knitr::include_graphics("figures/readme.png")
 ```
 
-**Vous pouvez alors personnaliser le fichier** en modifiant : le **titre**, le **sous-titre**, le.s **auteur.e.s** (et **affiliation.s**), ainsi que l'**URL de consultation de la fiche**. Exemple :
+**Vous pouvez alors personnaliser le fichier** en modifiant : le **titre**, le **sous-titre**, le.s **auteur.e.s** (et **affiliation.s**), et surtout l'**URL de consultation de la fiche**. Exemple :
 
 ```{r, echo=FALSE, fig.align='center', out.width = "100%"}
 knitr::include_graphics("figures/readme2.png")
@@ -1038,12 +1047,13 @@ En cas de soumission validée, **un ou une éditeur·rice désigné·e par la di
 **Deux relecteur·rice·s doté·e·s des connaissances thématiques nécessaires seront proposé·e·s à l'auteur·e**. Rzine est dans une démarche volontariste de Science ouverte, la relecture des fiches Rzine est ouverte et transparente. L’identité du ou des relecteur·rice·s et l'ensemble de leurs retours sont publics.
 
 
-Parce qu'une fiche est un document computationnel, l'ensemble du processus se déroule sur GitHub**. Vous serez donc invité·e à ouvrir les droits du dépôt GitHub de votre fiche aux relecteur·rice·s désigné·e·s. **Les retours et les demandes d’améliorations se feront  directement sur la plateforme GitHub via des** ***issues***.
+Parce qu'une fiche est un document computationnel, l'ensemble du processus se déroule sur GitHub. Vous serez donc invité·e à ouvrir les droits du dépôt GitHub de votre fiche aux relecteur·rice·s désigné·e·s. **Les retours et les demandes d’améliorations se feront  directement sur la plateforme GitHub via des** ***issues***.
 
+</br>
 
 
 <div class="alert alert-danger" role="alert">
-<b>Rédaction de la documentation à venir.</b></div>
+<b>Rédaction d'une documentation sur le processus de relecture à venir.</b></div>
 
 
 
