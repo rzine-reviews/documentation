@@ -140,7 +140,7 @@ Le projet Rzine souhaite promouvoir les pratiques contribuant à une science plu
 <div class="alert alert-danger" role="alert">
 <b>Etre auteur.e d'une fiche Rzine, c'est accepter que votre publication (HTML) soit mise à disposition sous les conditions d'utilisation de la [<b>licence Creative Commons BY-SA 4.0</b>](https://creativecommons.org/licenses/by-sa/4.0/deed.fr) et que son code source réponde aux conditions d'utilisation de la licence [<b>MIT</b>](https://opensource.org/licenses/mit-license.php).</b>
 
-<b>Afin d’éviter tout malentendu avec les auteur·e·s, la signature d’un accord de principe sera demandé.</b></div>
+<b>Afin d'éviter tout malentendu avec les auteur·e·s, la signature d’un accord de principe sera demandée.</b></div>
 
 
 
