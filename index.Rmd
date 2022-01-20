@@ -47,7 +47,7 @@ knitr::opts_chunk$set(echo=TRUE,
 
 La "fiche" est le premier format de documentation de la collection Rzine. Il s'agit d'un document didactique qui présente une méthodologie, un type d'analyse, une fonctionnalité, ou encore le traitement d'un certain type de données avec le langage R. Une fiche peut être principalement technique, méthodologique ou thématique, mais elle peut aussi couvrir ces trois aspects. Le premier objectif d'une fiche consiste à partager de manière pédagogique des méthodes reproductibles, applicables en SHS.
 
-La publication de fiche est ouverte à tou·te·s, quelque soit son statut et sa discipline. Une fiche peut être réalisée à plusieurs et présenter une dimension interdisciplinaire. 
+La publication de fiche est ouverte à tou·te·s, quels que soient son statut et sa discipline. Une fiche peut être réalisée à plusieurs et présenter une dimension interdisciplinaire. 
 
 Les auteur·e·s sont libres dans le choix de la problématique et dans la façon d'articuler le contenu. Il est cependant indispensable que le contenu d'une fiche soit correctement contextualisé et qu'il soit intelligible par l'ensemble des disciplines de SHS. Il est également obligatoire de suivre les règles suivantes :
 
@@ -61,7 +61,7 @@ Les auteur·e·s sont libres dans le choix de la problématique et dans la faço
 
 Vous pouvez consulter les premières fiches déjà produites pour vous faire une idée du résultat attendu :    
 
-- [Analyse Territoriale Multiscalaire](https://rzine.fr/docs/20211101_ysebaert_grasland_MTA/index.html), *Ronan Ysebaert et Claude Grasland*.    
+- [Analyse territoriale multiscalaire](https://rzine.fr/docs/20211101_ysebaert_grasland_MTA/index.html), *Ronan Ysebaert et Claude Grasland*.    
 - [Analyse des corrélations avec easystats](https://rzine.fr/docs/20200526_glecampion_initiation_aux_correlations/index.html), *Grégoire Le Campion*.    
 - [Exploration spatio-temporelle d’objets géographiques ponctuels](https://rzine.fr/docs/20200601_mletexier86_explo_spatiotemporel/index.html), *Marion Le Texier*. 
 - [Réaliser une carte de discontinuités en 2,5D](https://rzine.fr/docs/20191125_ironcurtain/index.html), *Nicolas Lambert*.
@@ -77,7 +77,7 @@ Rzine souhaite promouvoir l'usage de logiciels contribuant à une science plus o
 
 ## Critères d'acceptation
 
-Afin d'assurer la cohérence de la collection et une certaine qualité du contenu des fiches Rzine, plusieurs critères d'acceptation ont été établis. Certains de ces critères sont soumis à un ou plusieurs évaluateur·rice·s, d'autres peuvent faire l'objet d'un refus immédiat de la part des éditeur·rice·s du [comité de lecture](https://rzine.fr/collection/#people).  
+Afin d'assurer la cohérence de la collection et une certaine qualité du contenu des fiches Rzine, plusieurs critères d'acceptation ont été définis. Certains de ces critères peuvent faire l'objet d'un refus immédiat du [comité de lecture](https://rzine.fr/collection/#people), d'autres sont soumis à plusieurs évaluateur·rice·s.  
 
 Les éditeur·rice·s et les évaluateur·rice·s veilleront à ce que la démonstration soit contextualisée (champ disciplinaire d'application, enjeux en terme de reproductibilité...) et rigoureuse. Le code présenté se doit d'être lisible, commenté et reproductible. Les packages mobilisés doivent être brièvement décrits et leur utilisation justifiée. Enfin, les données utilisées dans le cadre de la démonstration doivent obligatoirement être sourcées, libres de droit et mises à disposition.
 
@@ -89,18 +89,18 @@ Les éditeur·rice·s et les évaluateur·rice·s veilleront à ce que la démon
 | Pas de fiche Rzine similaire déjà produite*                        |       X       |               |
 | N'a pas fait l'objet d'une publication par ailleurs                |       X       |               |
 | Pas de renvoi publicitaire explicite                               |       X       |       X       |
-| Respect du Règlement Général sur la Protection des Données         |       X       |       X       |
+| Respect du règlement général sur la protection des données (RGPD)         |       X       |       X       |
 | Intérêt pour la communauté des utilisateurs de R en SHS            |       X       |       X       |
 | Données utilisées libres, sourcées et mises à disposition  ([partie 4.2](#données-utilisées))        |       X       |       X       |
 | Rédaction dans un français ou un anglais correct                   |               |       X       |
-| Concerne des méthodes applicables en SHS (et sciences territoriales)                          |               |       X       |
+| Méthodes applicables en SHS (et sciences territoriales)                          |               |       X       |
 | Contextualisation de l'analyse ou méthode présentée ([partie 4.3](#contextualisation))         |               |       X       |
 | Présentation des prérequis techniques et méthodologiques           |               |       X       |
 | Clarté et rigueur de la ressource et de la démonstration           |               |       X       |
 | Clarté (indentation, commentaire...) et reproductibilité du code présenté  |       X        |       X       |
 | Justification (et stabilité) des packages utilisés                 |       X      |       X       |
 
-*Le cas échéant, le comité de lecture se réserve la possibilité de mettre en relation différents contributeur.rice.s pour leur proposer la rédaction collaborative d'une fiche. 
+*Le cas échéant, le comité de lecture se réserve la possibilité de mettre en relation différents contributeur.rice.s pour leur proposer un travail collaboratif. 
 
 <br/>
 
@@ -114,7 +114,7 @@ Il s'agit d'un document computationnel, alternant du texte et du code, permettan
 
 ## Soumission et évaluation
 
-L'ensemble du processus de soumission et d'évaluation d'une fiche se déroule sur [GitHub](https://github.com/). Cela facilite la gestion de version, permet l'archivage et la transparence de l'évaluation d'une fiche.
+L'ensemble du processus de soumission et d'évaluation d'une fiche se déroule sur [GitHub](https://github.com/). Cela facilite la gestion de version, permet l'archivage et la transparence du processus.
 
 Pour être soumise à évaluation, une fiche doit être déposée et déployée sur GitHub ([cf. partie 5](#la-soumission-dune-fiche)). 
 
@@ -133,12 +133,12 @@ knitr::include_graphics("figures/Rzine_05.png")
 ## Publication et licence d'utilisation
 
 <div class="alert alert-success" role="alert">
-<b>Une fois le processus d'évaluation terminée, les éditeur·rice·s s'occupent de la mise en page finale de la fiche, de son [<b>stockage pérenne</b>](https://github.com/rzine-reviews), du dépôt d'un [<b>DOI</b>](https://www.doi.org/), du référencement du document sur [<b>HAL</b>](https://hal.archives-ouvertes.fr/RZINE) et de sa mise en ligne sur le site [<b>rzine.fr</b>](https://rzine.fr/publication_rzine/).</b></div>
+<b>Une fois le processus d'évaluation terminée, les éditeur·rice·s s'occupent de la mise en page finale de la fiche, de son [<b>stockage pérenne</b>](https://github.com/rzine-reviews), de sa mise en ligne sur le site [<b>rzine.fr</b>](https://rzine.fr/publication_rzine/), du dépôt d'un [<b>DOI</b>](https://www.doi.org/)et de son référencement sur [<b>HAL</b>](https://hal.archives-ouvertes.fr/RZINE).</b></div>
 
 Le projet Rzine souhaite promouvoir les pratiques contribuant à une science plus ouverte et reproductible. C'est pour cette raison que l'ensemble des publications de la collection Rzine, ainsi que leurs codes sources, sont automatiquement mis à disposition de tou·te·s et libres de droit.
 
 <div class="alert alert-danger" role="alert">
-<b>Etre auteur.e d'une fiche Rzine, c'est accepter à ce que votre publication (HTML) soit mise à disposition sous les conditions d'utilisation de la [<b>licence Creative Commons BY-SA 4.0</b>](https://creativecommons.org/licenses/by-sa/4.0/deed.fr) et que son code source réponde aux conditions d'utilisation de la licence [<b>MIT</b>](https://opensource.org/licenses/mit-license.php).</b>
+<b>Etre auteur.e d'une fiche Rzine, c'est accepter que votre publication (HTML) soit mise à disposition sous les conditions d'utilisation de la [<b>licence Creative Commons BY-SA 4.0</b>](https://creativecommons.org/licenses/by-sa/4.0/deed.fr) et que son code source réponde aux conditions d'utilisation de la licence [<b>MIT</b>](https://opensource.org/licenses/mit-license.php).</b>
 
 <b>Afin d’éviter tout malentendu avec les auteur·e·s, la signature d’un accord de principe sera demandé.</b></div>
 
@@ -146,11 +146,11 @@ Le projet Rzine souhaite promouvoir les pratiques contribuant à une science plu
 
 # Le package `rzine`
 
-Le package [`Rzine`](https://gitlab.huma-num.fr/rzine/package) fournit le modèle de mise en page des fiches Rzine, ainsi que l'architecture de répertoire et l'ensemble des fichiers associés nécessaires.
+Le package [`rzine`](https://gitlab.huma-num.fr/rzine/package) fournit le modèle de mise en page des fiches Rzine, ainsi que l'architecture de répertoire et l'ensemble des fichiers associés nécessaires.
 
 ## Installation du package `rzine`
 
-Le package est mis à disposition sur un [depôt de l'organisation Rzine](https://gitlab.huma-num.fr/rzine/package) sur l'instance GitLab de la TGIR Huma-num. Pour l'installer et le charger :
+Le package est mis à disposition sur un [dépôt de l'organisation Rzine](https://gitlab.huma-num.fr/rzine/package) sur l'instance GitLab de la TGIR Huma-num. Pour l'installer et le charger :
 
 ```{r, echo=TRUE, eval=FALSE}
 # install.packages(remotes)
@@ -160,22 +160,22 @@ library(rzine)
 
 ## Utiliser le template `readrzine`
 
-### Spécifier un répértoire de travail
+### Spécifier un répertoire de travail
 
-Avant de générer une fiche Rzine vierge, il est important de spécifier un répertoire de travail.
+Avant de générer une fiche Rzine vierge il est important de spécifier un répertoire de travail.
 Pour cela, deux solutions s'offrent à vous :
 
-**1- En ligne de code**
+**1. En ligne de code**
 
-Créez un répertoire sur votre ordinateur, et spécifiez-le comme répertoire de travail avec la fonction `setwd()` :
+Créez un répertoire sur votre ordinateur et spécifiez-le comme répertoire de travail avec la fonction `setwd()` :
 
 ```{r, echo=TRUE, eval=FALSE}
 setwd("/home/jeanne/Documents/Fiche_rzine")
 ```
 
-**2- En clic-bouton avec Rstudio (recommandée)**
+**2. En clic-bouton avec Rstudio (recommandé)**
 
-Créez un projet Rstudio. Pour cela, cliquez sur *File/New Project*, sélectionnez *New Directory*, puis *New Project* :
+Pour créer un projet Rstudio, cliquez sur *File/New Project*, sélectionnez *New Directory*, puis *New Project* :
 
 ```{r, echo=FALSE, fig.align='center', out.width = "55%"}
 knitr::include_graphics("figures/create_project.png")
@@ -187,13 +187,13 @@ knitr::include_graphics("figures/create_project_2.png")
 
 
 <div class="alert alert-success" role="alert">
-<b>La création du projet Rstudio engendre la création d'un répertoire du nom du projet et le paramétrage automatique de ce dossier comme répertoire de travail.</b></div>
+<b>La création du projet Rstudio engendre la création d'un répertoire au nom du projet et le paramétrage automatique de ce dossier comme répertoire de travail.</b></div>
 
 <br/>
 
 ### Générer une fiche vierge (.Rmd)
 
-Une fois dans votre votre projet Rstudio (ou que vous avez spécifié votre répertoire de travail), vous pouvez générer un modèle de mise en page `readrzine` vierge en ligne de commande. Copiez-collez les lignes de code suivantes sans les modifier, puis exécutez :
+Une fois dans votre projet Rstudio (ou bien que le répertoire de travail a été spécifié), vous pouvez générer un modèle de mise en page `readrzine` vierge en ligne de commande. Copiez-collez les lignes de code suivantes sans les modifier, puis exécutez :
 
 ```{r, echo=TRUE, eval=FALSE}
 rmarkdown::draft(file = "index.Rmd", 
@@ -217,9 +217,9 @@ knitr::include_graphics("figures/files_folder.png")
 
 Pour générer la fiche en format HTML, il suffit de *kniter* (*tricoter*) le fichier ***index.Rmd***. 
 
-Le fichier est d'abord converti en format Markdown puis en format HTML via [Pandoc](https://pandoc.org/installing.html) (logiciel libre de conversion de documents). Sur certaines versions de systèmes d'exploitation, il est nécessaire d'installer le logiciel [Pandoc](https://pandoc.org/installing.html).
+Bien que cela soit invisible pour l'utilisateur, le fichier est d'abord converti en format Markdown puis en format HTML via [Pandoc](https://pandoc.org/installing.html) (logiciel libre de conversion de documents). Sur certaines versions de systèmes d'exploitation, le logiciel [Pandoc](https://pandoc.org/installing.html) n'est pas automatiquement disponible. Il est donc parfois nécessaire de l'installer.
 
-Vous pouvez *kniter* le fichier *index.Rmd* de différente manière :
+Vous pouvez *kniter* le fichier *index.Rmd* de différentes manières :
 
 **1- En ligne de code**
 
@@ -228,14 +228,17 @@ Vous pouvez *kniter* le fichier *index.Rmd* de différente manière :
 rmarkdown::render("index.Rmd", envir = new.env())
 
 ```
-**2- En clic- bouton (Rstudio)**
+**2- En clic-bouton (Rstudio)**
 
 
 ```{r, echo=FALSE, fig.align='center', out.width = "70%"}
 knitr::include_graphics("figures/knit.png")
 ```
 
-**3- Avec le raccourci clavier (Rstudio) :** **`CTRL+SHIFT+K`**
+**3- Avec le raccourci clavier (Rstudio) :**    
+
+- PC : **`CTRL + SHIFT + K`**,   
+- Mac : **`Command + Shift + K`**.  
 
 
 <br/>
@@ -309,10 +312,10 @@ link-citations: true
 
 **Le corps d’un document R Markdown comprend deux types de contenu, que l’on peut librement alterner :**
 
-- **Des blocs de texte brut** mis en forme selon la **syntaxe markdown**;   
-- **Des blocs de code**, appelés ***chunks*** (cf [partie 3.3](#les-chunks)).  
+- **Des blocs de texte brut** mis en forme selon la **syntaxe Markdown** ;   
+- **Des blocs de code**, appelés ***chunks*** (cf. [partie 3.3](#les-chunks)).  
 
-Le corps du document est constitué de texte mis en forme à l'aide de la syntaxe Markdown. Le markdown est un langage de balisage léger et très facile à maîtriser, qui permet de définir des niveaux de titres et de mettre en forme le texte. 
+Le corps du document est constitué de texte mis en forme à l'aide de la syntaxe Markdown. Le Markdown est un langage de balisage léger et très facile à maîtriser, qui permet la mise en forme basique du texte. 
 
 **Par exemple, le texte (brut) suivant :**
 
@@ -340,7 +343,7 @@ Pour définir des listes à puces, utilisez les **tirets** :
 Vous pouvez également ajouter des [liens cliquables](https://rzine.fr/)  
 
 <div class="alert alert-success" role="alert">
-<b>Pour tout connaitre de la syntaxe markdown, vous pouvez consulter les références bibliographiques listées dans la [partie  3.4](#documentation-de-référence).</b></div>
+<b>Pour tout connaître de la syntaxe markdown, vous pouvez consulter les références bibliographiques listées dans la [partie  3.4](#documentation-de-référence).</b></div>
 
 
 
@@ -359,21 +362,22 @@ print(x)
 ```
 ````
 
+
 <!-- ```{r, echo=FALSE} -->
 <!-- rmd = "figures/chunck1.Rmd" -->
 <!-- cat(readLines(rmd), sep = "\n") -->
 <!-- ``` -->
 
-Pour insérer facilement un nouveau chunk, vous pouvez utiliser le menu ***Insert*** proposé par l'IDE RStudio, situé en haut à droite de l'éditeur de texte (à gauche du bouton *Run*) :
+Pour insérer facilement un nouveau chunk, vous pouvez utiliser le menu ***Insert*** proposé par l’interface de développement RStudio, situé en haut à droite de l'éditeur de texte (à gauche du bouton *Run*) :
 
 ```{r, echo=FALSE, fig.align='center', out.width = "15%"}
 knitr::include_graphics("figures/insert.png")
 ```
 
-Vous pouvez également utiliser le raccourci clavier `Ctrl+Alt+i` pour générer un chunk vide.   
+Vous pouvez également utiliser le raccourci clavier `Ctrl + Alt + i` ou `Command + Option + I` pour générer un chunk vide.   
 
 
-### nom et options
+### Nom et options
 
 Vous pouvez nommer chaque *chunk* de la manière suivante :
 
@@ -390,7 +394,7 @@ Un nom de *chunk* doit être unique. Il n'est pas obligatoire de nommer un *chun
 <!-- cat(readLines(rmd), sep = "\n") -->
 <!-- ``` -->
 
-Un certain nombre d'options peuvent également être ajoutées sous la forme `option = valeur`. Les différentes options permettent de paramétrer le comportement d'un *chunk* lors d'un *knit* (compilation du document). Exemple : 
+Des options peuvent être ajoutées sous la forme `option = valeur`. Elles permettent de paramétrer le comportement d'un *chunk* lors d'un *knit* (compilation du document). Exemple : 
 
 ````{r, echo=TRUE, eval=FALSE}
 ```{r nom_du_chunck, echo = FALSE, warning = FALSE}
@@ -401,12 +405,12 @@ print(x)
 ```
 ````
 
-L'option `echo` permet d'afficher (ou pas) le code dans le document généré, et  l'option `warning` permet d'afficher (ou non) les *warnings* générés par le code en sortie. Voici la liste des principales options disponibles :
+L'option `echo` permet d'afficher (ou pas) le code dans le document généré, et  l'option `warning` permet d'afficher (ou non) les avertissements générés par le code en sortie. Voici la liste des principales options disponibles :
 
 Option   |    Valeurs    |  Description
 ---------|---------------|-------------------------------------------
 echo     | TRUE/FALSE    | Afficher ou non le code R dans le document en sortie
-eval     | TRUE/FALSE    | Exécuter ou non le code R durant la compilation du Rmarkdown
+eval     | TRUE/FALSE    | Exécuter ou non le code R durant la compilation du R Markdown
 include  | TRUE/FALSE    | Inclure ou non le code R et ses résultats dans le document
 warning  | TRUE/FALSE    | Afficher ou non les avertissements générés par le code du chunk
 message  | TRUE/FALSE    | Afficher ou non les messages générés par le code du chunk
@@ -427,7 +431,7 @@ message  | TRUE/FALSE    | Afficher ou non les messages générés par le code d
 - [Pimp my RMD: a few tips for R Markdown](https://holtzy.github.io/Pimp-my-rmd/), de Yan Holtz
 - [R for Data Science](https://r4ds.had.co.nz/r-markdown.html), de H. Wickham & G. Groelemund
 - [Guide de la syntaxe R Markdown](https://rmarkdown.rstudio.com/authoring_basics.html), de Rstudio
-- [guide de référence R Markdown](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf), de Rstudio 
+- [Guide de référence R Markdown](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf), de Rstudio 
 - [R Markdown Cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf), de Rstudio
 - [Writing Reproducible Research Papers with R Markdown](https://resulumit.com/teaching/rmd_workshop.html#1), de Resul Umit
 
@@ -436,23 +440,23 @@ message  | TRUE/FALSE    | Afficher ou non les messages générés par le code d
  
 # La rédaction d'une fiche
 
-Les auteur.e.s sont libres dans le choix de la problématique et dans la façon d’articuler le contenu de leur fiche Rzine, mais **afin d'assurer une certaine cohérence éditoriale et une qualité du contenu de la collection, les auteur.e.s sont soumis à quelques obligations**.
+Les auteur.e.s sont libres dans le choix de la problématique et dans la façon d’articuler le contenu de leur fiche Rzine mais, **afin d'assurer une certaine cohérence éditoriale et une qualité du contenu de la collection, les auteur.e.s sont soumis à quelques obligations**.
 
 
 ## Métadonnées d'en tête
 
-Commencez par modifier l'en-tête du template **`readrzine`** (YAML header), en personnalisant le **titre**, le **sous-titre**, le.s nom.s de ou des **auteur.es** et les **affiliations**, exemple : 
+Commencez par modifier l'en-tête du template **`readrzine`** (YAML header), en personnalisant le **titre**, le **sous-titre**, le nom de ou des **auteur.es** et les **affiliations**, comme par exemple : 
 
 
 ```
 ---
 title: "Analyse textuelle exploratoire"
-subtitle: "Exploration d'un corpus de lettre avec les package Quanteda"
+subtitle: "Exploration d'un corpus de lettre avec le package Quanteda"
 date: "`r Sys.Date()`"
 author: 
  - name: Jeanne Dupont
    affiliation: UMR TEXTO, CNRS
- - name: Second Paul Edouard
+ - name: Paul Edouard
    affiliation: Centre documentaire ED, Université de France
 
 ```
@@ -467,12 +471,12 @@ author:
 
 ## Le résumé
 
-Il est obligatoire de proposer un résumé en début de publication. Ce résumé sera également utilisé pour la page de présentation de la fiche (cf. [exemple](https://rzine.fr/publication_rzine/20211101_ysebaert_grasland_mta/)) sur le site rzine.fr ainsi que pour le dépôt Github du code source (cf. [exemple](https://github.com/rzine-reviews/mta_rzine)).
+Il est obligatoire de proposer un résumé en début de publication. Ce résumé sera utilisé pour la page de présentation de la fiche (cf. [exemple](https://rzine.fr/publication_rzine/20211101_ysebaert_grasland_mta/)) sur le site rzine.fr, pour le dépôt Github du code source (cf. [exemple](https://github.com/rzine-reviews/mta_rzine)), du DOI et le référencement sur HAL.
 
-**La longueur de ce résumé doit être compris entre 250 et 800 caractères (espaces compris).**
-Il peut comprendre des informations sur d'éventuels prérequis nécéssaires pour bien comprendre le document.
+**Ce résumé doit faire entre 250 à 800 caractères (espaces comprises).**
+Il peut comprendre des informations sur d'éventuels prérequis pour bien comprendre le document.
 
-Pour mettre en forme votre résumé en introduction de fiche, utilisez le symbol "**>**" qui permet de créer un block de citation en Markdown. Exemple :
+Pour mettre en forme votre résumé en introduction de fiche, utilisez le symbol "**>**" qui permet de créer un bloc de citation qui apparaîtra sur un fond gris. Exemple :
 
 ```
 > Ce document... xx x xx x xx xxx xxxx xx xx xxxx x xx x xxx xxxx x xx xxx xxxx xx xx xxxx x xx x xxx
@@ -480,7 +484,7 @@ Pour mettre en forme votre résumé en introduction de fiche, utilisez le symbol
 > **Prérequis** : xx x xx x xx xxx xxxx xx xx xxxx x xx x xxx xxxx x xx xxx xxxx xx xx xxxx x xx x xxx
 ````
 
-La mise en page d'un block de citation est le suivant :
+Le bloc de citation apparaîtra comme suit :
 
 > Ce document... xx x xx x xx xxx xxxx xx xx xxxx x xx x xxx xxxx x xx xxx xxxx xx xx xxxx x xx x xxx
 
@@ -495,7 +499,7 @@ Il est essentiel et obligatoire d'introduire et de contextualiser le contenu de 
 <div class="alert alert-success" role="alert">
 <b>Une fiche Rzine doit s'adresser à l'ensemble des disciplines de SHS et des sciences territoriales. Considérez que vos lecteur.rice.s ne seront pas forcément des spécialistes de la thématique ou méthode présentée.</b></div>
 
-Vous pouvez pour cela vous appuyer sur des références bibliographiques, utiles pour les lecteurs non-spécialistes de la thématique ou de la méthode présentée (cf [partie 4.10](#références-bibliographiques)).
+Vous pouvez pour cela vous appuyer sur des références bibliographiques, utiles pour les non-spécialistes de la thématique ou de la méthode présentée (cf. [partie 4.10](#références-bibliographiques)).
 
 <br/>
 
@@ -504,22 +508,22 @@ Vous pouvez pour cela vous appuyer sur des références bibliographiques, utiles
 
 ### Conditions d'utilisation
 
-Pour assurer le reproductibilité complète de la fiche, les données utilisées doivent obligatoirement être mis à disposition des lecteur·rice·s. Pour ne pas empêcher la diffusion publique et libre de la fiche, **vous ne pouvez pas utiliser de données soumises à des restrictions de diffusion et d'utilisation publiques**.
+Pour assurer le reproductibilité complète de la fiche, les données utilisées doivent obligatoirement être mises à disposition des lecteur·rice·s. Pour ne pas empêcher la diffusion publique et libre de la fiche, **vous ne pouvez pas utiliser de données soumises à des restrictions de diffusion et d'utilisation publiques**.
 
 
 <div class="alert alert-danger" role="alert">
-<b>Les données mobilisés doivent pourvoir être librement diffusées et utilisées par tous les lecteur·rice·s. Il est très important de vérifier leur conditions d'utilisations.</b></div>
+<b>Les données mobilisées doivent pourvoir être librement diffusées et utilisées par tous les lecteur·rice·s. Il est très important de vérifier leurs conditions d'utilisations.</b></div>
 
 
 ### Présentation
 
-Les données doivent être directement présentées, sourcées et brièvement décrites dans la fiche (cf [exemple](https://rzine.fr/docs/20211101_ysebaert_grasland_MTA/index.html#sources-mobilis%C3%A9es)).
-Consacrez-y un chapitre ou sous-chapitre en fonction des spécificités des données utilisées.
+Les données doivent être directement présentées, sourcées et brièvement décrites dans la fiche (cf.[exemple](https://rzine.fr/docs/20211101_ysebaert_grasland_MTA/index.html#sources-mobilis%C3%A9es)).
+Consacrez-y un chapitre ou sous-chapitre en fonction de leurs spécificités.
 
 
 ### Mise à disposition
 
-Même si les données mobilisées sont déjà librement mises à disposition de tou·te·s, **il est obligatoire de les sauvegarder dans votre répertoire et de les rendre directement téléchargeable depuis la fiche**.
+Même si les données mobilisées sont déjà librement mises à disposition, **il est obligatoire de les sauvegarder dans votre répertoire et de les rendre directement téléchargeables depuis la fiche**.
 
 
 ```{r, echo=FALSE, fig.align='center', out.width = "15%"}
@@ -533,7 +537,7 @@ Pour cela :
 
 
 
-2) Remplissez le fichier ***metadata.md*** (Markdown) situé à la racine, avec toutes les métadonnées nécessaires et obligatoires. Ce fichier doit doit contenir toutes les informations utiles pour comprendre et retrouver ces données à la source.
+2) Remplissez le fichier ***metadata.md*** (Markdown) situé à la racine, avec toutes les métadonnées nécessaires et obligatoires. Ce fichier doit contenir toutes les informations utiles pour comprendre et retrouver ces données à la source.
 
 
 
@@ -566,8 +570,8 @@ Voici le rendu :
 
 ## Packages et fonctions
 
-Comme pour les données, il est important de consacrer un sous-chapitre aux packages utilisées. 
-**Tous les packages mobilisés pour l'analyse présentée doivent être listés et décrits** (cf. [exemple](https://rzine.fr/docs/20211101_ysebaert_grasland_MTA/index.html#packages-n%C3%A9cessaires)) :     
+Comme pour les données, il est important de consacrer un sous-chapitre aux packages utilisés. 
+**Tous les packages mobilisés pour l'analyse doivent être listés et décrits** (cf. [exemple](https://rzine.fr/docs/20211101_ysebaert_grasland_MTA/index.html#packages-n%C3%A9cessaires)) :     
 - `package1` : description...   
 - `package2` : description...   
 - `package3` : description...   
@@ -582,11 +586,11 @@ Tous les packages et fonctions explicitement nommés doivent également être mi
 Voici le rendu : `packages` et `fonction()`
 
 <div class="alert alert-danger" role="alert">
-<b>L'utilisation d'un package doit être justifiable. Les éditeur·rice·s seront particulièrement attentifs à l'utilisation de packages récents ou mis à disposition via un logiciel de gestion de versions.</b></div>
+<b>L'utilisation d'un package doit être justifiable. Les éditeur·rice·s seront particulièrement attentif.ve.s à l'utilisation de packages le plus récents ou mis à disposition via un logiciel de gestion de versions.</b></div>
 
 <br/>
 
-## Image d'illustration
+## Illustration
 
 ### Illustration de couverture
 
@@ -605,20 +609,20 @@ knitr::include_graphics("figures/meta_featured.png")
 ```
 
 <div class="alert alert-success" role="alert">
-<b>Pour modifier l'illustration par défaut, remplacez l'image nommée featured.png à la racine du répertoire par celle de votre choix** (le nom doit être identique !).</b></div>
+<b>Pour modifier l'illustration par défaut, remplacez l'image nommée featured.png à la racine du répertoire par celle de votre choix (le nom doit être identique !).</b></div>
 
 
 ```{r, echo=FALSE, fig.align='center', out.width = "25%"}
 knitr::include_graphics("figures/featured.png")
 ```
 
-Le format optimal de cette image de couverture est de type 'bandeau' (ex : 750 x 300).
+Le format optimal de cette image de couverture est de type "bandeau" (ex : 750 x 300 pixels).
 
 
 
 ### Image dans le corps du texte
 
-**Les images affichées doivent être stockées dans le répertoire "figures"**. Il existe plusieurs solutions pour insérer des images dans un document R Markdown. Il est possible d'utiliser du code R dans un *chunk*, d'utiliser le langage Markdown ou HTML. 
+**Les images affichées dans le corps du texte doivent être stockées dans le répertoire "figures"**. Il existe plusieurs solutions pour insérer des images dans un document R Markdown. Il est possible d'utiliser du code R dans un *chunk*, d'utiliser le langage Markdown ou HTML (recommandé). 
 
 Pour insérer une image en HTML : 
 
@@ -661,27 +665,27 @@ Pour en savoir plus, vous pouvez consulter [The tidyverse style guide](https://s
 
 Il est possible d'utiliser certains [messages d'alerte boostrap](https://getbootstrap.com/docs/4.0/components/alerts/) :   
 
-- Encadré vert (*success*) : Pour mettre en avant une information   
-- Encadré rouge (*danger*) : Pour mettre en relief une information primordiale   
+- Encadré vert (*success*) : pour mettre en avant une information   
+- Encadré rouge (*danger*) : our mettre en relief une information primordiale   
 
 La syntaxe HTML à utiliser est : 
 
 
 ````
-<div class="alert alert-success" role="alert">Message d'information</diV>
+<div class="alert alert-success" role="alert">Message d'information</div>
 
 **ET**
  
-<div class="alert alert-danger" role="alert">Message <b>très important</b></diV>
+<div class="alert alert-danger" role="alert">Message <b>très important</b></div>
 ````
 
 Voici le rendu :
 
-<div class="alert alert-success" role="alert">Message d'information</diV>
+<div class="alert alert-success" role="alert">Message d'information</div>
 
 **ET**
  
-<div class="alert alert-danger" role="alert">Message <b>très important</b></diV>
+<div class="alert alert-danger" role="alert">Message <b>très important</b></div>
 
 <br/>
 
@@ -700,7 +704,7 @@ En mode ***Displayed*** (**deux $**), elles apparaissent centrées et mises en e
 ## Références bibliographiques
 
 
-Il n'est pas obligatoire d'ajouter des références bibliographique. Néanmoins, le template `readrzine` intègre automatiquement cette section. **Supprimer les lignes suivantes dans le fichier *index.rmd* si vous ne souhaitez pas afficher de bibliographie dans votre fiche :**
+Le template `readrzine` intègre automatiquement une section de références bibliographiques. Il est fortement recommandé aux auteur·e·s de l'utiliser. Cependant cette section n'est pas obligatoire, vous pouvez supprimer les lignes suivantes dans le fichier *index.rmd* si vous ne souhaitez pas afficher de bibliographie :
 
 ```
 # Bibliographie {-}
@@ -715,7 +719,7 @@ Il n'est pas obligatoire d'ajouter des références bibliographique. Néanmoins,
 knitr::include_graphics("figures/biblio_folder.png")
 ```
 
-Trois références bibliographique sont saisies par défaut dans le fichier *biblio.bib* :
+Trois références bibliographiques sont saisies par défaut dans le fichier *biblio.bib* :
 
 ```
 @Manual{R-base,
@@ -744,13 +748,15 @@ Trois références bibliographique sont saisies par défaut dans le fichier *bib
 }
 ```
 
-Supprimez et ajoutez les références bibliographiques que vous souhaitez.
+Beaucoup de documentation sur les fichiers BibTex sont consultables sur internet ([exemple](https://doc.archives-ouvertes.fr/x2hal/bibtex-exemple/)). Supprimez et ajoutez les références bibliographiques que vous souhaitez.
+
 
 <div class="alert alert-success" role="alert">
-<b>Pour citer une référence dans le corps du texte, utilisez la syntaxe suivante : `[@Citation Key]`.    
+<b>Pour citer une référence dans le corps du texte, utilisez la syntaxe suivante : `[@Citation Key]`.   
+Citation Key = nom de la référence dans le fichier BibTex (ex : R_base, R-knitr ou R-rmdformats).    
 Par exemple, la chaîne de caractère `[@R-base]` affichera le lien [@R-base] dans le document.
 
-Toutes les références bibliographiques renseignées dans le fichier biblio.bib seront automatiquement ajoutées dans la section "[Bibliographie](#bibliographie)".</b></div>
+Toutes les références bibliographiques renseignées dans le fichier biblio.bib seront automatiquement ajoutées dans la section « [Bibliographie](#bibliographie) ».</b></div>
 
 
 <br/>
@@ -760,19 +766,20 @@ Toutes les références bibliographiques renseignées dans le fichier biblio.bib
 
 
 
-Cette section n'est pas obligatoire, cependant vos lecteur.rices ne seront pas forcément issus de votre discipline ou ne maîtriseront peut-être pas la thématique ou méthode présentée. Pour que l'ensemble de la démonstration soit compréhensible par un public large, vous pouvez utiliser la section "[Glossaire](#endnotes)" pour définir certains termes utilisés.
+Cette section n'est pas obligatoire, cependant vos lecteur.rices ne seront pas forcément issu·es de votre discipline ou ne maîtriseront peut-être pas la thématique ou méthode présentée. En définissant certains termes utilisés, la section « [Glossaire](#endnotes) » permet de rendre la démonstration compréhensible à un public plus large.
+
 
 **Pour ajouter un mot ou expression, ainsi que sa définition dans le [Glossaire](#endnotes), utilisez la syntaxe markdown suivante**  :
 
 ```
-texte texte texte mot à définir^[__Mot à définir__: Définition du terme... ect.]
+texte texte texte mot à définir^[__Mot à définir__: Définition du terme... ]
 ```
 
-A la compilation du document en format HTML, un numéro est associé et affiché après le "mot à définir". Ce mot/expression et sa définition sont ajoutés dans la section glossaire. Exemple : **Mot à définir**^[__Mot à définir__: Définition du terme à définir... ect.]
+A la compilation du document en format HTML, un numéro est automatiquement associé et affiché après le "mot à définir". Ce mot/expression et sa définition sont ajoutés dans la section « [Glossaire](#endnotes) ». Exemple : **Mot à définir**^[__Mot à définir__: Définition du terme à définir... ect.]
 
 
 <div class="alert alert-success" role="alert">
-<b>Comme pour les références bibliographiques, un lien est automatiquement crée entre le "mot" dans le corps du texte et sa définition dans le glossaire.</b></div>
+<b>Comme pour les références bibliographiques, un lien est automatiquement créé entre le "mot" dans le corps du texte et sa définition dans le glossaire.</b></div>
 
 
 **Si vous ne souhaitez pas utiliser de [Glossaire](#endnotes), supprimez les lignes suivantes dans le fichier *index.rmd* :**
@@ -798,7 +805,7 @@ $(document).ready(function() {
 
 ## Informations sur la session
 
-Cette section obligatoire est directement intégrée au template.
+Cette **section obligatoire** est directement intégrée au template.
 
 ````{verbatim}
 ## Info session  {-}
@@ -809,15 +816,17 @@ kableExtra::kable_styling(knitr::kable(rzine::sessionRzine()[[2]], row.names = F
 ```
 ````
 
-**Ne pas modifier ni déplacer cette section !** 
+<div class="alert alert-danger" role="alert">
+<b>Ne pas modifier ni déplacer cette section !</b></div>
+ 
 
-Ce bout de code affiche des informations sur la session qui a permis de générer la fiche (système d'exploitation, version de R et des packages utilisés). Voir l'[exemple](#info-session) pour ce document.
+Ce bout de code affiche des informations sur la session qui a permis de générer la fiche (système d'exploitation, versions de R et des packages utilisés). Voir l'[exemple](#info-session) pour ce document.
 
 <br/>
 
 ## Citation BibTex 
 
-Cette section obligatoire est directement intégrée au template.
+Cette **section obligatoire** est directement intégrée au template.
 
 ````{verbatim}
 ## Citation {-}
@@ -857,7 +866,7 @@ Ces deux *chunks* permettent l'affichage de la référence bibliographique de vo
 
 # La soumission d'une fiche
 
-Une fois que le fichier index.Rmd est rédigé et qu'il a été compilé en format HTML ([knit](#kniter-la-fiche--html)), vérifiez que l'ensemble des annexes ([biblio.bib](#références-bibliographiques), [featured.png](#illustration-de-couverture), [figures](#image-dans-le-corps-du-texte) et [data](#données-utilisées)) ont été complétés, remplacés ou supprimés.    
+Une fois que le fichier index.Rmd est rédigé et qu'il a été compilé en format HTML ([knit](#kniter-la-fiche--html)), vérifiez que les annexes ([biblio.bib](#références-bibliographiques), [featured.png](#illustration-de-couverture), [figures](#image-dans-le-corps-du-texte) et [data](#données-utilisées)) ont été complétées, remplacées ou supprimées.    
 
 <div class="alert alert-danger" role="alert">
 **Il est impératif que les fichiers** "***.Rmd***" et "***.html***" **soient nommés** "***index.Rmd***" et  "***index.html***" **pour la suite du processus.**</div>
@@ -865,22 +874,22 @@ Une fois que le fichier index.Rmd est rédigé et qu'il a été compilé en form
 Vous êtes alors en mesure de soumettre votre travail au comité de lecture Rzine. Pour cela, vous devez :   
 
 **1) Déposer votre travail sur un dépôt Git** ([logiciel de gestion de versions décentralisé](https://fr.wikipedia.org/wiki/Git)).     
-**2) Déployer la fiche en format HTML depuis le dépôt Git** pour la rendre consultable en ligne.    
+**2) Déployer la fiche en format HTML depuis le dépôt GitHub** pour la rendre consultable en ligne.    
 **3) Contacter le comité de lecture** en lui fournissant l'adresse du dépôt.    
 
 
 <div class="alert alert-success" role="alert">
-<b>Ne soyez pas inquiet si vous n'avez aucune connaissance de Git, ce document détaille clairement toutes les étapes à réaliser.</b></div>
+<b>Ne soyez pas inquiet si vous n'avez aucune connaissance de Git, la section suivante détaille clairement toutes les étapes à réaliser.</b></div>
 
 <br/>
 
 ## Premiers pas sur Github
 
-Le logiciel de gestion de versions décentralisé que vous devez utiliser pour la soumission est le plus utilisé au monde : [**GitHub**](https://github.com/). 
+Le logiciel de gestion de versions décentralisé que vous devez utiliser pour la soumission est [**GitHub**](https://github.com/). 
 
 ### Création de compte
 
-Commencez par connecter à la [page de création de compte GitHub](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home). 
+Commencez par vous connecter à la [page de création de compte GitHub](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home). 
 
 ```{r, echo=FALSE, fig.align='center', out.width = "60%"}
 knitr::include_graphics("figures/email_github.png")
@@ -921,7 +930,7 @@ knitr::include_graphics("figures/new_repo_2.png")
 
 ## Remplissage du dépôt
 
-Vous pouvez désormais y ajouter le répertoire contenant tous les fichiers (et sous-répertoires) de votre fiche. Il existe plusieurs méthodes pour téléverser des fichiers sur GitHub (en ligne de commande ou en clic-bouton). Nous présentons ici la méthode clic-bouton depuis l’interface de GitHub.
+Vous pouvez désormais y ajouter le répertoire (et sous-répertoires) contenant tous les fichiers de votre fiche. Il existe plusieurs méthodes pour téléverser des fichiers sur GitHub (en ligne de commande ou en clic-bouton). Nous présentons ici la méthode clic-bouton depuis l’interface de GitHub.
 
 Cliquez sur "***Add file***", puis sur "***Upload files***" :.
 
@@ -933,7 +942,7 @@ knitr::include_graphics("figures/upload_file.png")
 <br/>
 
 <div class="alert alert-danger" role="alert">
-**Faîtes glisser l'ensemble des fichiers et sous-répertoires de votre fiche**, c'est à dire tous les fichiers et repértoires présents dans votre projet Rstudio) **dans ce dépôt**.</div>
+**Faîtes glisser l'ensemble des fichiers et sous-répertoires de votre fiche**, c'est-à-dire tous les fichiers et répertoires présents dans votre projet Rstudio, **dans ce dépôt**.</div>
 
 
 
@@ -947,19 +956,19 @@ knitr::include_graphics("figures/drag_files.png")
 knitr::include_graphics("figures/commit_changes.png")
 ```
 
-**Vous venez de réaliser votre premier** "***commit***" (enregistrement des changements). **L'ensemble des fichiers sont désormais stockés sur le dépôt :** 
+**Vous venez de réaliser votre premier** "***commit***" (enregistrement des changements). **L'ensemble des fichiers est désormais stocké sur le dépôt :** 
 
 ```{r, echo=FALSE, fig.align='center', out.width = "100%"}
 knitr::include_graphics("figures/commit.png")
 ```
 
-Ce dépôt étant paramétré comme *public*, **tout le monde peut désormais le consulter et récupérer ces fichiers**.
+Ce dépôt étant paramétré comme *public*, **tout le monde peut désormais le consulter et récupérer les fichiers qu'il contient**.
 
 <br/>
 
 ## Déploiement de la fiche
 
-Les fichiers sont consultables à l'état brut, mais **une manipulation supplémentaire va permettre de mettre en ligne votre fiche (format HTML)**. **Votre fiche mise en page sera ainsi consultable par tout le monde sur le web**, sans avoir à gérer un serveur ou un site web.
+Les fichiers sont consultables à l'état brut, mais **une manipulation supplémentaire va permettre de mettre en ligne votre fiche (format HTML)**. **Votre fiche mise en forme sera ainsi consultable par tout le monde sur le web**, sans avoir à gérer un serveur ou un site web.
 
 ### GitHub Page
 
@@ -1003,7 +1012,7 @@ knitr::include_graphics("figures/online.png")
 
 ### README.md
 
-Le fichier markdown *README.md* est utilisé pour présenter les informations importantes à propos du dépôt. Son contenu est automatiquement affiché (et mise en forme grâce à la syntaxe markdown) en dessous des fichiers listés du dépôt.
+Le fichier markdown *README.md* est utilisé pour présenter les informations importantes à propos du dépôt. Son contenu est automatiquement affiché (et mis en forme grâce à la syntaxe markdown) sous les fichiers listés du dépôt.
 
 Vous pouvez éditer et modifier facilement ce fichier depuis l'interface GitHub en cliquant sur le symbole crayon :
 
@@ -1011,7 +1020,7 @@ Vous pouvez éditer et modifier facilement ce fichier depuis l'interface GitHub 
 knitr::include_graphics("figures/readme.png")
 ```
 
-**Vous pouvez alors personnaliser le fichier** en modifiant : le **titre**, le **sous-titre**, le.s **auteur.e.s** (et **affiliation.s**), et surtout l'**URL de consultation de la fiche**. Exemple :
+**Vous pouvez alors personnaliser le fichier** en modifiant : le **titre**, le **sous-titre**, le.s **auteur.e.s** (et **affiliation.s**), et l'**URL de consultation de la fiche**. Exemple :
 
 ```{r, echo=FALSE, fig.align='center', out.width = "100%"}
 knitr::include_graphics("figures/readme2.png")
@@ -1035,19 +1044,18 @@ knitr::include_graphics("figures/final.png")
 
 ## Soumettre
 
-Il ne vous reste plus qu'à contacter le comité de lecture Rzine pour soumettre votre fiche à évaluation.  **Envoyez un courriel à [collection@rzine.fr](mailto:collection@rzine.fr), en précisant l'adresse du dépôt qui héberge votre fiche.**
+Il ne vous reste plus qu'à contacter le comité de lecture Rzine pour soumettre votre fiche pour évaluation.  **Envoyez un courriel à [collection[a]rzine.fr](mailto:collection@rzine.fr), en précisant l'adresse du dépôt qui héberge votre fiche.**
 
-**Vous serez contacté par le comité de lecture dans les 15 jours suivants l'envoi de ce courriel.**
+**Vous serez contacté·e par le comité de lecture dans les 15 jours suivants l'envoi de ce courriel.**
 
 
 # Le processus de relecture
 
-En cas de soumission validée, **un ou une éditeur·rice désigné·e par la direction du comité de lecture pendra sous sa responsabilité l'ensemble du processus de relecture**.
+En cas d'acceptation, **un ou une éditeur·rice désigné·e par la direction du comité de lecture prendra sous sa responsabilité le du processus de relecture**.
 
-**Deux relecteur·rice·s doté·e·s des connaissances thématiques nécessaires seront proposé·e·s à l'auteur·e**. Rzine est dans une démarche volontariste de Science ouverte, la relecture des fiches Rzine est ouverte et transparente. L’identité du ou des relecteur·rice·s et l'ensemble de leurs retours sont publics.
+**Deux relecteur·rice·s doté·e·s des connaissances thématiques nécessaires seront proposé·e·s à l'auteur·e**. Rzine est dans une démarche volontariste de science ouverte, la relecture des fiches Rzine est ouverte et transparente. L’identité des relecteur·rice·s et leurs retours sont publics.
 
-
-Parce qu'une fiche est un document computationnel, l'ensemble du processus se déroule sur GitHub. Vous serez donc invité·e à ouvrir les droits du dépôt GitHub de votre fiche aux relecteur·rice·s désigné·e·s. **Les retours et les demandes d’améliorations se feront  directement sur la plateforme GitHub via des** ***issues***.
+Parce qu'une fiche est un document computationnel, l'ensemble du processus se déroule sur GitHub. Vous serez donc invité·e à ouvrir les droits du dépôt GitHub de votre fiche aux relecteur·rice·s désigné·e·s. **Les retours (enrichissements, illustrations, corrections...) se feront se feront  directement sur la plateforme GitHub via des** ***issues***.
 
 </br>
 
@@ -1087,7 +1095,7 @@ Parce qu'une fiche est un document computationnel, l'ensemble du processus se d�
 
 # Question ?
 
-Pour toute question relative au processus de soumission et de relecture d'une fiche, **vous pouvez contacter le comité de lecture à l'adresse [collection@rzine.fr](mailto:collection@rzine.fr).**
+Pour toute question relative au processus de soumission et de relecture d'une fiche, **vous pouvez contacter le comité de lecture à l'adresse [collection[a]rzine.fr](mailto:collection@rzine.fr).**
 
 
 
