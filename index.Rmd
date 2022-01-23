@@ -121,7 +121,7 @@ Pour être soumise à évaluation, une fiche doit être déposée et déployée 
 Dans le cas où l'ensemble des critères d'acceptations sont respectés, le comité de lecture désigne un·e éditeur·rice référent·e qui coordonnera tout le processus d'évaluation et de publication. Il propose également deux évaluateur·rice·s à l'auteur·e. Une fois le processus d'évaluation enclenché, les retours des évaluateur·rice·s et de l'éditeur·rice se feront publiquement sur GitHub ([cf. partie 6](#le-processus-de-relecture)).
 
 <br/>
-<center>**Le processus d'évaluation et de publication d'une fiche Rzine :**</center>
+<center>**Le processus d'évaluation et de publication d'une fiche Rzine**</center>
 <br/>
  
 ```{r, echo=FALSE, out.width="95%",  fig.align = 'center'}
@@ -231,7 +231,7 @@ rmarkdown::render("index.Rmd", envir = new.env())
 **2- En clic-bouton (Rstudio)**
 
 
-```{r, echo=FALSE, fig.align='center', out.width = "70%"}
+```{r, echo=FALSE, fig.align='center', out.width = "80%"}
 knitr::include_graphics("figures/knit.png")
 ```
 
@@ -300,9 +300,7 @@ link-citations: true
 # Only Creative Commons Licence 
 # 5 possible choices : "by-nd", "by", "by-nc-sa", "by-nc","by-sa"
 ---
-  
-  
-  
+
 
 ```
 
@@ -353,14 +351,13 @@ Vous pouvez également ajouter des [liens cliquables](https://rzine.fr/)
 En plus du texte libre balisé en markdown, un document R Markdown peut évidemment contenir du code R.    
 Celui-ci doit être inclus dans des ***chunks*** délimités par la syntaxe suivante :
 
-````{r, echo=TRUE, eval=FALSE}
-```{r}
 
-x <- 37 + 12
-print(x)
-
+```{r, echo=FALSE}
+rmd = "figures/md2.md"
+cat(readLines(rmd), sep = "\n")
 ```
-````
+
+
 
 
 <!-- ```{r, echo=FALSE} -->
@@ -381,11 +378,12 @@ Vous pouvez également utiliser le raccourci clavier `Ctrl + Alt + i` ou `Comman
 
 Vous pouvez nommer chaque *chunk* de la manière suivante :
 
-````{r, echo=TRUE, eval=FALSE}
-```{r nom_du_chunck}
 
+
+```{r, echo=FALSE}
+rmd = "figures/md3.md"
+cat(readLines(rmd), sep = "\n")
 ```
-````
 
 Un nom de *chunk* doit être unique. Il n'est pas obligatoire de nommer un *chunk*, mais cela peut être utile pour localiser une erreur lors de la compilation du code.
 
@@ -396,14 +394,15 @@ Un nom de *chunk* doit être unique. Il n'est pas obligatoire de nommer un *chun
 
 Des options peuvent être ajoutées sous la forme `option = valeur`. Elles permettent de paramétrer le comportement d'un *chunk* lors d'un *knit* (compilation du document). Exemple : 
 
-````{r, echo=TRUE, eval=FALSE}
-```{r nom_du_chunck, echo = FALSE, warning = FALSE}
 
-x <- 37 + 12
-print(x)
 
+
+```{r, echo=FALSE}
+rmd = "figures/md4.md"
+cat(readLines(rmd), sep = "\n")
 ```
-````
+
+
 
 L'option `echo` permet d'afficher (ou pas) le code dans le document généré, et  l'option `warning` permet d'afficher (ou non) les avertissements générés par le code en sortie. Voici la liste des principales options disponibles :
 
@@ -807,14 +806,12 @@ $(document).ready(function() {
 
 Cette **section obligatoire** est directement intégrée au template.
 
-````{verbatim}
-## Info session  {-}
 
-```{r session_info, echo=FALSE}
-kableExtra::kable_styling(knitr::kable(rzine::sessionRzine()[[1]], row.names = F))
-kableExtra::kable_styling(knitr::kable(rzine::sessionRzine()[[2]], row.names = F))
+```{r, echo=FALSE}
+rmd = "figures/md0.md"
+cat(readLines(rmd), sep = "\n")
 ```
-````
+
 
 <div class="alert alert-danger" role="alert">
 <b>Ne pas modifier ni déplacer cette section !</b></div>
@@ -828,36 +825,13 @@ Ce bout de code affiche des informations sur la session qui a permis de génére
 
 Cette **section obligatoire** est directement intégrée au template.
 
-````{verbatim}
-## Citation {-}
 
-```{r Citation, echo=FALSE}
-
-rref <- bibentry(
-   bibtype = "article",
-   title = "Titre de la fiche",
-   author = person("Auteur.e 1", "Auteur.e 2" ),
-   journal = "Rzine.fr",
-   publisher = "FR CIST",
-   year = 2021,
-   url = "https://...")
-
-``` 
-
-`r capture.output(print(rref))`
-
-### BibTex : {-}
-
-```{r generateBibTex, echo=FALSE}
-
-writeLines(toBibtex(rref), "cite.bib")
-toBibtex(rref)
-
-``` 
+```{r, echo=FALSE}
+rmd = "figures/md1.md"
+cat(readLines(rmd), sep = "\n")
+```
 
 
-<br/>
-````
 
 
 **Ne mofifiez pas cette section, elle sera complétée avant publication par l'équipe éditoriale.**
@@ -916,7 +890,7 @@ knitr::include_graphics("figures/new_repo.png")
 
 Un fois sur la page de création d'un nouveau dépôt, **saisissez un nom de dépôt** (sans espaces ni caractères spéciaux) et éventuellement une description. **Initialisez ce dépôt comme** ***Public*** et **demandez l'ajout automatique d'un fichier** ***README.md*** :
 
-```{r, echo=FALSE, fig.align='center', out.width = "70%"}
+```{r, echo=FALSE, fig.align='center', out.width = "80%"}
 knitr::include_graphics("figures/create_repo.png")
 ```
 
@@ -998,7 +972,7 @@ La page html est alors distribuée à l'adresse suivante : https://<b>username</
 
 Vous pouvez retrouver l'URL d'accès dans le menu "*Settings > Pages*" :
 
-```{r, echo=FALSE, fig.align='center', out.width = "90%"}
+```{r, echo=FALSE, fig.align='center', out.width = "99%"}
 knitr::include_graphics("figures/deploy_url.png")
 ```
   
@@ -1016,7 +990,7 @@ Le fichier markdown *README.md* est utilisé pour présenter les informations im
 
 Vous pouvez éditer et modifier facilement ce fichier depuis l'interface GitHub en cliquant sur le symbole crayon :
 
-```{r, echo=FALSE, fig.align='center', out.width = "90%"}
+```{r, echo=FALSE, fig.align='center', out.width = "99%"}
 knitr::include_graphics("figures/readme.png")
 ```
 
@@ -1028,7 +1002,7 @@ knitr::include_graphics("figures/readme2.png")
 
 Une fois les modifications terminées, **commentez votre** ***commit***, puis **cliquez sur** ***Commit changes*** pour enregistrer les modifications :
 
-```{r, echo=FALSE, fig.align='center', out.width = "80%"}
+```{r, echo=FALSE, fig.align='center', out.width = "45%"}
 knitr::include_graphics("figures/readme3.png")
 ```
 
@@ -1109,14 +1083,14 @@ Pour toute question relative au processus de soumission et de relecture d'une fi
 
 ## Info session  {-}
 
-```{r session_info, echo=FALSE}
+```{r session_information, echo=FALSE}
 kableExtra::kable_styling(knitr::kable(rzine::sessionRzine()[[1]], row.names = F))
 kableExtra::kable_styling(knitr::kable(rzine::sessionRzine()[[2]], row.names = F))
 ```
 
 ## Citation {-}
 
-```{r Citation, echo=FALSE}
+```{r Citation_ok, echo=FALSE}
 rref <- bibentry(
    bibtype = "misc",
    title = "Publier une fiche Rzine",
@@ -1138,7 +1112,7 @@ rref <- bibentry(
 
 ### BibTex : {-}
 
-```{r generateBibTex, echo=FALSE}
+```{r generateBibTexok, echo=FALSE}
 
 writeLines(toBibtex(rref), "cite.bib")
 toBibtex(rref)
