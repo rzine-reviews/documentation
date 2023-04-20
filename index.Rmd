@@ -45,18 +45,20 @@ knitr::opts_chunk$set(echo=TRUE,
 
 # Une fiche Rzine ?  
 
-La "fiche" est le premier format de documentation de la collection Rzine. Il s'agit d'un document didactique qui présente une méthodologie, un type d'analyse, une fonctionnalité, ou encore le traitement d'un certain type de données avec le langage R. Une fiche peut être principalement technique, méthodologique ou thématique, mais elle peut aussi couvrir ces trois aspects. Le premier objectif d'une fiche consiste à partager de manière pédagogique des méthodes reproductibles, applicables en SHS.
+La "fiche" est la première forme de documentation de la collection Rzine. Il s'agit d'un document didactique qui présente une méthodologie, un type d'analyse, une fonctionnalité, ou encore le traitement d'un certain type de données avec le langage R. Une fiche peut être principalement technique, méthodologique ou thématique, mais elle peut aussi couvrir ces trois aspects.
 
-La publication de fiche est ouverte à tou·te·s, quels que soient son statut et sa discipline. Une fiche peut être réalisée à plusieurs et présenter une dimension interdisciplinaire. 
+Le premier objectif d'une fiche consiste à partager de manière pédagogique des méthodes reproductibles dans un environnement spécifique ou non, applicables en SHS.
 
-Les auteur·e·s sont libres dans le choix de la problématique et dans la façon d'articuler le contenu. Il est cependant indispensable que le contenu d'une fiche soit correctement contextualisé et qu'il soit intelligible par l'ensemble des disciplines de SHS. Il est également obligatoire de suivre les règles suivantes :
+La publication de fiche est ouverte à toutes et tous, quels que soient son statut et sa discipline. Une fiche peut être réalisée à plusieurs et présenter une dimension interdisciplinaire.
 
-- Utiliser le modèle de mise en page [`readrzine`](#utiliser-le-template-readrzine)
-- Rédiger en français ou en anglais
-- Introduire et contextualiser le contenu 
-- Présenter du code entièrement reproductible
-- Utiliser des données libres d'utilisation et mises à disposition des lecteurs
-- Fournir les fichiers et annexes demandées 
+Les auteurs et autrices sont libres dans le choix de la problématique et dans la façon d'articuler le contenu. Il est cependant indispensable que le contenu d'une fiche soit correctement contextualisé et qu'il soit intelligible pour l'ensemble des disciplines de SHS. Il est également obligatoire de suivre les règles suivantes :
+
+- utiliser le modèle de mise en page [`readrzine`](#utiliser-le-template-readrzine),
+- rédiger en français ou en anglais,
+- introduire et contextualiser le contenu,
+- présenter du code entièrement reproductible,
+- utiliser des données libres d'utilisation et mises à disposition des lecteurs et lectrices,
+- fournir les fichiers et annexes demandées.
 
 
 Vous pouvez consulter les premières fiches déjà produites pour vous faire une idée du résultat attendu :    
@@ -67,11 +69,11 @@ Vous pouvez consulter les premières fiches déjà produites pour vous faire une
 - [Réaliser une carte de discontinuités en 2,5D](https://rzine.fr/docs/20191125_ironcurtain/index.html), *Nicolas Lambert*.
 
 
-Rzine souhaite promouvoir l'usage de logiciels contribuant à une science plus ouverte et reproductible, et participer à une montée en compétence des disciplines de SHS dans ce domaine. C'est pour cela que l'ensemble du processus d'évaluation se déroule sur [GitHub](https://github.com/) (service web d'hébergement et de gestion de développement de logiciels) qui repose sur le logiciel de gestion de versions [Git](https://git-scm.com/). 
+Rzine souhaite promouvoir et partager des usages et pratiques de logiciels et méthodes contribuant à une science plus ouverte et reproductible, et participer à une montée en compétence des disciplines de SHS dans ce domaine. C'est pour cela que l'ensemble du processus d'évaluation se déroule sur [GitHub](https://github.com/) (service web d'hébergement et de gestion de développement de logiciels) qui repose sur le logiciel de gestion de versions [Git](https://git-scm.com/).
 
 
 <div class="alert alert-success" role="alert">
-<b>Cela ne doit en aucun cas effrayer les auteur·e·s qui n'ont jamais utilisé Git. De la documentation et une assistance sont fournies par le comité de lecture Rzine... Profitez-en pour vous former à cet outil !</b></div>
+<b>Cela ne doit en aucun cas effrayer les auteurs et autrices qui n'ont jamais utilisé Git. De la documentation et une assistance sont fournies par le comité de lecture Rzine... Profitez-en pour vous former à cet outil !</b></div>
 
 <br/>
 
