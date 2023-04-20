@@ -79,12 +79,12 @@ Rzine souhaite promouvoir et partager des usages et pratiques de logiciels et m�
 
 ## Critères d'acceptation
 
-Afin d'assurer la cohérence de la collection et une certaine qualité du contenu des fiches Rzine, plusieurs critères d'acceptation ont été définis. Certains de ces critères peuvent faire l'objet d'un refus immédiat du [comité de lecture](https://rzine.fr/collection/#people), d'autres sont soumis à plusieurs évaluateur·rice·s.  
+Afin d'assurer la cohérence de la collection et une certaine qualité du contenu des fiches Rzine, plusieurs critères d'acceptation ont été définis. Certains de ces critères peuvent conduire au refus immédiat d'une proposition de fiche par le [comité de lecture](https://rzine.fr/collection/#people), d'autres critères font l'objet d'une analyse contradictoire par plusieurs évaluateurices.  
 
-Les éditeur·rice·s et les évaluateur·rice·s veilleront à ce que la démonstration soit contextualisée (champ disciplinaire d'application, enjeux en terme de reproductibilité...) et rigoureuse. Le code présenté se doit d'être lisible, commenté et reproductible. Les packages mobilisés doivent être brièvement décrits et leur utilisation justifiée. Enfin, les données utilisées dans le cadre de la démonstration doivent obligatoirement être sourcées, libres de droit et mises à disposition.
+Les éditeurices et les évaluateurices veilleront à ce que la démonstration soit contextualisée (champ disciplinaire d'application, enjeux en terme de reproductibilité...) et rigoureuse. Le code présenté se doit d'être lisible, commenté et reproductible. Les packages mobilisés doivent être brièvement décrits et leur utilisation justifiée. Enfin, les données utilisées dans le cadre de la démonstration doivent obligatoirement être sourcées, libres de droit et mises à disposition.
 
 
-|  Critères d'évaluations d'une fiche                                |  Editeur·rice·s | Evaluateur·rice·s |
+|  Critères d'évaluations d'une fiche                                |  Editeurices | Evaluateurices |
 |--------------------------------------------------------------------|:-------------:|:-------------:|
 | Respect des consignes éditoriales ([partie 4](#la-rédaction-dune-fiche))    |       X       |               |
 | Acceptation des futures conditions d'utilisation ([partie 1.4](#publication-et-licence-dutilisation)) |      X        |               |
@@ -92,7 +92,7 @@ Les éditeur·rice·s et les évaluateur·rice·s veilleront à ce que la démon
 | N'a pas fait l'objet d'une publication par ailleurs                |       X       |               |
 | Pas de renvoi publicitaire explicite                               |       X       |       X       |
 | Respect du règlement général sur la protection des données (RGPD)         |       X       |       X       |
-| Intérêt pour la communauté des utilisateurs de R en SHS            |       X       |       X       |
+| Intérêt pour la communauté des utilisateurices de R en SHS            |       X       |       X       |
 | Données utilisées libres, sourcées et mises à disposition  ([partie 4.2](#données-utilisées))        |       X       |       X       |
 | Rédaction dans un français ou un anglais correct                   |               |       X       |
 | Méthodes applicables en SHS (et sciences territoriales)                          |               |       X       |
@@ -102,47 +102,45 @@ Les éditeur·rice·s et les évaluateur·rice·s veilleront à ce que la démon
 | Clarté (indentation, commentaire...) et reproductibilité du code présenté  |       X        |       X       |
 | Justification (et stabilité) des packages utilisés                 |       X      |       X       |
 
-*Le cas échéant, le comité de lecture se réserve la possibilité de mettre en relation différents contributeur.rice.s pour leur proposer un travail collaboratif. 
+*Le cas échéant, le comité de lecture se réserve la possibilité de mettre en relation différent·es contributeurices pour leur proposer un travail collaboratif. 
 
 <br/>
 
-## Format et template
+## Forme et modèle de fiche (*template*)
 
-Une fiche Rzine est la sortie HTML d'un fichier R Markdown construit avec R. Les packages nécessaires sont [**`rmarkdown`**](https://rmarkdown.rstudio.com/), [**`knitr`**](https://yihui.org/knitr/) (pour la compilation) et [**`rzine`**](https://gitlab.huma-num.fr/rzine/package) (pour le modèle de mise en page).
-
-Il s'agit d'un document computationnel, alternant du texte et du code, permettant d’appliquer le paradigme de la programmation lettrée. 
+Une fiche Rzine est un document computationnel, alternant texte et code, permettant d’appliquer le paradigme de la programmation lettrée. Sa transcription en HTML nécessite les packages [**`rmarkdown`**](https://rmarkdown.rstudio.com/) et [**`knitr`**](https://yihui.org/knitr/) pour la transformation (ou interprétation) du document Rmd, et [**`rzine`**](https://gitlab.huma-num.fr/rzine/package) pour sa mise en page.
 
 <br/>
 
 ## Soumission et évaluation
 
-L'ensemble du processus de soumission et d'évaluation d'une fiche se déroule sur [GitHub](https://github.com/). Cela facilite la gestion de version, permet l'archivage et la transparence du processus.
+L'ensemble du processus de soumission et d'évaluation d'une fiche se déroule sur [GitHub](https://github.com//rzine-reviews/). Cela facilite la gestion de versions, permet l'archivage et la visibilité du processus éditorial.
 
 Pour être soumise à évaluation, une fiche doit être déposée et déployée sur GitHub ([cf. partie 5](#la-soumission-dune-fiche)). 
 
-Dans le cas où l'ensemble des critères d'acceptations sont respectés, le comité de lecture désigne un·e éditeur·rice référent·e qui coordonnera tout le processus d'évaluation et de publication. Il propose également deux évaluateur·rice·s à l'auteur·e. Une fois le processus d'évaluation enclenché, les retours des évaluateur·rice·s et de l'éditeur·rice se feront publiquement sur GitHub ([cf. partie 6](#le-processus-de-relecture)).
+Dans le cas où l'ensemble des critères d'acceptation est respecté, le comité de lecture désigne un·e éditeurice référent·e qui coordonnera tout le processus d'évaluation et de publication. Il ou elle propose également deux évaluateurices aux auteurices. Une fois le processus d'évaluation enclenché, les retours des évaluateurices et de l'éditeurice se feront publiquement sur GitHub ([cf. partie 6](#le-processus-de-relecture)).
 
 <br/>
 <center>**Le processus d'évaluation et de publication d'une fiche Rzine**</center>
 <br/>
  
-```{r, echo=FALSE, out.width="95%",  fig.align = 'center'}
+```{r, echo=FALSE, out.width="90%",  fig.align = 'center'}
 knitr::include_graphics("figures/Rzine_05.png")
 ```
-
 <br/>
-
+ 
 ## Publication et licence d'utilisation
 
-<div class="alert alert-success" role="alert">
-<b>Une fois le processus d'évaluation terminée, les éditeur·rice·s s'occupent de la mise en page finale de la fiche, de son [<b>stockage pérenne</b>](https://github.com/rzine-reviews), de sa mise en ligne sur le site [<b>rzine.fr</b>](https://rzine.fr/publication_rzine/), du dépôt d'un [<b>DOI</b>](https://www.doi.org/)et de son référencement sur [<b>HAL</b>](https://hal.archives-ouvertes.fr/RZINE).</b></div>
+Les choix des dépôts et licences d'utilisation exposés ci-après s'inscrivent dans la volonté du projet Rzine de promouvoir des pratiques contribuant à une science plus ouverte et à la reproductibilité des méthodes : l'ensemble des publications de la collection Rzine avec leurs codes sources est automatiquement référencé et mis à disposition de toutes et tous, selon les modalités décrites ci-après.
 
-Le projet Rzine souhaite promouvoir les pratiques contribuant à une science plus ouverte et reproductible. C'est pour cette raison que l'ensemble des publications de la collection Rzine, ainsi que leurs codes sources, sont automatiquement mis à disposition de tou·te·s et libres de droit.
+<div class="alert alert-success" role="alert">
+<b>Une fois le processus d'évaluation terminé, les éditeurices réalisent la mise en page finale de la fiche, son [<b>stockage pérenne</b>](https://github.com/rzine-reviews), sa mise en ligne sur le site [<b>rzine.fr</b>](https://rzine.fr/publication_rzine/), le dépôt d'un [<b>DOI</b>](https://www.doi.org/) et son référencement sur [<b>HAL</b>](https://hal.archives-ouvertes.fr/RZINE).</b></div>
+
 
 <div class="alert alert-danger" role="alert">
-<b>Etre auteur.e d'une fiche Rzine, c'est accepter que votre publication (HTML) soit mise à disposition sous les conditions d'utilisation de la [<b>licence Creative Commons BY-SA 4.0</b>](https://creativecommons.org/licenses/by-sa/4.0/deed.fr) et que son code source réponde aux conditions d'utilisation de la licence [<b>MIT</b>](https://opensource.org/licenses/mit-license.php).</b>
+<b>Etre auteurice d'une fiche Rzine, c'est accepter que votre publication (HTML) soit mise à disposition sous les conditions d'utilisation de la [<b>licence Creative Commons BY-SA 4.0</b>](https://creativecommons.org/licenses/by-sa/4.0/deed.fr) et que son code source réponde aux conditions d'utilisation de la licence [<b>MIT</b>](https://opensource.org/licenses/mit-license.php).</b>
 
-<b>Afin d'éviter tout malentendu avec les auteur·e·s, la signature d’un accord de principe sera demandée.</b></div>
+<b>Afin d'éviter tout malentendu avec les auteurices, un accord de principe est demandé en amont du processus éditorial.</b></div>
 
 
 
