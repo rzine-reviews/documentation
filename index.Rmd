@@ -47,7 +47,7 @@ knitr::opts_chunk$set(echo=TRUE,
 
 La "fiche" est la première forme de documentation de la collection Rzine. Il s'agit d'un document didactique qui présente une méthodologie, un type d'analyse, une fonctionnalité, ou encore le traitement d'un certain type de données avec le langage R. Une fiche peut être principalement technique, méthodologique ou thématique, mais elle peut aussi couvrir ces trois aspects.
 
-Le premier objectif d'une fiche consiste à partager de manière pédagogique des méthodes reproductibles dans un environnement spécifique ou non, applicables en SHS.
+Le premier objectif d'une fiche consiste à partager de manière pédagogique des méthodes reproductibles applicables en SHS dans un environnement spécifique ou non.
 
 La publication de fiche est ouverte à toutes et tous, quels que soient son statut et sa discipline. Une fiche peut être réalisée à plusieurs et présenter une dimension interdisciplinaire.
 
@@ -93,7 +93,7 @@ Les éditeurices et les évaluateurices veilleront à ce que la démonstration s
 | Pas de renvoi publicitaire explicite                               |       X       |       X       |
 | Respect du règlement général sur la protection des données (RGPD)         |       X       |       X       |
 | Intérêt pour la communauté des utilisateurices de R en SHS            |       X       |       X       |
-| Données utilisées libres, sourcées et mises à disposition  ([partie 4.2](#données-utilisées))        |       X       |       X       |
+| Données et jeux de données utilisés publiés, sourcées et librement réutilisables  ([partie 4.2](#données-utilisées))        |       X       |       X       |
 | Rédaction dans un français ou un anglais correct                   |               |       X       |
 | Méthodes applicables en SHS (et sciences territoriales)                          |               |       X       |
 | Contextualisation de l'analyse ou méthode présentée ([partie 4.3](#contextualisation))         |               |       X       |
@@ -138,7 +138,7 @@ Les choix des dépôts et licences d'utilisation exposés ci-après s'inscrivent
 
 
 <div class="alert alert-danger" role="alert">
-<b>Etre auteurice d'une fiche Rzine, c'est accepter que votre publication (HTML) soit mise à disposition sous les conditions d'utilisation de la [<b>licence Creative Commons BY-SA 4.0</b>](https://creativecommons.org/licenses/by-sa/4.0/deed.fr) et que son code source réponde aux conditions d'utilisation de la licence [<b>MIT</b>](https://opensource.org/licenses/mit-license.php).</b>
+<b>Etre auteurice d'une fiche Rzine, c'est accepter que votre publication (HTML) soit mise à disposition sous les conditions d'utilisation de la [<b>licence Creative Commons BY-SA 4.0</b>](https://creativecommons.org/licenses/by-sa/4.0/deed.fr), que les données et jeux de données associés ont été ou sont rendus publics et que leur réutilisation est libre, et que son code source réponde aux conditions d'utilisation de la licence [<b>MIT</b>](https://opensource.org/licenses/mit-license.php).</b>
 
 <b>Afin d'éviter tout malentendu avec les auteurices, un accord de principe est demandé en amont du processus éditorial.</b></div>
 
