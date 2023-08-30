@@ -144,7 +144,7 @@ Les choix des dépôts et licences d'utilisation exposés ci-après s'inscrivent
 <b>Afin d'éviter tout malentendu avec les auteurices, un accord de principe est demandé en amont du processus éditorial.</b></div>
 
 # Le package `rzine`
-Le [package `rzine`](https://gitlab.huma-num.fr/rzine/package) fournit le modèle de document numérique (R.T. Pedauque, 2006) associé à une fiche rzine. Il comprend un ensemble de fichiers et une structure de répertoires correspondant à un package R. Il permet de déployer sur votre ordinateur, en syntaxe Rmarkdown, le modèle éditorial `readrzine` d’un notebook R qui sera publié au format statique HTML.
+Le [package `rzine`](https://gitlab.huma-num.fr/rzine/package) fournit le modèle de document numérique [@pedauque_document_2006] associé à une fiche rzine. Il comprend un ensemble de fichiers et une structure de répertoires correspondant à un package R. Il permet de déployer sur votre ordinateur, en syntaxe Rmarkdown, le modèle éditorial `readrzine` d’un notebook R qui sera publié au format statique HTML.
 
 ## Installation du package `rzine`
 Le package est mis à disposition sur un [dépôt du groupe Rzine](https://gitlab.huma-num.fr/rzine/package) sur l'instance GitLab de la TGIR Huma-num. Pour l'installer et le charger il suffit de copier le code ci-dessous dans votre console R :
