@@ -150,30 +150,22 @@ Le package [`rzine`](https://gitlab.huma-num.fr/rzine/package) fournit le modèl
 
 ## Installation du package `rzine`
 
-Le package est mis à disposition sur un [dépôt de l'organisation Rzine](https://gitlab.huma-num.fr/rzine/package) sur l'instance GitLab de la TGIR Huma-num. Pour l'installer et le charger :
+Le package est mis à disposition sur un [dépôt du groupe Rzine](https://gitlab.huma-num.fr/rzine/package) sur l'instance GitLab de la TGIR Huma-num. Pour l'installer et le charger :
 
 ```{r, echo=TRUE, eval=FALSE}
-# install.packages(remotes)
+install.packages("remotes") # si le package `remotes` n'est pas encore installé
 remotes::install_gitlab("rzine/package", host = "https://gitlab.huma-num.fr/", force = TRUE)
 library(rzine)
 ```
 
-## Utiliser le template `readrzine`
+## Utiliser le template `readrzine` - pas-à-pas
 
-### Spécifier un répertoire de travail
+### Première étape : Spécifier un répertoire de travail
 
 Avant de générer une fiche Rzine vierge il est important de spécifier un répertoire de travail.
 Pour cela, deux solutions s'offrent à vous :
 
-**1. En ligne de code**
-
-Créez un répertoire sur votre ordinateur et spécifiez-le comme répertoire de travail avec la fonction `setwd()` :
-
-```{r, echo=TRUE, eval=FALSE}
-setwd("/home/jeanne/Documents/Fiche_rzine")
-```
-
-**2. En clic-bouton avec Rstudio (recommandé)**
+**1. En clic-bouton avec Rstudio (recommandé)**
 
 Pour créer un projet Rstudio, cliquez sur *File/New Project*, sélectionnez *New Directory*, puis *New Project* :
 
@@ -189,11 +181,19 @@ knitr::include_graphics("figures/create_project_2.png")
 <div class="alert alert-success" role="alert">
 <b>La création du projet Rstudio engendre la création d'un répertoire au nom du projet et le paramétrage automatique de ce dossier comme répertoire de travail.</b></div>
 
+**2. En ligne de code**
+
+Créez un répertoire sur votre ordinateur puis spécifiez-le comme répertoire de travail avec la fonction `setwd()` :
+
+```{r, echo=TRUE, eval=FALSE}
+setwd("/home/jeanne/Documents/Fiche_rzine")
+```
+
 <br/>
 
-### Générer une fiche vierge (.Rmd)
+### Seconde étape : générer une fiche vierge (.Rmd)
 
-Une fois dans votre projet Rstudio (ou bien que le répertoire de travail a été spécifié), vous pouvez générer un modèle de mise en page `readrzine` vierge en ligne de commande. Copiez-collez les lignes de code suivantes sans les modifier, puis exécutez :
+Dans votre projet Rstudio (ou bien au sein du répertoire de travail que vous avez spécifié), vous pouvez générer un modèle de mise en page `readrzine` vierge en ligne de commande.<br/> Copiez-collez les lignes de code suivantes dans votre console **sans les modifier**, puis exécutez-les :
 
 ```{r, echo=TRUE, eval=FALSE}
 rmarkdown::draft(file = "index.Rmd", 
@@ -204,7 +204,9 @@ rmarkdown::draft(file = "index.Rmd",
 ```
 
 
-Cela génère un ensemble de fichiers à la racine de votre répertoire de travail. Certains fichiers sont à modifier ou à ajouter en fonction du contenu de votre fiche : 
+Un ensemble de fichiers est généré à la racine du répertoire de travail que vous avez créé. 
+Certains fichiers seront à modifier ou à ajouter en fonction du contenu de votre fiche. <br/>
+La figure ci-dessous donne la description de la structure et des fichiers créés au sein de votre répertoire de travail : 
 
 
 ```{r, echo=FALSE, fig.align='center', out.width = "90%"}
@@ -213,11 +215,11 @@ knitr::include_graphics("figures/files_folder.png")
 
 <br/>
 
-## Kniter la fiche (.html)
+## Troisième étape : _kniter_ la fiche (.html)
 
-Pour générer la fiche en format HTML, il suffit de *kniter* (*tricoter*) le fichier ***index.Rmd***. 
+Pour générer la fiche en format HTML, il suffit de *kniter* (*tricoter*) le fichier **index.Rmd**. 
 
-Bien que cela soit invisible pour l'utilisateur, le fichier est d'abord converti en format Markdown puis en format HTML via [Pandoc](https://pandoc.org/installing.html) (logiciel libre de conversion de documents). Sur certaines versions de systèmes d'exploitation, le logiciel [Pandoc](https://pandoc.org/installing.html) n'est pas automatiquement disponible. Il est donc parfois nécessaire de l'installer.
+Bien que cela soit invisible pour l'utilisateurice, le fichier est d'abord converti en format *Markdown* puis en format HTML via le logiciel libre de conversion de documents[Pandoc] (https://pandoc.org/installing.html). Sur certaines versions de systèmes d'exploitation, le logiciel [Pandoc](https://pandoc.org/installing.html) n'est pas automatiquement installé : il est dans ce cas nécessaire de l'installer.
 
 Vous pouvez *kniter* le fichier *index.Rmd* de différentes manières :
 
@@ -243,14 +245,17 @@ knitr::include_graphics("figures/knit.png")
 
 <br/>
 
-**Un fichier du même nom en format HTML est alors créé à la racine de votre répertoire** (***index.html***). Il s'agit du fichier index.Rmd mis en page à partir du modèle `readrzine` :
+**Un fichier du même nom en format HTML est alors créé à la racine de votre répertoire** (**index.html**). Il s'agit du fichier index.Rmd mis en page à partir du modèle `readrzine` :
 
 ```{r, echo=FALSE, fig.align='center', out.width = "100%"}
 knitr::include_graphics("figures/template.png")
 ```
 
 
-Il ne reste plus qu'à le remplir...
+Il ne reste plus qu'à le remplir... 
+
+- en modifiant, pas-à-pas, votre fichier index.Rmd,
+- puis, en le knittant pour visualiser la version HTML de votre fiche.
 
 <br/>
 
