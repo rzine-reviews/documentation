@@ -196,7 +196,7 @@ Bien que cela soit invisible pour l'utilisateurice, le fichier est d'abord conve
 <div class="alert alert-danger" role="alert"> Sur certaines versions de système d'exploitation ce logiciel n'est pas automatiquement présent : il est dans ce cas nécessaire de l'[installer](https://pandoc.org/installing.html).</div>
 Vous pouvez "kniter" le fichier index.Rmd de différentes manières :
 
-**1. Avec Rstudio (recommandé)**
+**1. En clic-bouton (avec Rstudio, recommandé)**
 
 ```{r, echo=FALSE, fig.align='center', out.width = "60%"}
 knitr::include_graphics("figures/knit.png")
