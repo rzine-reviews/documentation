@@ -43,15 +43,14 @@ knitr::opts_chunk$set(echo=TRUE,
 
 <!-- > Documentation d'aide à la rédaction, la soumission et au processus d'évaluation d'une fiche Rzine -->
 
-# Une fiche Rzine ?  
+# Une fiche Rzine 
 
-La "fiche" est la première forme de documentation de la collection Rzine. Il s'agit d'un document didactique qui présente une méthodologie, un type d'analyse, une fonctionnalité, ou encore le traitement d'un certain type de données avec le langage R. Une fiche peut être principalement technique, méthodologique ou thématique, mais elle peut aussi couvrir ces trois aspects.
+## Qu'est-ce c'est ?
+La "fiche" est une publication didactique qui présente une méthodologie, un type d'analyse, une fonctionnalité, ou encore le traitement d'un certain type de données avec le langage R. Une fiche peut être principalement technique, méthodologique ou thématique ; elle peut également couvrir ces trois aspects. Elle est évaluée par au moins deux personnes ayant les connaissances thématiques nécessaires.
 
-Le premier objectif d'une fiche consiste à partager de manière pédagogique des méthodes reproductibles applicables en SHS dans un environnement spécifique ou non.
+Le premier objectif d'une fiche consiste à partager de manière pédagogique des méthodes reproductibles applicables en SHS. La publication d'une fiche est ouverte à toutes et tous, quels que soient son statut et sa discipline. Une fiche peut être réalisée à plusieurs et présenter une dimension interdisciplinaire.
 
-La publication de fiche est ouverte à toutes et tous, quels que soient son statut et sa discipline. Une fiche peut être réalisée à plusieurs et présenter une dimension interdisciplinaire.
-
-Les auteurs et autrices sont libres dans le choix de la problématique et dans la façon d'articuler le contenu. Il est cependant indispensable que le contenu d'une fiche soit correctement contextualisé et qu'il soit intelligible pour l'ensemble des disciplines de SHS. Il est également obligatoire de suivre les règles suivantes :
+Les auteurs et autrices sont libres dans le choix de la problématique et dans la façon d'articuler le contenu. Il est cependant indispensable que le contenu soit correctement contextualisé et intelligible pour l'ensemble des disciplines de SHS. Il est également obligatoire de suivre les règles suivantes :
 
 - utiliser le modèle de mise en page [`readrzine`](#utiliser-le-template-readrzine),
 - rédiger en français ou en anglais,
@@ -69,37 +68,33 @@ Vous pouvez consulter les premières fiches déjà produites pour vous faire une
 - [Réaliser une carte de discontinuités en 2,5D](https://rzine.fr/docs/20191125_ironcurtain/index.html), *Nicolas Lambert*.
 
 
-Rzine souhaite promouvoir et partager des usages et pratiques de logiciels et méthodes contribuant à une science plus ouverte et reproductible, et participer à une montée en compétence des disciplines de SHS dans ce domaine. C'est pour cela que l'ensemble du processus d'évaluation se déroule sur [GitHub](https://github.com/) (service web d'hébergement et de gestion de développement de logiciels) qui repose sur le logiciel de gestion de versions [Git](https://git-scm.com/).
-
-
-<div class="alert alert-success" role="alert">
-<b>Cela ne doit en aucun cas effrayer les auteurs et autrices qui n'ont jamais utilisé Git. De la documentation et une assistance sont fournies par le comité de lecture Rzine... Profitez-en pour vous former à cet outil !</b></div>
-<br/>
+Rzine souhaite promouvoir et partager des usages et pratiques de logiciels et méthodes contribuant à une science plus ouverte et reproductible, et participer à une montée en compétence des disciplines de SHS dans ce domaine. C'est pour cela que l'ensemble du processus d'évaluation se déroule sur [GitHub](https://github.com/) qui repose sur le logiciel de gestion de versions [Git](https://git-scm.com/). Cela ne doit en aucun cas effrayer les auteurs et autrices qui n'ont jamais utilisé Git : de la documentation et une assistance sont fournies par le comité de lecture Rzine... !
 
 ## Critères d'acceptation
-Afin d'assurer la cohérence de la collection et une certaine qualité du contenu des fiches Rzine, plusieurs critères d'acceptation ont été définis. Certains de ces critères peuvent conduire au refus immédiat d'une proposition de fiche par le [comité de lecture](https://rzine.fr/collection/#people), d'autres critères font l'objet d'une analyse contradictoire par plusieurs évaluateurices.  
+Afin d'assurer la cohérence et la qualité du contenu des fiches Rzine, plusieurs critères d'acceptation ont été définis. Certains de ces critères peuvent conduire au refus immédiat d'une proposition de fiche par le [comité de lecture](https://rzine.fr/collection/#people), d'autres critères font l'objet d'une analyse contradictoire par plusieurs évaluateur·rice·s.
 
-Les éditeurices et les évaluateurices veilleront à ce que :
+Les éditeur·rice·s et les évaluateur·rice·s veilleront à ce que :
 
-- la démonstration soit contextualisée (champ disciplinaire d'application, enjeux en terme de reproductibilité...) et rigoureuse, 
+- la démonstration soit contextualisée (champ disciplinaire d'application) et rigoureuse, 
 - le code présenté se doit d'être lisible, commenté et reproductible,
 - les packages mobilisés doivent être brièvement décrits et leur utilisation justifiée,
-- enfin, les données ou jeux de données utilisés dans le cadre de la démonstration doivent obligatoirement être publiés, sourcés et librement réutilisables.
+- les données ou jeux de données utilisés dans le cadre de la démonstration doivent obligatoirement être publiés, sourcés et librement réutilisables.
 
+<center>**Les critères d'évaluations**</center>
 
-|  Critères d'évaluations d'une fiche                                |  Editeurices | Evaluateurices |
+|                                 |  Editeur·rice·s | Evaluateur·rice·s |
 |--------------------------------------------------------------------|:-------------:|:-------------:|
-| Respect des consignes éditoriales ([partie 4](#la-rédaction-dune-fiche))    |       X       |               |
-| Acceptation des futures conditions d'utilisation ([partie 1.4](#publication-et-licence-dutilisation)) |      X        |               |
+| Respect des consignes éditoriales ([partie 3](#la-rédaction-dune-fiche))    |       X       |               |
+| Acceptation des futures conditions d'utilisation ([partie 4](#publication-et-licence-dutilisation)) |      X        |               |
 | Pas de fiche Rzine similaire déjà produite*                        |       X       |               |
 | N'a pas fait l'objet d'une publication par ailleurs                |       X       |               |
 | Pas de renvoi publicitaire explicite                               |       X       |       X       |
 | Respect du règlement général sur la protection des données (RGPD)         |       X       |       X       |
 | Intérêt pour la communauté des utilisateurices de R en SHS            |       X       |       X       |
-| Données et jeux de données utilisés publiés, sourcés et librement réutilisables  ([partie 4.2](#données-utilisées))        |       X       |       X       |
+| Données et jeux de données utilisés publiés, sourcés et librement réutilisables  ([partie 3.4](#données-utilisées))        |       X       |       X       |
 | Rédaction dans un français ou un anglais correct                   |               |       X       |
-| Méthodes applicables en SHS (et sciences territoriales)                          |               |       X       |
-| Contextualisation de l'analyse ou méthode présentée ([partie 4.3](#contextualisation))         |               |       X       |
+| Méthodes applicables en SHS                         |               |       X       |
+| Contextualisation de l'analyse ou méthode présentée ([partie 3.3](#contextualisation))         |               |       X       |
 | Présentation des prérequis techniques et méthodologiques           |               |       X       |
 | Clarté et rigueur de la ressource et de la démonstration           |               |       X       |
 | Clarté (indentation, commentaire...) et reproductibilité du code présenté  |       X        |       X       |
@@ -107,18 +102,7 @@ Les éditeurices et les évaluateurices veilleront à ce que :
 *Le cas échéant, le comité de lecture se réserve la possibilité de mettre en relation différent·es contributeurices pour leur proposer un travail collaboratif. 
 <br/>
 
-## Forme et modèle de fiche (*template*)
-Une fiche Rzine est un document computationnel, alternant texte et code, permettant d’appliquer le paradigme de la programmation lettrée. Sa transcription en HTML nécessite :
-
-- les packages [**`rmarkdown`**](https://rmarkdown.rstudio.com/) et [**`knitr`**](https://yihui.org/knitr/) pour la transformation (ou interprétation) du document Rmd, 
-- et le package [**`rzine`**](https://gitlab.huma-num.fr/rzine/package) pour le choix de la forme de présentation finale du document HTML construit à partir de Rmarkdown (via notamment le logiciel [Pandoc](https://pandoc.org/)).
-<br/>
-
 ## Soumission et évaluation
-L'ensemble du processus de soumission et d'évaluation d'une fiche se déroule sur [GitHub](https://github.com//rzine-reviews/). Cela facilite la gestion de versions, permet l'archivage et la visibilité du processus éditorial.<br/>
-Pour être soumise à évaluation, une fiche doit être déposée et déployée sur GitHub ([cf. partie 5](#la-soumission-dune-fiche)).  <br/>
-Dans le cas où l'ensemble des critères d'acceptation est respecté, le comité de lecture désigne un·e éditeurice référent·e qui coordonnera tout le processus d'évaluation et de publication. Il ou elle propose également deux évaluateurices aux auteurices. Une fois le processus d'évaluation enclenché, les retours des évaluateurices et de l'éditeurice se feront publiquement sur GitHub ([cf. partie 6](#le-processus-de-relecture)).
-<br/>
 
 <center>**Schéma du processus d'évaluation et de publication d'une fiche Rzine**</center>
 <br/>
@@ -128,23 +112,27 @@ knitr::include_graphics("figures/Rzine_05.png")
 <br/>
  
 ## Publication et licence d'utilisation
-Les choix des dépôts et licences d'utilisation exposés ci-après s'inscrivent dans la volonté du projet Rzine de promouvoir des pratiques contribuant à une science plus ouverte et à la reproductibilité des méthodes. L'ensemble des publications de la collection Rzine avec leurs codes sources est automatiquement référencé et mis à disposition de toutes et tous, selon les modalités décrites ci-après.
+Les choix des dépôts et licences d'utilisation s'inscrivent dans la volonté du projet Rzine de promouvoir des pratiques contribuant à une science plus ouverte et à la reproductibilité des méthodes. L'ensemble des publications de la collection Rzine avec leurs codes sources est automatiquement référencé et mis à disposition de toutes et tous. 
+Afin d'éviter tout malentendu avec les auteurices, un accord de principe est demandé en amont du processus éditorial.
+
+Etre auteurice d'une fiche Rzine, c'est accepter que :
+
+- votre publication (HTML) soit mise à disposition sous les conditions d'utilisation de la [<b>licence Creative Commons BY-SA 4.0</b>](https://creativecommons.org/licenses/by-sa/4.0/deed.fr),
+
+- les données et jeux de données associés ont été ou sont rendus publics, sont sourcés et leur réutilisation est libre,
+
+- son code source réponde aux conditions d'utilisation de la licence [<b>MIT</b>](https://opensource.org/licenses/mit-license.php).
 
 <div class="alert alert-success" role="alert">
-<b>Une fois le processus d'évaluation terminé, les éditeurices réalisent la mise en page finale de la fiche, son [<b>stockage pérenne</b>](https://github.com/rzine-reviews), sa mise en ligne sur le site [<b>rzine.fr</b>](https://rzine.fr/publication_rzine/), le dépôt d'un [<b>DOI</b>](https://www.doi.org/) et son référencement sur [<b>HAL</b>](https://hal.archives-ouvertes.fr/RZINE) dans la collection RZINE.</b></div>
+<b>Une fois le processus d'évaluation terminé, les éditeur·rice·s réalisent la mise en page finale de la fiche, son [<b>stockage pérenne</b>](https://github.com/rzine-reviews), sa mise en ligne sur le site [<b>rzine.fr</b>](https://rzine.fr/publication_rzine/), le dépôt d'un [<b>DOI</b>](https://www.doi.org/) et son référencement sur [<b>HAL</b>](https://hal.archives-ouvertes.fr/RZINE) dans la collection RZINE.</b></div>
 
 
-<div class="alert alert-danger" role="alert">
-<b>Etre auteurice d'une fiche Rzine, c'est accepter que :
+# Forme et modèle de fiche : le package `rzine`
+Une fiche Rzine est un document computationnel, alternant texte et code, permettant d’appliquer le paradigme de la programmation lettrée. Sa transcription en HTML nécessite :
 
-- votre publication (HTML) soit mise à disposition sous les conditions d'utilisation de la [<b>licence Creative Commons BY-SA 4.0</b>](https://creativecommons.org/licenses/by-sa/4.0/deed.fr), 
-- les données et jeux de données associés ont été ou sont rendus publics, sont sourcés et leur réutilisation est libre, 
-- son code source réponde aux conditions d'utilisation de la licence [<b>MIT</b>](https://opensource.org/licenses/mit-license.php).</b>
-
-<b>Afin d'éviter tout malentendu avec les auteurices, un accord de principe est demandé en amont du processus éditorial.</b></div>
-
-# Le package `rzine`
-Le [package `rzine`](https://gitlab.huma-num.fr/rzine/package) fournit le modèle de document numérique [@pedauque_document_2006] associé à une fiche rzine. Il comprend un ensemble de fichiers et une structure de répertoires correspondant à un package R. Il permet de déployer sur votre ordinateur, en syntaxe Rmarkdown, le modèle éditorial `readrzine` d’un notebook R qui sera publié au format statique HTML.
+- les packages [**`rmarkdown`**](https://rmarkdown.rstudio.com/) et [**`knitr`**](https://yihui.org/knitr/) pour la transformation du document Rmd, 
+- et le package [**`rzine`**](https://gitlab.huma-num.fr/rzine/package) qui fournit le modèle de document numérique [@pedauque_document_2006] associé à une fiche rzine. Il comprend un ensemble de fichiers et une structure de répertoires correspondant à un package R. Il permet de déployer sur votre ordinateur, en syntaxe Rmarkdown, le modèle éditorial `readrzine` d’un notebook R qui sera publié au format statique HTML.
+<br/>
 
 ## Installation du package `rzine`
 Le package est mis à disposition sur un [dépôt du groupe Rzine](https://gitlab.huma-num.fr/rzine/package) sur l'instance GitLab de la TGIR Huma-num. Pour l'installer et le charger il suffit de copier le code ci-dessous dans votre console R :
@@ -154,7 +142,7 @@ remotes::install_gitlab("rzine/package", host = "https://gitlab.huma-num.fr/", f
 library(rzine)
 ```
 
-## Utiliser le modèle (*template*) `readrzine` - pas-à-pas
+## Utiliser le *template* `readrzine`
 ### Première étape : spécifier un répertoire de travail
 Avant de générer une fiche Rzine vierge il est important de spécifier un répertoire de travail.
 Pour cela, deux solutions s'offrent à vous :
@@ -205,7 +193,7 @@ knitr::include_graphics("figures/files_folder.png")
 Pour générer la fiche en HTML, il suffit de **"kniter"** (tricoter) le fichier **index.Rmd**. 
 
 Bien que cela soit invisible pour l'utilisateurice, le fichier est d'abord converti en syntaxe *Markdown* puis en HTML via le logiciel libre de conversion de documents [Pandoc](https://pandoc.org/).<br/> 
-<div class="alert alert-danger" role="alert"> Sur certaines versions de systèmes d'exploitation ce logiciel n'est pas automatiquement présent : il est dans ce cas nécessaire de l'[installer](https://pandoc.org/installing.html).</div>
+<div class="alert alert-danger" role="alert"> Sur certaines versions de système d'exploitation ce logiciel n'est pas automatiquement présent : il est dans ce cas nécessaire de l'[installer](https://pandoc.org/installing.html).</div>
 Vous pouvez "kniter" le fichier index.Rmd de différentes manières :
 
 **1. En clic-bouton (avec Rstudio, recommandé)**
@@ -214,12 +202,8 @@ Vous pouvez "kniter" le fichier index.Rmd de différentes manières :
 knitr::include_graphics("figures/knit.png")
 ```
 
-**2. Avec le raccourci clavier (avec Rstudio) :**    
 
-- PC : **`CTRL + SHIFT + K`**,   
-- Mac : **`Command + Shift + K`**.  
-
-**3. En ligne de code R**
+**2. En ligne de code R**
 
 ```{r, echo=TRUE, eval=FALSE}
 rmarkdown::render("index.Rmd", envir = new.env())
@@ -235,193 +219,9 @@ Il ne reste plus qu'à le remplir...
 - en modifiant, pas-à-pas, votre fichier index.Rmd (voir la partie [3.](#anatomie-dun-r-markdown) ci-dessous),
 - puis, en le "knitant" pour visualiser la version HTML de votre fiche (dans un émulateur Rstudio ou dans votre navigateur).
 <br/>
-
-# Anatomie d'un R Markdown
-Bien que dans le cadre d'une publication Rzine certaines métadonnées et informations sont à renseigner et que certaines règles de mise en page doivent être appliquées, le modèle de mise en page **`readrzine`** fonctionne comme n'importe quel autre fichier R Markdown.
-
-<div class="alert alert-success" role="alert">
-<b>Ce chapitre est une introduction au langage de balisage Markdown et à la construction de document R Markdown. Il ne vous sera pas utile si vous en maîtrisez déjà les différents aspects.</b></div>
-
-
-
-## L'en-tête
-
-L'en-tête d'un document R Markdown (parfois appelé YAML header) est délimité par deux lignes de trois tirets et contient des métadonnées et les éléments de style du document. Voici à quoi ressemble par exemple l'en-tête vierge du template **`readrzine`** :
-
-<!-- ```{r, echo=FALSE, fig.align='center', out.width = "65%"} -->
-<!-- knitr::include_graphics("figures/meta.png") -->
-<!-- ``` -->
-
-```
----
-title: "Titre fiche"
-subtitle: "Sous-titre fiche"
-date: "`r Sys.Date()`"
-author: 
- - name: Premier Auteur.e
-   affiliation: Affiliation_1, Affiliation_2
- - name: Second Auteur.e
-   affiliation: Affiliation_1, Affiliation_2
-image: "featured.png"   
-logo: "figures/rzine.png"  
-output:
-  rzine::readrzine:
-    highlight: kate
-    number_sections: true
-csl: Rzine_citation.csl
-bibliography: biblio.bib
-nocite: |
-  @*
-link-citations: true
-# github: "author/repository"
-# gitlab: "gitlab.huma-num.fr/author/repository"
-# doi: "xx.xxx/xxxx.xxxxxxx"
-# licence: "by-sa"
-
-# Only Creative Commons Licence 
-# 5 possible choices : "by-nd", "by", "by-nc-sa", "by-nc","by-sa"
----
-
-
-```
-
-
-
-## Le texte balisé en markdown
-
-**Le corps d’un document R Markdown comprend deux types de contenu, que l’on peut librement alterner :**
-
-- **Des blocs de texte brut** mis en forme selon la **syntaxe Markdown** ;   
-- **Des blocs de code**, appelés ***chunks*** (cf. [partie 3.3](#les-chunks)).  
-
-Le corps du document est constitué de texte mis en forme à l'aide de la syntaxe Markdown. Le Markdown est un langage de balisage léger et très facile à maîtriser, qui permet la mise en forme basique du texte. 
-
-**Par exemple, le texte (brut) suivant :**
-
-```
-Ceci est du texte en *italique*, **gras** ou en ***gras italique***.
-
-Pour définir des listes à puces, utilisez les **tirets** :
-
-- premier élément
-- second élément
-
-Vous pouvez également ajouter des [liens cliquables](https://rzine.fr/) 
-
-```
-
-**Sera mis en page de la manière suivante dans le fichier HTML généré :**
-
-Ceci est du texte en *italique*, **gras** ou en ***gras italique***.
-
-Pour définir des listes à puces, utilisez les **tirets** :
-
-- premier élément
-- second élément
-
-Vous pouvez également ajouter des [liens cliquables](https://rzine.fr/)  
-
-<div class="alert alert-success" role="alert">
-<b>Pour tout connaître de la syntaxe markdown, vous pouvez consulter les références bibliographiques listées dans la [partie  3.4](#documentation-de-référence).</b></div>
-
-
-
-
-## Les chunks
-
-En plus du texte libre balisé en markdown, un document R Markdown peut évidemment contenir du code R.    
-Celui-ci doit être inclus dans des ***chunks*** délimités par la syntaxe suivante :
-
-
-```{r, echo=FALSE}
-rmd = "figures/md2.md"
-cat(readLines(rmd), sep = "\n")
-```
-
-
-
-
-<!-- ```{r, echo=FALSE} -->
-<!-- rmd = "figures/chunck1.Rmd" -->
-<!-- cat(readLines(rmd), sep = "\n") -->
-<!-- ``` -->
-
-Pour insérer facilement un nouveau chunk, vous pouvez utiliser le menu ***Insert*** proposé par l’interface de développement RStudio, situé en haut à droite de l'éditeur de texte (à gauche du bouton *Run*) :
-
-```{r, echo=FALSE, fig.align='center', out.width = "15%"}
-knitr::include_graphics("figures/insert.png")
-```
-
-Vous pouvez également utiliser le raccourci clavier `Ctrl + Alt + i` ou `Command + Option + I` pour générer un chunk vide.   
-
-
-### Nom et options
-
-Vous pouvez nommer chaque *chunk* de la manière suivante :
-
-
-
-```{r, echo=FALSE}
-rmd = "figures/md3.md"
-cat(readLines(rmd), sep = "\n")
-```
-
-Un nom de *chunk* doit être unique. Il n'est pas obligatoire de nommer un *chunk*, mais cela peut être utile pour localiser une erreur lors de la compilation du code.
-
-<!-- ```{r, echo=FALSE} -->
-<!-- rmd = "figures/chunck2.Rmd" -->
-<!-- cat(readLines(rmd), sep = "\n") -->
-<!-- ``` -->
-
-Des options peuvent être ajoutées sous la forme `option = valeur`. Elles permettent de paramétrer le comportement d'un *chunk* lors d'un *knit* (compilation du document). Exemple : 
-
-
-
-
-```{r, echo=FALSE}
-rmd = "figures/md4.md"
-cat(readLines(rmd), sep = "\n")
-```
-
-
-
-L'option `echo` permet d'afficher (ou pas) le code dans le document généré, et  l'option `warning` permet d'afficher (ou non) les avertissements générés par le code en sortie. Voici la liste des principales options disponibles :
-
-Option   |    Valeurs    |  Description
----------|---------------|-------------------------------------------
-echo     | TRUE/FALSE    | Afficher ou non le code R dans le document en sortie
-eval     | TRUE/FALSE    | Exécuter ou non le code R durant la compilation du R Markdown
-include  | TRUE/FALSE    | Inclure ou non le code R et ses résultats dans le document
-warning  | TRUE/FALSE    | Afficher ou non les avertissements générés par le code du chunk
-message  | TRUE/FALSE    | Afficher ou non les messages générés par le code du chunk
-
-**L'ensemble des options disponibles sont décrites dans le** [**guide de référence R Markdown**](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf), et également dans plusieurs références listées ci-dessous.
-
-
-
-## Documentation de référence
-
-**Pour en savoir plus, pour se former au R Markdown et à la syntaxe markdown :**
-
-- [Cookbook R Markdown](https://bookdown.org/yihui/rmarkdown-cookbook/), de Y. Xie, C. Dervieux & E. Riederer
-- [R Markdown Definitive Guide](https://bookdown.org/yihui/rmarkdown/), de Y. Xie, J. J. Allaire & G. Grolemund
-- [R Markdown for Scientists](https://rmd4sci.njtierney.com/), de Nicholas Tierney
-- [Introduction à R et au tidyverse](https://juba.github.io/tidyverse/13-rmarkdown.html), de Julien Barnier 
-- [Travail collaboratif avec R](https://linogaliana.gitlab.io/collaboratif/rmd.html), de Lino Galiana
-- [Pimp my RMD: a few tips for R Markdown](https://holtzy.github.io/Pimp-my-rmd/), de Yan Holtz
-- [R for Data Science](https://r4ds.had.co.nz/r-markdown.html), de H. Wickham & G. Groelemund
-- [Guide de la syntaxe R Markdown](https://rmarkdown.rstudio.com/authoring_basics.html), de Rstudio
-- [Guide de référence R Markdown](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf), de Rstudio 
-- [R Markdown Cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf), de Rstudio
-- [Writing Reproducible Research Papers with R Markdown](https://resulumit.com/teaching/rmd_workshop.html#1), de Resul Umit
-
-
  
  
 # La rédaction d'une fiche
-
-Les auteur.e.s sont libres dans le choix de la problématique et dans la façon d’articuler le contenu de leur fiche Rzine mais, **afin d'assurer une certaine cohérence éditoriale et une qualité du contenu de la collection, les auteur.e.s sont soumis à quelques obligations**.
-
 
 ## Métadonnées d'en tête
 
@@ -451,7 +251,7 @@ author:
 
 ## Le résumé
 
-Il est obligatoire de proposer un résumé en début de publication. Ce résumé sera utilisé pour la page de présentation de la fiche (cf. [exemple](https://rzine.fr/publication_rzine/20211101_ysebaert_grasland_mta/)) sur le site rzine.fr, pour le dépôt Github du code source (cf. [exemple](https://github.com/rzine-reviews/mta_rzine)), du DOI et le référencement sur HAL.
+Il est obligatoire de proposer un résumé en début de publication. Ce résumé sera utilisé pour la page de présentation de la fiche sur le site rzine.fr, pour le dépôt Github du code source (cf. [exemple](https://github.com/rzine-reviews/mta_rzine)), du DOI et le référencement sur HAL.
 
 **Ce résumé doit faire entre 250 à 800 caractères (espaces comprises).**
 Il peut comprendre des informations sur d'éventuels prérequis pour bien comprendre le document.
@@ -479,7 +279,7 @@ Il est essentiel et obligatoire d'introduire et de contextualiser le contenu de 
 <div class="alert alert-success" role="alert">
 <b>Une fiche Rzine doit s'adresser à l'ensemble des disciplines de SHS et des sciences territoriales. Considérez que vos lecteur.rice.s ne seront pas forcément des spécialistes de la thématique ou méthode présentée.</b></div>
 
-Vous pouvez pour cela vous appuyer sur des références bibliographiques, utiles pour les non-spécialistes de la thématique ou de la méthode présentée (cf. [partie 4.10](#références-bibliographiques)).
+Vous pouvez pour cela vous appuyer sur des références bibliographiques, utiles pour les non-spécialistes de la thématique ou de la méthode présentée.
 
 <br/>
 
@@ -488,7 +288,7 @@ Vous pouvez pour cela vous appuyer sur des références bibliographiques, utiles
 
 ### Conditions d'utilisation
 
-Pour assurer le reproductibilité complète de la fiche, les données utilisées doivent obligatoirement être mises à disposition des lecteur·rice·s. Pour ne pas empêcher la diffusion publique et libre de la fiche, **vous ne pouvez pas utiliser de données soumises à des restrictions de diffusion et d'utilisation publiques**.
+Pour assurer le reproductibilité complète de la fiche, les données utilisées doivent obligatoirement être mises à disposition des lecteur·rice·s. Pour ne pas empêcher la diffusion publique et libre de la fiche, vous ne pouvez pas utiliser de données soumises à des restrictions de diffusion et d'utilisation publiques.
 
 
 <div class="alert alert-danger" role="alert">
@@ -540,18 +340,12 @@ Voici le rendu :
 <p class="center">[<span style="font-size: 230%;" class="glyphicon glyphicon-download-alt"></span><br/>Télécharger les données](https://rzine.fr/docs/20211101_ysebaert_grasland_MTA/data.zip)</p>
 
 <br/>
-
-
-
-<div class="alert alert-danger" role="alert">
-<b>C'est ensuite aux éditeur·rice·s de rendre ce lien opérationnel durant le processus de publication.</b></div>
-
-<br/>
+C'est ensuite aux éditeur·rice·s de rendre ce lien opérationnel durant le processus de publication.
 
 ## Packages et fonctions
 
 Comme pour les données, il est important de consacrer un sous-chapitre aux packages utilisés. 
-**Tous les packages mobilisés pour l'analyse doivent être listés et décrits** (cf. [exemple](https://rzine.fr/docs/20211101_ysebaert_grasland_MTA/index.html#packages-n%C3%A9cessaires)) :     
+**Tous les packages mobilisés pour l'analyse doivent être listés et décrits** :     
 - `package1` : description...   
 - `package2` : description...   
 - `package3` : description...   
@@ -728,19 +522,10 @@ Trois références bibliographiques sont saisies par défaut dans le fichier *bi
 }
 ```
 
-Beaucoup de documentation sur les fichiers BibTex sont consultables sur internet ([exemple](https://doc.archives-ouvertes.fr/x2hal/bibtex-exemple/)). Supprimez et ajoutez les références bibliographiques que vous souhaitez.
+Beaucoup de documentation sur les fichiers BibTex sont consultables sur internet ([exemple](https://doc.archives-ouvertes.fr/x2hal/bibtex-exemple/)). Pour citer une référence dans le corps du texte, utilisez la syntaxe suivante : `[@Citation Key]`. Citation Key = nom de la référence dans le fichier BibTex (ex : R_base, R-knitr ou R-rmdformats). Par exemple, la chaîne de caractère `[@R-base]` affichera le lien [@R-base] dans le document.
 
-
-<div class="alert alert-success" role="alert">
-<b>Pour citer une référence dans le corps du texte, utilisez la syntaxe suivante : `[@Citation Key]`.   
-Citation Key = nom de la référence dans le fichier BibTex (ex : R_base, R-knitr ou R-rmdformats).    
-Par exemple, la chaîne de caractère `[@R-base]` affichera le lien [@R-base] dans le document.
-
-Toutes les références bibliographiques renseignées dans le fichier biblio.bib seront automatiquement ajoutées dans la section « [Bibliographie](#bibliographie) ».</b></div>
-
-
+Toutes les références bibliographiques renseignées dans le fichier biblio.bib seront automatiquement ajoutées dans la section « [Bibliographie](#bibliographie) ».
 <br/>
-
 
 ## Glossaire
 
@@ -778,25 +563,18 @@ $(document).ready(function() {
 
 
 <br/>
-````
-
-<br/>
 
 
 ## Informations sur la session
+<div class="alert alert-danger" role="alert">
+<b>Ne pas modifier ni déplacer cette section !</b></div>
 
-Cette **section obligatoire** est directement intégrée au template.
-
+Cette section obligatoire est directement intégrée au template.
 
 ```{r, echo=FALSE}
 rmd = "figures/md0.md"
 cat(readLines(rmd), sep = "\n")
 ```
-
-
-<div class="alert alert-danger" role="alert">
-<b>Ne pas modifier ni déplacer cette section !</b></div>
- 
 
 Ce bout de code affiche des informations sur la session qui a permis de générer la fiche (système d'exploitation, versions de R et des packages utilisés). Voir l'[exemple](#info-session) pour ce document.
 
@@ -804,7 +582,7 @@ Ce bout de code affiche des informations sur la session qui a permis de génére
 
 ## Citation BibTex 
 
-Cette **section obligatoire** est directement intégrée au template.
+Cette section obligatoire est directement intégrée au template.
 
 
 ```{r, echo=FALSE}
@@ -813,9 +591,7 @@ cat(readLines(rmd), sep = "\n")
 ```
 
 
-
-
-**Ne mofifiez pas cette section, elle sera complétée avant publication par l'équipe éditoriale.**
+Ne mofifiez pas cette section, elle sera complétée avant publication par l'équipe éditoriale.
 Ces deux *chunks* permettent l'affichage de la référence bibliographique de votre fiche dans le corps du document ([Voir l'exemple pour ce document](#citation)), ainsi que le stockage de cette référence en format BibTex, enregistrée dans le fichier *cite.bib* à la racine du répertoire.
 
 
@@ -828,7 +604,7 @@ Une fois que le fichier index.Rmd est rédigé et qu'il a été compilé en form
 
 Vous êtes alors en mesure de soumettre votre travail au comité de lecture Rzine. Pour cela, vous devez :   
 
-**1) Déposer votre travail sur un dépôt Git** ([logiciel de gestion de versions décentralisé](https://fr.wikipedia.org/wiki/Git)).     
+**1) Déposer votre travail sur un dépôt Git**.     
 **2) Déployer la fiche en format HTML depuis le dépôt GitHub** pour la rendre consultable en ligne.    
 **3) Contacter le comité de lecture** en lui fournissant l'adresse du dépôt.    
 
@@ -1015,11 +791,6 @@ Parce qu'une fiche est un document computationnel, l'ensemble du processus se d�
 </br>
 
 
-<div class="alert alert-danger" role="alert">
-<b>Rédaction d'une documentation sur le processus de relecture à venir.</b></div>
-
-
-
 <!-- # Le processus éditorial -->
 
 <!-- ## Mise en page finale -->
@@ -1045,15 +816,184 @@ Parce qu'une fiche est un document computationnel, l'ensemble du processus se d�
 <!-- ``` -->
 
 
+# Anatomie d'un R Markdown
+<div class="alert alert-success" role="alert">
+<b>Cette partie est une introduction au langage de balisage Markdown et à la construction de document R Markdown. Il ne vous sera pas utile si vous en maîtrisez déjà les différents aspects.</b></div>
 
+
+## L'en-tête
+
+L'en-tête d'un document R Markdown (parfois appelé YAML header) est délimité par deux lignes de trois tirets et contient des métadonnées et les éléments de style du document. Voici à quoi ressemble par exemple l'en-tête vierge du template **`readrzine`** :
+
+<!-- ```{r, echo=FALSE, fig.align='center', out.width = "65%"} -->
+<!-- knitr::include_graphics("figures/meta.png") -->
+<!-- ``` -->
+
+```
+---
+title: "Titre fiche"
+subtitle: "Sous-titre fiche"
+date: "`r Sys.Date()`"
+author: 
+ - name: Premier Auteur.e
+   affiliation: Affiliation_1, Affiliation_2
+ - name: Second Auteur.e
+   affiliation: Affiliation_1, Affiliation_2
+image: "featured.png"   
+logo: "figures/rzine.png"  
+output:
+  rzine::readrzine:
+    highlight: kate
+    number_sections: true
+csl: Rzine_citation.csl
+bibliography: biblio.bib
+nocite: |
+  @*
+link-citations: true
+# github: "author/repository"
+# gitlab: "gitlab.huma-num.fr/author/repository"
+# doi: "xx.xxx/xxxx.xxxxxxx"
+# licence: "by-sa"
+
+# Only Creative Commons Licence 
+# 5 possible choices : "by-nd", "by", "by-nc-sa", "by-nc","by-sa"
+---
+
+
+```
+
+## Le texte balisé en markdown
+
+**Le corps d’un document R Markdown comprend deux types de contenu, que l’on peut librement alterner :**
+
+- **Des blocs de texte brut** mis en forme selon la **syntaxe Markdown** ;   
+- **Des blocs de code**, appelés ***chunks*** (cf. [partie 3.3](#les-chunks)).  
+
+Le corps du document est constitué de texte mis en forme à l'aide de la syntaxe Markdown. Le Markdown est un langage de balisage léger et très facile à maîtriser, qui permet la mise en forme basique du texte. 
+
+**Par exemple, le texte (brut) suivant :**
+
+```
+Ceci est du texte en *italique*, **gras** ou en ***gras italique***.
+
+Pour définir des listes à puces, utilisez les **tirets** :
+
+- premier élément
+- second élément
+
+Vous pouvez également ajouter des [liens cliquables](https://rzine.fr/) 
+
+```
+
+**Sera mis en page de la manière suivante dans le fichier HTML généré :**
+
+Ceci est du texte en *italique*, **gras** ou en ***gras italique***.
+
+Pour définir des listes à puces, utilisez les **tirets** :
+
+- premier élément
+- second élément
+
+Vous pouvez également ajouter des [liens cliquables](https://rzine.fr/)  
+
+<div class="alert alert-success" role="alert">
+<b>Pour tout connaître de la syntaxe markdown, vous pouvez consulter les références bibliographiques listées dans la [partie  3.4](#documentation-de-référence).</b></div>
+
+
+
+
+## Les chunks
+
+En plus du texte libre balisé en markdown, un document R Markdown peut évidemment contenir du code R.    
+Celui-ci doit être inclus dans des ***chunks*** délimités par la syntaxe suivante :
+
+
+```{r, echo=FALSE}
+rmd = "figures/md2.md"
+cat(readLines(rmd), sep = "\n")
+```
+
+
+
+
+<!-- ```{r, echo=FALSE} -->
+<!-- rmd = "figures/chunck1.Rmd" -->
+<!-- cat(readLines(rmd), sep = "\n") -->
+<!-- ``` -->
+
+Pour insérer facilement un nouveau chunk, vous pouvez utiliser le menu ***Insert*** proposé par l’interface de développement RStudio, situé en haut à droite de l'éditeur de texte (à gauche du bouton *Run*) :
+
+```{r, echo=FALSE, fig.align='center', out.width = "15%"}
+knitr::include_graphics("figures/insert.png")
+```
+
+Vous pouvez également utiliser le raccourci clavier `Ctrl + Alt + i` ou `Command + Option + I` pour générer un chunk vide.   
+
+
+### Nom et options
+
+Vous pouvez nommer chaque *chunk* de la manière suivante :
+
+
+
+```{r, echo=FALSE}
+rmd = "figures/md3.md"
+cat(readLines(rmd), sep = "\n")
+```
+
+Un nom de *chunk* doit être unique. Il n'est pas obligatoire de nommer un *chunk*, mais cela peut être utile pour localiser une erreur lors de la compilation du code.
+
+<!-- ```{r, echo=FALSE} -->
+<!-- rmd = "figures/chunck2.Rmd" -->
+<!-- cat(readLines(rmd), sep = "\n") -->
+<!-- ``` -->
+
+Des options peuvent être ajoutées sous la forme `option = valeur`. Elles permettent de paramétrer le comportement d'un *chunk* lors d'un *knit* (compilation du document). Exemple : 
+
+
+
+
+```{r, echo=FALSE}
+rmd = "figures/md4.md"
+cat(readLines(rmd), sep = "\n")
+```
+
+
+
+L'option `echo` permet d'afficher (ou pas) le code dans le document généré, et  l'option `warning` permet d'afficher (ou non) les avertissements générés par le code en sortie. Voici la liste des principales options disponibles :
+
+Option   |    Valeurs    |  Description
+---------|---------------|-------------------------------------------
+echo     | TRUE/FALSE    | Afficher ou non le code R dans le document en sortie
+eval     | TRUE/FALSE    | Exécuter ou non le code R durant la compilation du R Markdown
+include  | TRUE/FALSE    | Inclure ou non le code R et ses résultats dans le document
+warning  | TRUE/FALSE    | Afficher ou non les avertissements générés par le code du chunk
+message  | TRUE/FALSE    | Afficher ou non les messages générés par le code du chunk
+
+**L'ensemble des options disponibles sont décrites dans le** [**guide de référence R Markdown**](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf), et également dans plusieurs références listées ci-dessous.
+
+
+
+## Documentation de référence
+
+**Pour en savoir plus, pour se former au R Markdown et à la syntaxe markdown :**
+
+- [Cookbook R Markdown](https://bookdown.org/yihui/rmarkdown-cookbook/), de Y. Xie, C. Dervieux & E. Riederer
+- [R Markdown Definitive Guide](https://bookdown.org/yihui/rmarkdown/), de Y. Xie, J. J. Allaire & G. Grolemund
+- [R Markdown for Scientists](https://rmd4sci.njtierney.com/), de Nicholas Tierney
+- [Introduction à R et au tidyverse](https://juba.github.io/tidyverse/13-rmarkdown.html), de Julien Barnier 
+- [Travail collaboratif avec R](https://linogaliana.gitlab.io/collaboratif/rmd.html), de Lino Galiana
+- [Pimp my RMD: a few tips for R Markdown](https://holtzy.github.io/Pimp-my-rmd/), de Yan Holtz
+- [R for Data Science](https://r4ds.had.co.nz/r-markdown.html), de H. Wickham & G. Groelemund
+- [Guide de la syntaxe R Markdown](https://rmarkdown.rstudio.com/authoring_basics.html), de Rstudio
+- [Guide de référence R Markdown](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf), de Rstudio 
+- [R Markdown Cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf), de Rstudio
+- [Writing Reproducible Research Papers with R Markdown](https://resulumit.com/teaching/rmd_workshop.html#1), de Resul Umit
 
 
 # Question ?
 
 Pour toute question relative au processus de soumission et de relecture d'une fiche, **vous pouvez contacter le comité de lecture à l'adresse [collection[a]rzine.fr](mailto:collection@rzine.fr).**
-
-
-
 
 
 # Bibliographie {-}
