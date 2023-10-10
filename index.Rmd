@@ -56,7 +56,7 @@ Les auteurs et autrices sont libres dans le choix de la problématique et dans l
 - rédiger en français ou en anglais,
 - introduire et contextualiser le contenu,
 - présenter du code entièrement reproductible,
-- utiliser des données libres d'utilisation et mises à disposition des lecteurs et lectrices,
+- utiliser des données librement réutilisables et mises à disposition des lecteurs et lectrices,
 - fournir les fichiers et annexes demandées.
 
 
@@ -119,7 +119,7 @@ Etre auteurice d'une fiche Rzine, c'est accepter que :
 
 - votre publication (HTML) soit mise à disposition sous les conditions d'utilisation de la [<b>licence Creative Commons BY-SA 4.0</b>](https://creativecommons.org/licenses/by-sa/4.0/deed.fr),
 
-- les données et jeux de données associés ont été ou sont rendus publics, sont sourcés et leur réutilisation est libre,
+- les données et jeux de données associés ont été ou sont rendus publics, sont sourcés et librement réutilisables,
 
 - son code source réponde aux conditions d'utilisation de la licence [<b>MIT</b>](https://opensource.org/licenses/mit-license.php).
 
@@ -131,7 +131,7 @@ Etre auteurice d'une fiche Rzine, c'est accepter que :
 Une fiche Rzine est un document computationnel, alternant texte et code, permettant d’appliquer le paradigme de la programmation lettrée. Sa transcription en HTML nécessite :
 
 - les packages [**`rmarkdown`**](https://rmarkdown.rstudio.com/) et [**`knitr`**](https://yihui.org/knitr/) pour la transformation du document Rmd, 
-- et le package [**`rzine`**](https://gitlab.huma-num.fr/rzine/package) qui fournit le modèle de document numérique [@pedauque_document_2006] associé à une fiche rzine. Il comprend un ensemble de fichiers et une structure de répertoires correspondant à un package R. Il permet de déployer sur votre ordinateur, en syntaxe Rmarkdown, le modèle éditorial `readrzine` d’un notebook R qui sera publié au format statique HTML.
+- et le package [**`rzine`**](https://gitlab.huma-num.fr/rzine/package) qui fournit le modèle de document numérique [@pedauque_document_2006] associé à une fiche rzine. Il comprend un ensemble de fichiers et une structure de répertoires correspondant à un package R. Il permet de déployer sur votre ordinateur, en syntaxe Rmarkdown, le modèle `readrzine` d’un notebook R qui sera publié au format statique HTML.
 <br/>
 
 ## Installation du package `rzine`
@@ -303,7 +303,7 @@ Consacrez-y un chapitre ou sous-chapitre en fonction de leurs spécificités.
 
 ### Mise à disposition
 
-Même si les données mobilisées sont déjà librement mises à disposition, **il est obligatoire de les sauvegarder dans votre répertoire et de les rendre directement téléchargeables depuis la fiche**.
+Même si les données mobilisées sont librement réutilisables, **il est obligatoire de les sauvegarder dans votre répertoire et de les rendre directement téléchargeables depuis la fiche**.
 
 
 ```{r, echo=FALSE, fig.align='center', out.width = "15%"}
