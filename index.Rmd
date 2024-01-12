@@ -1,6 +1,6 @@
 ---
-title: "Publier une fiche Rzine"
-subtitle: "Processus de rédaction, soumission et relecture d'une fiche Rzine"
+title: "Publier un article Rzine"
+subtitle: "Processus de rédaction, soumission et relecture d'un article Rzine"
 date: "`r Sys.Date()`"
 author: 
  - name: Comité éditorial Rzine
@@ -41,26 +41,26 @@ knitr::opts_chunk$set(echo=TRUE,
 ```
 
 
-<!-- > Documentation d'aide à la rédaction, la soumission et au processus d'évaluation d'une fiche Rzine -->
+<!-- > Documentation d'aide à la rédaction, la soumission et au processus d'évaluation d'un article Rzine -->
 
-# Une fiche Rzine 
+# Un article Rzine 
 
 ## Qu'est-ce c'est ?
-La "fiche" est une publication didactique qui présente une méthodologie, un type d'analyse, une fonctionnalité, ou encore le traitement d'un certain type de données avec le langage R. Une fiche peut être principalement technique, méthodologique ou thématique ; elle peut également couvrir ces trois aspects. Elle est évaluée par au moins deux personnes ayant les connaissances thématiques nécessaires.
+Une publication didactique qui présente une méthodologie, un type d'analyse, une fonctionnalité, ou encore le traitement d'un certain type de données avec le langage R. Un article peut être principalement technique, méthodologique ou thématique ; il peut également couvrir ces trois aspects. Il est évalué par au moins deux personnes ayant les connaissances thématiques nécessaires.
 
-Le premier objectif d'une fiche consiste à partager de manière pédagogique des méthodes reproductibles applicables en SHS. La publication d'une fiche est ouverte à toutes et tous, quels que soient son statut et sa discipline. Une fiche peut être réalisée à plusieurs et présenter une dimension interdisciplinaire.
+Le premier objectif d'un article consiste à partager de manière pédagogique des méthodes reproductibles applicables en SHS. La publication d'un article est ouverte à toutes et tous, quels que soient son statut et sa discipline. Un article peut être réalisée à plusieurs et présenter une dimension interdisciplinaire.
 
-Les auteurs et autrices sont libres dans le choix de la problématique et dans la façon d'articuler le contenu. Il est cependant indispensable que le contenu soit correctement contextualisé et intelligible pour l'ensemble des disciplines de SHS. Il est également obligatoire de suivre les règles suivantes :
+Les auteurs et autrices sont libres dans le choix de la problématique et dans la façon d'articuler le contenu. Il est cependant indispensable que le contenu soit correctement contextualisé et intelligible pour l'ensemble des disciplines des SHS. Il est également obligatoire de suivre les règles suivantes :
 
 - utiliser le modèle de mise en page [`readrzine`](#utiliser-le-template-readrzine),
 - rédiger en français ou en anglais,
 - introduire et contextualiser le contenu,
 - présenter du code entièrement reproductible,
-- utiliser des données libres d'utilisation et mises à disposition des lecteurs et lectrices,
+- utiliser des données librement réutilisables et mises à disposition des lecteurs et lectrices,
 - fournir les fichiers et annexes demandées.
 
 
-Vous pouvez consulter les premières fiches déjà produites pour vous faire une idée du résultat attendu :    
+Vous pouvez consulter les premiers articles déjà publiés pour vous faire une idée du résultat attendu :    
 
 - [Analyse territoriale multiscalaire](https://rzine.fr/docs/20211101_ysebaert_grasland_MTA/index.html), *Ronan Ysebaert et Claude Grasland*.    
 - [Analyse des corrélations avec easystats](https://rzine.fr/docs/20200526_glecampion_initiation_aux_correlations/index.html), *Grégoire Le Campion*.    
@@ -68,29 +68,29 @@ Vous pouvez consulter les premières fiches déjà produites pour vous faire une
 - [Réaliser une carte de discontinuités en 2,5D](https://rzine.fr/docs/20191125_ironcurtain/index.html), *Nicolas Lambert*.
 
 
-Rzine souhaite promouvoir et partager des usages et pratiques de logiciels et méthodes contribuant à une science plus ouverte et reproductible, et participer à une montée en compétence des disciplines de SHS dans ce domaine. C'est pour cela que l'ensemble du processus d'évaluation se déroule sur [GitHub](https://github.com/) qui repose sur le logiciel de gestion de versions [Git](https://git-scm.com/). Cela ne doit en aucun cas effrayer les auteurs et autrices qui n'ont jamais utilisé Git : de la documentation et une assistance sont fournies par le comité de lecture Rzine... !
+Rzine souhaite promouvoir et partager des usages et pratiques de logiciels et méthodes contribuant à une science plus ouverte et reproductible, et participer à une montée en compétence des disciplines des SHS dans ce domaine. C'est pour cela que l'ensemble du processus d'évaluation se déroule sur [GitHub](https://github.com/) qui repose sur le logiciel de gestion de versions [Git](https://git-scm.com/). Cela ne doit en aucun cas effrayer les auteurs et autrices qui n'ont jamais utilisé Git : de la documentation et une assistance sont fournies par le comité éditorial de Rzine... !
 
 ## Critères d'acceptation
-Afin d'assurer la cohérence et la qualité du contenu des fiches Rzine, plusieurs critères d'acceptation ont été définis. Certains de ces critères peuvent conduire au refus immédiat d'une proposition de fiche par le [comité de lecture](https://rzine.fr/collection/#people), d'autres critères font l'objet d'une analyse contradictoire par plusieurs évaluateur·rice·s.
+Afin d'assurer la cohérence et la qualité du contenu des articles Rzine, plusieurs critères d'acceptation ont été définis. Certains de ces critères peuvent conduire au refus immédiat d'une proposition d'article par le [comité éditorial](https://rzine.fr/collection/#people), d'autres critères font l'objet d'une analyse contradictoire par plusieurs évaluateur·rice·s.
 
 Les éditeur·rice·s et les évaluateur·rice·s veilleront à ce que :
 
 - la démonstration soit contextualisée (champ disciplinaire d'application) et rigoureuse, 
-- le code présenté se doit d'être lisible, commenté et reproductible,
-- les packages mobilisés doivent être brièvement décrits et leur utilisation justifiée,
-- les données ou jeux de données utilisés dans le cadre de la démonstration doivent obligatoirement être publiés, sourcés et librement réutilisables.
+- le code présenté soit lisible, commenté et reproductible,
+- les packages mobilisés soient brièvement décrits et leur utilisation justifiée,
+- les données ou jeux de données utilisés dans le cadre de la démonstration soient obligatoirement publiés, sourcés et librement réutilisables.
 
 <center>**Les critères d'évaluations**</center>
 
 |                                 |  Editeur·rice·s | Evaluateur·rice·s |
 |--------------------------------------------------------------------|:-------------:|:-------------:|
-| Respect des consignes éditoriales ([partie 3](#la-rédaction-dune-fiche))    |       X       |               |
+| Respect des consignes éditoriales ([partie 3](#la-rédaction-dun-article))    |       X       |               |
 | Acceptation des futures conditions d'utilisation ([partie 4](#publication-et-licence-dutilisation)) |      X        |               |
-| Pas de fiche Rzine similaire déjà produite*                        |       X       |               |
+| Pas d'article Rzine similaire déjà produit*                        |       X       |               |
 | N'a pas fait l'objet d'une publication par ailleurs                |       X       |               |
 | Pas de renvoi publicitaire explicite                               |       X       |       X       |
 | Respect du règlement général sur la protection des données (RGPD)         |       X       |       X       |
-| Intérêt pour la communauté des utilisateurices de R en SHS            |       X       |       X       |
+| Intérêt pour la communauté des utilisateur·ice·s de R en SHS            |       X       |       X       |
 | Données et jeux de données utilisés publiés, sourcés et librement réutilisables  ([partie 3.4](#données-utilisées))        |       X       |       X       |
 | Rédaction dans un français ou un anglais correct                   |               |       X       |
 | Méthodes applicables en SHS                         |               |       X       |
@@ -99,12 +99,12 @@ Les éditeur·rice·s et les évaluateur·rice·s veilleront à ce que :
 | Clarté et rigueur de la ressource et de la démonstration           |               |       X       |
 | Clarté (indentation, commentaire...) et reproductibilité du code présenté  |       X        |       X       |
 | Justification (et stabilité) des packages utilisés                 |       X      |       X       |
-*Le cas échéant, le comité de lecture se réserve la possibilité de mettre en relation différent·es contributeurices pour leur proposer un travail collaboratif. 
+*Le cas échéant, le comité éditorial se réserve la possibilité de mettre en relation différent·es contributeur·ice·s pour leur proposer un travail collaboratif. 
 <br/>
 
 ## Soumission et évaluation
 
-<center>**Schéma du processus d'évaluation et de publication d'une fiche Rzine**</center>
+<center>**Schéma du processus d'évaluation et de publication d'un article Rzine**</center>
 <br/>
  ```{r, echo=FALSE, out.width="80%",  fig.align = 'center'}
 knitr::include_graphics("figures/Rzine_05.png")
@@ -115,27 +115,27 @@ knitr::include_graphics("figures/Rzine_05.png")
 Les choix des dépôts et licences d'utilisation s'inscrivent dans la volonté du projet Rzine de promouvoir des pratiques contribuant à une science plus ouverte et à la reproductibilité des méthodes. L'ensemble des publications de la collection Rzine avec leurs codes sources est automatiquement référencé et mis à disposition de toutes et tous. 
 Afin d'éviter tout malentendu avec les auteurices, un accord de principe est demandé en amont du processus éditorial.
 
-Etre auteurice d'une fiche Rzine, c'est accepter que :
+Etre auteur·ic·e d'un article Rzine, c'est accepter que :
 
 - votre publication (HTML) soit mise à disposition sous les conditions d'utilisation de la [<b>licence Creative Commons BY-SA 4.0</b>](https://creativecommons.org/licenses/by-sa/4.0/deed.fr),
 
-- les données et jeux de données associés ont été ou sont rendus publics, sont sourcés et leur réutilisation est libre,
+- les données et jeux de données associés ont été ou sont rendus publics, sont sourcés et librement réutilisables,
 
 - son code source réponde aux conditions d'utilisation de la licence [<b>MIT</b>](https://opensource.org/licenses/mit-license.php).
 
 <div class="alert alert-success" role="alert">
-<b>Une fois le processus d'évaluation terminé, les éditeur·rice·s réalisent la mise en page finale de la fiche, son [<b>stockage pérenne</b>](https://github.com/rzine-reviews), sa mise en ligne sur le site [<b>rzine.fr</b>](https://rzine.fr/publication_rzine/), le dépôt d'un [<b>DOI</b>](https://www.doi.org/) et son référencement sur [<b>HAL</b>](https://hal.archives-ouvertes.fr/RZINE) dans la collection RZINE.</b></div>
+<b>Une fois le processus d'évaluation terminé, les éditeur·rice·s réalisent la mise en page finale de l'article, son [<b>stockage pérenne</b>](https://github.com/rzine-reviews), sa mise en ligne sur le site [<b>rzine.fr</b>](https://rzine.fr/publication_rzine/), le dépôt d'un [<b>DOI</b>](https://www.doi.org/) et son référencement sur [<b>HAL</b>](https://hal.archives-ouvertes.fr/RZINE) dans la collection RZINE.</b></div>
 
 
-# Forme et modèle de fiche : le package `rzine`
-Une fiche Rzine est un document computationnel, alternant texte et code, permettant d’appliquer le paradigme de la programmation lettrée. Sa transcription en HTML nécessite :
+# Forme et modèle d'article : le package `rzine`
+Un article Rzine est un document computationnel, alternant texte et code, permettant d’appliquer le paradigme de la programmation lettrée. Sa transcription en HTML nécessite :
 
 - les packages [**`rmarkdown`**](https://rmarkdown.rstudio.com/) et [**`knitr`**](https://yihui.org/knitr/) pour la transformation du document Rmd, 
-- et le package [**`rzine`**](https://gitlab.huma-num.fr/rzine/package) qui fournit le modèle de document numérique [@pedauque_document_2006] associé à une fiche rzine. Il comprend un ensemble de fichiers et une structure de répertoires correspondant à un package R. Il permet de déployer sur votre ordinateur, en syntaxe Rmarkdown, le modèle éditorial `readrzine` d’un notebook R qui sera publié au format statique HTML.
+- et le package [**`rzine`**](https://gitlab.huma-num.fr/rzine/package) qui fournit le modèle de document numérique [@pedauque_document_2006] associé à un article rzine. Il comprend un ensemble de fichiers et une structure de répertoires correspondant à un package R. Il permet de déployer sur votre ordinateur, en syntaxe Rmarkdown, le modèle `readrzine` d’un notebook R qui sera publié au format statique HTML.
 <br/>
 
 ## Installation du package `rzine`
-Le package est mis à disposition sur un [dépôt du groupe Rzine](https://gitlab.huma-num.fr/rzine/package) sur l'instance GitLab de la TGIR Huma-num. Pour l'installer et le charger il suffit de copier le code ci-dessous dans votre console R :
+Le package est mis à disposition sur un [dépôt du groupe Rzine](https://gitlab.huma-num.fr/rzine/package) sur l'instance GitLab de l'infrastructure de recherche Huma-num. Pour l'installer et le charger il suffit de copier le code ci-dessous dans votre console R :
 ```{r, echo=TRUE, eval=FALSE}
 install.packages("remotes") # si le package `remotes` n'est pas encore installé
 remotes::install_gitlab("rzine/package", host = "https://gitlab.huma-num.fr/", force = TRUE)
@@ -144,7 +144,7 @@ library(rzine)
 
 ## Utiliser le *template* `readrzine`
 ### Première étape : spécifier un répertoire de travail
-Avant de générer une fiche Rzine vierge il est important de spécifier un répertoire de travail.
+Avant de générer un article Rzine vierge il est important de spécifier un répertoire de travail.
 Pour cela, deux solutions s'offrent à vous :
 
 **1. En clic-bouton avec Rstudio (recommandé)**
@@ -165,12 +165,12 @@ knitr::include_graphics("figures/create_project_2.png")
 
 Créez un répertoire sur votre ordinateur puis spécifiez-le comme répertoire de travail avec la fonction `setwd()` dans votre console :
 ```{r, echo=TRUE, eval=FALSE}
-setwd("/home/jeanne/Documents/Fiche_rzine")
+setwd("/home/jeanne/Documents/Article_rzine")
 ```
 <br/>
 
-### Seconde étape : générer une première fiche vide (index.Rmd)
-Dans votre projet Rstudio (ou bien au sein du répertoire de travail que vous avez spécifié), vous pouvez générer un modèle de fiche `readrzine` vide en ligne de commande.<br/> Copiez-collez les lignes de code R suivantes dans votre console **sans les modifier**, puis exécutez-les :
+### Seconde étape : générer un premier article vide (index.Rmd)
+Dans votre projet Rstudio (ou bien au sein du répertoire de travail que vous avez spécifié), vous pouvez générer un modèle d'article `readrzine` vide en ligne de commande.<br/> Copiez-collez les lignes de code R suivantes dans votre console **sans les modifier**, puis exécutez-les :
 
 ```{r, echo=TRUE, eval=FALSE}
 rmarkdown::draft(file = "index.Rmd", 
@@ -181,7 +181,7 @@ rmarkdown::draft(file = "index.Rmd",
 ```
 
 Un ensemble de fichiers est généré à la racine du répertoire de travail que vous avez créé. 
-Certains fichiers seront à modifier ou à ajouter en fonction du contenu de votre fiche. <br/>
+Certains fichiers seront à modifier ou à ajouter en fonction du contenu de votre article. <br/>
 La figure ci-dessous donne la description de la structure et des fichiers créés au sein de votre répertoire de travail : 
 
 ```{r, echo=FALSE, fig.align='center', out.width = "90%"}
@@ -189,12 +189,13 @@ knitr::include_graphics("figures/files_folder.png")
 ```
 <br/>
 
-### Troisième étape : "kniter" la fiche (index.html)
-Pour générer la fiche en HTML, il suffit de **"kniter"** (tricoter) le fichier **index.Rmd**. 
+### Troisième étape : "knit" l'article (index.html)
+Pour générer l'article en HTML, il suffit de **"knit"** (littéralement tricoter) le fichier **index.Rmd**. 
 
-Bien que cela soit invisible pour l'utilisateurice, le fichier est d'abord converti en syntaxe *Markdown* puis en HTML via le logiciel libre de conversion de documents [Pandoc](https://pandoc.org/).<br/> 
+Bien que cela soit invisible pour l'utilisateur·ice, le fichier est d'abord converti en syntaxe *Markdown* puis en HTML via le logiciel libre de conversion de documents [Pandoc](https://pandoc.org/).<br/>
+
 <div class="alert alert-danger" role="alert"> Sur certaines versions de système d'exploitation ce logiciel n'est pas automatiquement présent : il est dans ce cas nécessaire de l'[installer](https://pandoc.org/installing.html).</div>
-Vous pouvez "kniter" le fichier index.Rmd de différentes manières :
+Vous pouvez "knit" le fichier index.Rmd de différentes manières :
 
 **1. En clic-bouton (avec Rstudio, recommandé)**
 
@@ -210,18 +211,21 @@ rmarkdown::render("index.Rmd", envir = new.env())
 
 ```
 <br/>
+
 **Un fichier du même nom en format HTML est alors créé à la racine de votre répertoire : index.html**. Il s'agit du fichier index.Rmd transformé en HTML statique à partir du modèle `readrzine` :
 ```{r, echo=FALSE, fig.align='center', out.width = "100%"}
 knitr::include_graphics("figures/template.png")
 ```
+
+
 Il ne reste plus qu'à le remplir... 
 
-- en modifiant, pas-à-pas, votre fichier index.Rmd (voir la partie [3.](#anatomie-dun-r-markdown) ci-dessous),
-- puis, en le "knitant" pour visualiser la version HTML de votre fiche (dans un émulateur Rstudio ou dans votre navigateur).
+- en modifiant, pas-à-pas, votre fichier index.Rmd (voir la partie [6.](#anatomie-dun-r-markdown) ci-dessous),
+- puis, en le "knitant" pour visualiser la version HTML de votre article (dans un émulateur Rstudio ou dans votre navigateur).
 <br/>
  
  
-# La rédaction d'une fiche
+# La rédaction d'un article
 
 ## Métadonnées d'en tête
 
@@ -251,12 +255,12 @@ author:
 
 ## Le résumé
 
-Il est obligatoire de proposer un résumé en début de publication. Ce résumé sera utilisé pour la page de présentation de la fiche sur le site rzine.fr, pour le dépôt Github du code source (cf. [exemple](https://github.com/rzine-reviews/mta_rzine)), du DOI et le référencement sur HAL.
+Il est obligatoire de proposer un résumé en début de publication. Ce résumé sera utilisé pour la page de présentation de l'article sur le site rzine.fr, pour le dépôt Github du code source (cf. [exemple](https://github.com/rzine-reviews/mta_rzine)), du DOI et le référencement sur HAL.
 
 **Ce résumé doit faire entre 250 à 800 caractères (espaces comprises).**
 Il peut comprendre des informations sur d'éventuels prérequis pour bien comprendre le document.
 
-Pour mettre en forme votre résumé en introduction de fiche, utilisez le symbol "**>**" qui permet de créer un bloc de citation qui apparaîtra sur un fond gris. Exemple :
+Pour mettre en forme votre résumé en introduction d'article, utilisez le symbol "**>**" qui permet de créer un bloc de citation qui apparaîtra sur un fond gris. Exemple :
 
 ```
 > Ce document... xx x xx x xx xxx xxxx xx xx xxxx x xx x xxx xxxx x xx xxx xxxx xx xx xxxx x xx x xxx
@@ -277,7 +281,7 @@ Le bloc de citation apparaîtra comme suit :
 Il est essentiel et obligatoire d'introduire et de contextualiser le contenu de votre document. 
 
 <div class="alert alert-success" role="alert">
-<b>Une fiche Rzine doit s'adresser à l'ensemble des disciplines de SHS et des sciences territoriales. Considérez que vos lecteur.rice.s ne seront pas forcément des spécialistes de la thématique ou méthode présentée.</b></div>
+<b>Un article Rzine doit s'adresser à l'ensemble des disciplines des SHS et des sciences territoriales. Considérez que vos lecteur.rice.s ne seront pas forcément des spécialistes de la thématique ou de la méthode présentée.</b></div>
 
 Vous pouvez pour cela vous appuyer sur des références bibliographiques, utiles pour les non-spécialistes de la thématique ou de la méthode présentée.
 
@@ -288,7 +292,7 @@ Vous pouvez pour cela vous appuyer sur des références bibliographiques, utiles
 
 ### Conditions d'utilisation
 
-Pour assurer le reproductibilité complète de la fiche, les données utilisées doivent obligatoirement être mises à disposition des lecteur·rice·s. Pour ne pas empêcher la diffusion publique et libre de la fiche, vous ne pouvez pas utiliser de données soumises à des restrictions de diffusion et d'utilisation publiques.
+Pour assurer le reproductibilité complète de l'article, les données utilisées doivent obligatoirement être mises à disposition des lecteur·rice·s. Pour ne pas empêcher la diffusion publique et libre de l'article, vous ne pouvez pas utiliser de données soumises à des restrictions de diffusion et d'utilisation publiques.
 
 
 <div class="alert alert-danger" role="alert">
@@ -297,13 +301,13 @@ Pour assurer le reproductibilité complète de la fiche, les données utilisées
 
 ### Présentation
 
-Les données doivent être directement présentées, sourcées et brièvement décrites dans la fiche (cf.[exemple](https://rzine.fr/docs/20211101_ysebaert_grasland_MTA/index.html#sources-mobilis%C3%A9es)).
+Les données doivent être directement présentées, sourcées et brièvement décrites dans l'article (cf.[exemple](https://rzine.fr/docs/20211101_ysebaert_grasland_MTA/index.html#sources-mobilis%C3%A9es)).
 Consacrez-y un chapitre ou sous-chapitre en fonction de leurs spécificités.
 
 
 ### Mise à disposition
 
-Même si les données mobilisées sont déjà librement mises à disposition, **il est obligatoire de les sauvegarder dans votre répertoire et de les rendre directement téléchargeables depuis la fiche**.
+Même si les données mobilisées sont librement réutilisables, **il est obligatoire de les sauvegarder dans votre répertoire et de les rendre directement téléchargeables depuis l'article**.
 
 
 ```{r, echo=FALSE, fig.align='center', out.width = "15%"}
@@ -321,7 +325,7 @@ Pour cela :
 
 
 
-3) Ajoutez un bouton de téléchargement des données dans votre fiche, en copiant-collant ce bout de code HTML :
+3) Ajoutez un bouton de téléchargement des données dans votre article, en copiant-collant ce bout de code HTML :
 
 
 ````
@@ -428,7 +432,7 @@ Cela affichera l'image centrée et large de 200 pixels, ainsi qu'un titre (sourc
 
 ## Ecriture de code R
 
-Le code R présenté dans la fiche doit être indenté, espacé et commenté. 
+Le code R présenté dans l'article doit être indenté, espacé et commenté. 
 **Il est demandé aux auteur·e·s de prendre soin de la syntaxe et de respecter les principales conventions d'écriture.**
 
 Pour en savoir plus, vous pouvez consulter [The tidyverse style guide](https://style.tidyverse.org/syntax.html) d'Hadley Wickham. 
@@ -576,7 +580,7 @@ rmd = "figures/md0.md"
 cat(readLines(rmd), sep = "\n")
 ```
 
-Ce bout de code affiche des informations sur la session qui a permis de générer la fiche (système d'exploitation, versions de R et des packages utilisés). Voir l'[exemple](#info-session) pour ce document.
+Ce bout de code affiche des informations sur la session qui a permis de générer l'article (système d'exploitation, versions de R et des packages utilisés). Voir l'[exemple](#info-session) pour ce document.
 
 <br/>
 
@@ -592,21 +596,21 @@ cat(readLines(rmd), sep = "\n")
 
 
 Ne mofifiez pas cette section, elle sera complétée avant publication par l'équipe éditoriale.
-Ces deux *chunks* permettent l'affichage de la référence bibliographique de votre fiche dans le corps du document ([Voir l'exemple pour ce document](#citation)), ainsi que le stockage de cette référence en format BibTex, enregistrée dans le fichier *cite.bib* à la racine du répertoire.
+Ces deux *chunks* permettent l'affichage de la référence bibliographique de votre article dans le corps du document ([Voir l'exemple pour ce document](#citation)), ainsi que le stockage de cette référence en format BibTex, enregistrée dans le fichier *cite.bib* à la racine du répertoire.
 
 
-# La soumission d'une fiche
+# La soumission d'un article
 
 Une fois que le fichier index.Rmd est rédigé et qu'il a été compilé en format HTML ([knit](#kniter-la-fiche--html)), vérifiez que les annexes ([biblio.bib](#références-bibliographiques), [featured.png](#illustration-de-couverture), [figures](#image-dans-le-corps-du-texte) et [data](#données-utilisées)) ont été complétées, remplacées ou supprimées.    
 
 <div class="alert alert-danger" role="alert">
 **Il est impératif que les fichiers** "***.Rmd***" et "***.html***" **soient nommés** "***index.Rmd***" et  "***index.html***" **pour la suite du processus.**</div>
 
-Vous êtes alors en mesure de soumettre votre travail au comité de lecture Rzine. Pour cela, vous devez :   
+Vous êtes alors en mesure de soumettre votre travail au comité éditorial Rzine. Pour cela, vous devez :   
 
 **1) Déposer votre travail sur un dépôt Git**.     
-**2) Déployer la fiche en format HTML depuis le dépôt GitHub** pour la rendre consultable en ligne.    
-**3) Contacter le comité de lecture** en lui fournissant l'adresse du dépôt.    
+**2) Déployer l'article en format HTML depuis le dépôt GitHub** pour le rendre consultable en ligne.    
+**3) Contacter le comité éditorial** en lui fournissant l'adresse du dépôt.    
 
 
 <div class="alert alert-success" role="alert">
@@ -630,7 +634,7 @@ Saisissez le courriel que vous souhaitez utiliser, un mot de passe, un nom d'uti
 
 ### Création d'un dépôt
 
-Vous avez désormais un compte GitHub. **Cliquez sur** "***Start a project***" ou "***Create repository***" **pour créer un dépôt qui hébergera votre fiche**.
+Vous avez désormais un compte GitHub. **Cliquez sur** "***Start a project***" ou "***Create repository***" **pour créer un dépôt qui hébergera votre article**.
 
 ```{r, echo=FALSE, fig.align='center', out.width = "100%"}
 knitr::include_graphics("figures/welcome_github.png")
@@ -661,7 +665,7 @@ knitr::include_graphics("figures/new_repo_2.png")
 
 ## Remplissage du dépôt
 
-Vous pouvez désormais y ajouter le répertoire (et sous-répertoires) contenant tous les fichiers de votre fiche. Il existe plusieurs méthodes pour téléverser des fichiers sur GitHub (en ligne de commande ou en clic-bouton). Nous présentons ici la méthode clic-bouton depuis l’interface de GitHub.
+Vous pouvez désormais y ajouter le répertoire (et sous-répertoires) contenant tous les fichiers de votre article. Il existe plusieurs méthodes pour téléverser des fichiers sur GitHub (en ligne de commande ou en clic-bouton). Nous présentons ici la méthode clic-bouton depuis l’interface de GitHub.
 
 Cliquez sur "***Add file***", puis sur "***Upload files***" :.
 
@@ -673,7 +677,7 @@ knitr::include_graphics("figures/upload_file.png")
 <br/>
 
 <div class="alert alert-danger" role="alert">
-**Faîtes glisser l'ensemble des fichiers et sous-répertoires de votre fiche**, c'est-à-dire tous les fichiers et répertoires présents dans votre projet Rstudio, **dans ce dépôt**.</div>
+**Faîtes glisser l'ensemble des fichiers et sous-répertoires de votre article**, c'est-à-dire tous les fichiers et répertoires présents dans votre projet Rstudio, **dans ce dépôt**.</div>
 
 
 
@@ -697,9 +701,9 @@ Ce dépôt étant paramétré comme *public*, **tout le monde peut désormais le
 
 <br/>
 
-## Déploiement de la fiche
+## Déploiement de l'article
 
-Les fichiers sont consultables à l'état brut, mais **une manipulation supplémentaire va permettre de mettre en ligne votre fiche (format HTML)**. **Votre fiche mise en forme sera ainsi consultable par tout le monde sur le web**, sans avoir à gérer un serveur ou un site web.
+Les fichiers sont consultables à l'état brut, mais **une manipulation supplémentaire va permettre de mettre en ligne votre article (format HTML)**. **Votre article mis en forme sera ainsi consultable par tout le monde sur le web**, sans avoir à gérer un serveur ou un site web.
 
 ### GitHub Page
 
@@ -721,7 +725,7 @@ knitr::include_graphics("figures/GitHub_Pages.png")
 ```
 
 <div class="alert alert-success" role="alert">
-<b>Votre fiche est désormais consultable en ligne depuis votre compte GitHub !</b>   
+<b>Votre article est désormais consultable en ligne depuis votre compte GitHub !</b>   
 
 La page html est alors distribuée à l'adresse suivante : https://<b>username</b>.gitub.io/<b>repository_name</b>.</b></div>
 
@@ -733,7 +737,7 @@ Vous pouvez retrouver l'URL d'accès dans le menu "*Settings > Pages*" :
 knitr::include_graphics("figures/deploy_url.png")
 ```
   
-**Cliquez sur le lien affiché pour consulter la fiche mise en ligne :**
+**Cliquez sur le lien affiché pour consulter l'article mis en ligne :**
 
 ```{r, echo=FALSE, fig.align='center', out.width = "100%"}
 knitr::include_graphics("figures/online.png")
@@ -751,7 +755,7 @@ Vous pouvez éditer et modifier facilement ce fichier depuis l'interface GitHub 
 knitr::include_graphics("figures/readme.png")
 ```
 
-**Vous pouvez alors personnaliser le fichier** en modifiant : le **titre**, le **sous-titre**, le.s **auteur.e.s** (et **affiliation.s**), et l'**URL de consultation de la fiche**. Exemple :
+**Vous pouvez alors personnaliser le fichier** en modifiant : le **titre**, le **sous-titre**, le.s **auteur.e.s** (et **affiliation.s**), et l'**URL de consultation de l'article**. Exemple :
 
 ```{r, echo=FALSE, fig.align='center', out.width = "100%"}
 knitr::include_graphics("figures/readme2.png")
@@ -766,7 +770,7 @@ knitr::include_graphics("figures/readme3.png")
 </br>
 
 <div class="alert alert-success" role="alert">
-<b>Vous avez terminé la mise en ligne de votre fiche. Désormais, un lien vers votre fiche déployée est affiché à la racine du dépôt grâce au fichier README.md.</b></div>
+<b>Vous avez terminé la mise en ligne de votre article. Désormais, un lien vers votre article déployé est affiché à la racine du dépôt grâce au fichier README.md.</b></div>
 
 
 ```{r, echo=FALSE, fig.align='center', out.width = "100%"}
@@ -775,18 +779,18 @@ knitr::include_graphics("figures/final.png")
 
 ## Soumettre
 
-Il ne vous reste plus qu'à contacter le comité de lecture Rzine pour soumettre votre fiche pour évaluation.  **Envoyez un courriel à [collection[a]rzine.fr](mailto:collection@rzine.fr), en précisant l'adresse du dépôt qui héberge votre fiche.**
+Il ne vous reste plus qu'à contacter le comité éditorial Rzine pour soumettre votre article pour évaluation.  **Envoyez un courriel à [collection[a]rzine.fr](mailto:collection@rzine.fr), en précisant l'adresse du dépôt qui héberge votre article.**
 
-**Vous serez contacté·e par le comité de lecture dans les 15 jours suivants l'envoi de ce courriel.**
+**Vous serez contacté·e par le comité éditorial dans les 15 jours suivants l'envoi de ce courriel.**
 
 
 # Le processus de relecture
 
-En cas d'acceptation, **un ou une éditeur·rice désigné·e par la direction du comité de lecture prendra sous sa responsabilité le du processus de relecture**.
+En cas d'acceptation, **un ou une éditeur·rice désigné·e par la direction du comité éditorial prendra sous sa responsabilité le du processus de relecture**.
 
-**Deux relecteur·rice·s doté·e·s des connaissances thématiques nécessaires seront proposé·e·s à l'auteur·e**. Rzine est dans une démarche volontariste de science ouverte, la relecture des fiches Rzine est ouverte et transparente. L’identité des relecteur·rice·s et leurs retours sont publics.
+**Deux relecteur·rice·s doté·e·s des connaissances thématiques nécessaires seront proposé·e·s à l'auteur·e**. Rzine est dans une démarche volontariste de science ouverte, la relecture des articles Rzine est ouverte et transparente. L’identité des relecteur·rice·s et leurs retours sont publics.
 
-Parce qu'une fiche est un document computationnel, l'ensemble du processus se déroule sur GitHub. Vous serez donc invité·e à ouvrir les droits du dépôt GitHub de votre fiche aux relecteur·rice·s désigné·e·s. **Les retours (enrichissements, illustrations, corrections...) se feront se feront  directement sur la plateforme GitHub via des** ***issues***.
+Parce qu'un article est un document computationnel, l'ensemble du processus se déroule sur GitHub. Vous serez donc invité·e à ouvrir les droits du dépôt GitHub de votre article aux relecteur·rice·s désigné·e·s. **Les retours (enrichissements, illustrations, corrections...) se feront se feront directement sur la plateforme GitHub via des** ***issues***.
 
 </br>
 
@@ -797,7 +801,7 @@ Parce qu'une fiche est un document computationnel, l'ensemble du processus se d�
 
 <!-- ## Attribution d'un DOI -->
 
-<!-- En cas de publication, un **DOI** ([Digital Object Identifier](https://fr.wikipedia.org/wiki/Digital_Object_Identifier)) sera attribué à chaque fiche par le biais de [l'Institut de l'information scientifique et technique](https://www.inist.fr/?lang=en) du CNRS (INIST). -->
+<!-- En cas de publication, un **DOI** ([Digital Object Identifier](https://fr.wikipedia.org/wiki/Digital_Object_Identifier)) sera attribué à chaque article par le biais de [l'Institut de l'information scientifique et technique](https://www.inist.fr/?lang=en) du CNRS (INIST). -->
 
 <!-- **Le DOI (et le lien vers la page des métadonnées) sera ajouté sur le document par le comité éditorial :** -->
 
@@ -807,9 +811,9 @@ Parce qu'une fiche est un document computationnel, l'ensemble du processus se d�
 
 <!-- ## Dépôt sur HAL -->
 
-<!-- ## Mise en ligne de la fiche -->
+<!-- ## Mise en ligne de l'article -->
 
-<!-- Un fois le processus de publication terminé, la fiche sera accessible à tout le monde depuis son dépôt Git. Pour une meilleure visibilité, **elle sera également référencée et mise en valeur sur le site** [**rzine.fr**](https://rzine.fr/) :  -->
+<!-- Un fois le processus de publication terminé, l'article sera accessible à tout le monde depuis son dépôt Git. Pour une meilleure visibilité, **elle sera également référencée et mise en valeur sur le site** [**rzine.fr**](https://rzine.fr/) :  -->
 
 <!-- ```{r, echo=FALSE, fig.align='center', out.width = "100%"} -->
 <!-- knitr::include_graphics("figures/rzine_fr.png") -->
@@ -831,8 +835,8 @@ L'en-tête d'un document R Markdown (parfois appelé YAML header) est délimité
 
 ```
 ---
-title: "Titre fiche"
-subtitle: "Sous-titre fiche"
+title: "Titre article"
+subtitle: "Sous-titre article"
 date: "`r Sys.Date()`"
 author: 
  - name: Premier Auteur.e
@@ -993,7 +997,7 @@ message  | TRUE/FALSE    | Afficher ou non les messages générés par le code d
 
 # Question ?
 
-Pour toute question relative au processus de soumission et de relecture d'une fiche, **vous pouvez contacter le comité de lecture à l'adresse [collection[a]rzine.fr](mailto:collection@rzine.fr).**
+Pour toute question relative au processus de soumission et de relecture d'un article, **vous pouvez contacter le comité éditorial à l'adresse [collection[a]rzine.fr](mailto:collection@rzine.fr).**
 
 
 # Bibliographie {-}
@@ -1014,8 +1018,8 @@ kableExtra::kable_styling(knitr::kable(rzine::sessionRzine()[[2]], row.names = F
 ```{r Citation_ok, echo=FALSE}
 rref <- bibentry(
    bibtype = "misc",
-   title = "Publier une fiche Rzine",
-   subtitle = "Processus de rédaction, soumission et relecture d’une fiche Rzine",
+   title = "Publier un article Rzine",
+   subtitle = "Processus de rédaction, soumission et relecture d’un article Rzine",
    author = c("Rzine"),
    doi = "10.48645/xxxxxx",
    url = "https://rzine.fr/publication_rzine/xxxxxxx/",
