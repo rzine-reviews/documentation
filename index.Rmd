@@ -106,11 +106,19 @@ Les éditeur·rice·s et les évaluateur·rice·s veilleront à ce que :
 
 <center>**Schéma du processus d'évaluation et de publication d'un article Rzine**</center>
 <br/>
- ```{r, echo=FALSE, out.width="80%",  fig.align = 'center'}
+```{r, echo=FALSE, out.width="80%",  fig.align = 'center'}
 knitr::include_graphics("figures/Rzine_05.png")
 ```
 <br/>
- 
+
+
+En cas d'acceptation, un ou une éditeur·rice désigné·e par la direction du comité éditorial prendra sous sa responsabilité le processus de relecture.
+
+Deux relecteur·rice·s doté·e·s des connaissances thématiques nécessaires seront proposé·e·s à l'auteur·e. Rzine est dans une démarche volontariste de science ouverte, la relecture des articles Rzine est ouverte et transparente. L’identité des relecteur·rice·s et leurs retours sont publics.
+
+Parce qu'un article est un document computationnel, l'ensemble du processus se déroule sur GitHub. Vous serez donc invité·e à ouvrir les droits du dépôt GitHub de votre article aux relecteur·rice·s désigné·e·s. **Les retours (enrichissements, illustrations, corrections...) se feront se feront directement sur la plateforme GitHub via des** ***issues***
+
+
 ## Publication et licence d'utilisation
 Les choix des dépôts et licences d'utilisation s'inscrivent dans la volonté du projet Rzine de promouvoir des pratiques contribuant à une science plus ouverte et à la reproductibilité des méthodes. L'ensemble des publications de la collection Rzine avec leurs codes sources est automatiquement référencé et mis à disposition de toutes et tous. 
 Afin d'éviter tout malentendu avec les auteurices, un accord de principe est demandé en amont du processus éditorial.
@@ -563,7 +571,7 @@ $(document).ready(function() {
   $('.footnotes').remove();
 });
 
-```
+````
 
 
 <br/>
@@ -783,14 +791,6 @@ Il ne vous reste plus qu'à contacter le comité éditorial Rzine pour soumettre
 
 **Vous serez contacté·e par le comité éditorial dans les 15 jours suivants l'envoi de ce courriel.**
 
-
-# Le processus de relecture
-
-En cas d'acceptation, **un ou une éditeur·rice désigné·e par la direction du comité éditorial prendra sous sa responsabilité le du processus de relecture**.
-
-**Deux relecteur·rice·s doté·e·s des connaissances thématiques nécessaires seront proposé·e·s à l'auteur·e**. Rzine est dans une démarche volontariste de science ouverte, la relecture des articles Rzine est ouverte et transparente. L’identité des relecteur·rice·s et leurs retours sont publics.
-
-Parce qu'un article est un document computationnel, l'ensemble du processus se déroule sur GitHub. Vous serez donc invité·e à ouvrir les droits du dépôt GitHub de votre article aux relecteur·rice·s désigné·e·s. **Les retours (enrichissements, illustrations, corrections...) se feront se feront directement sur la plateforme GitHub via des** ***issues***.
 
 </br>
 
